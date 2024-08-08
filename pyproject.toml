@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "desid-playground"
+version = "0.1.0"
+description = "DESID Data Analytics Platform"
+authors = ["Fred Guth <frederico.guth@saude.gov.br>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+sqlmesh = "^0.116.0"
+duckdb = "^1.0.0"
+numpy = "^2.0.1"
+pandas = "^2.2.2"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

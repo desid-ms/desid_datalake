@@ -1,0 +1,17 @@
+seeds/*
+seeds/**/*
+.cache/**/*
+
+*.db*
+
+temp/*
+new_docs/*
+.env*
+_models
+logs
+data/**/*
+.cache
+__pycache__
+**/*/*.ipynb_checkpoints*
+
+

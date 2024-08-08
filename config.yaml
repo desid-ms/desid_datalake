@@ -1,0 +1,17 @@
+project: desid
+ignore_patterns: ["models/**/*/_*.*", "models/**/**/*/_*.*"]
+gateways:
+    local:
+        connection:
+            type: duckdb
+            database: data/catalog.db
+            extensions: [spatial, sqlite]
+        state_connection:
+            type: duckdb
+            database: data/state.db
+
+default_gateway: local
+
+model_defaults:
+    dialect: duckdb, normalization_strategy=case_sensitive
+
