@@ -5,7 +5,7 @@ MODEL (
 
 select distinct   
     ano, -- Ano competência da Despesa
-    TRIM(REGEXP_REPLACE(fase, '\s+\([a-z]\)', '', 'gi')) AS fase, -- Fase da Despesa (Orçada, Empenhada, Liquidada, Paga)
+    TRIM(REGEXP_REPLACE(fase, '\s+\([a-z]\)', '', 'gi')) AS fase, -- Fase da Despesa (Dotação Atualizada, Despesa Empenhada, Despesa Liquidada, Despesa Paga)
     ente, -- Município ou Estado
     IBGE as codigo_ibge, -- Código IBGE do Ente
     UF as sigla_uf, -- Sigla da Unidade da Federação do Ente
