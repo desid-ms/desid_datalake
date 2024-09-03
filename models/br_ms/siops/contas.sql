@@ -5,8 +5,10 @@ MODEL (
 WITH contas AS (
     SELECT 
         conta AS id_conta,
+        ordem_conta,
         parent AS codigo_conta_mae, 
-        * FROM read_parquet('data/inputs/contas/contas.parquet')
+        ds_conta as descricao_conta,
+        FROM read_parquet('data/inputs/contas/contas.parquet')
 )
 SELECT 
     id_conta, -- Código da conta no SIOPS
