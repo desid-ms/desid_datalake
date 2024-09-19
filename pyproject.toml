@@ -13,7 +13,11 @@ duckdb = "^1.0.0"
 numpy = "^2.0.1"
 pandas = "^2.2.2"
 ipykernel = "^6.29.5"
+cx-oracle = "^8.3.0"
 
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.2.2"
 
 [build-system]
 requires = ["poetry-core"]
