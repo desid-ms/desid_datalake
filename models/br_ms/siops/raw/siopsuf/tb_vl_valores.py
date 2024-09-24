@@ -6,7 +6,7 @@ from sqlmesh import ExecutionContext, model
 import os
 
 @model(
-    "siopsuf_raw.tb_vl_valores",
+    "raw_siopsuf.tb_vl_valores",
     columns={
         "CO_PASTA": "INT",
         "CO_ITEM": "TEXT",
@@ -35,7 +35,7 @@ def execute(
 
     username = os.environ['ORACLE_USR']
     password = os.environ['ORACLE_PWD']
-    host = '172.25.61.196'
+    host = 'exaccdfdr-scan.saude.gov'
     port = '1521'
     service_name = 'RJPO2DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)

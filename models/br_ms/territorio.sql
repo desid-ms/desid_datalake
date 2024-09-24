@@ -1,6 +1,6 @@
 MODEL (
   name br_ms.territorio,
-  kind SEED
+  kind FULL
 );
 
  SELECT

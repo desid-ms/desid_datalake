@@ -6,15 +6,15 @@ from sqlmesh import ExecutionContext, model
 import os
 
 @model(
-    "siopsuf_raw.tb_proj_pasta",
+    "raw_siops.tb_proj_coluna",
     columns={
-        "CO_SEQ_PASTA": "INT",
-        "TP_PASTA": "TEXT",
-        "NO_PASTA": "TEXT",
-        "CO_PASTA_INTERNO": "TEXT",
-        "NO_COMPLETO_PASTA": "TEXT",
-        "DS_FUNCIONALIDADE_PASTA": "TEXT",
-        "DT_INCLUSAO": "DATE"
+        "CO_SEQ_COLUNA": "INT",
+        "NO_COLUNA": "TEXT",
+        "CO_COLUNA_INTERNO": "INT",
+        "NO_COMPLETO_COLUNA": "TEXT",
+        "DT_INCLUSAO": "DATE",
+        "ST_UTILIZADO_DESCRICAO": "INT",
+        "TP_COLUNA": "TEXT"
     },
 )
 def execute(
@@ -27,11 +27,11 @@ def execute(
 
     username = os.environ['ORACLE_USR']
     password = os.environ['ORACLE_PWD']
-    host = '172.25.61.196'
+    host = 'exaccdfdr-scan.saude.gov'
     port = '1521'
     service_name = 'RJPO2DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
-    query = "SELECT * FROM SIOPSUF.TB_PROJ_PASTA"
+    query = "SELECT * FROM SIOPSUF.TB_PROJ_COLUNA"
 
     try:
         # Establish the connection

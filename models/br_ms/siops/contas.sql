@@ -1,6 +1,6 @@
 MODEL (
     name siops.contas,
-    kind SEED
+    kind FULL
 );
 WITH contas AS (
     SELECT 

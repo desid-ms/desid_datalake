@@ -14,6 +14,7 @@ numpy = "^2.0.1"
 pandas = "^2.2.2"
 ipykernel = "^6.29.5"
 cx-oracle = "^8.3.0"
+oracledb = "^2.4.1"
 
 
 [tool.poetry.group.dev.dependencies]
