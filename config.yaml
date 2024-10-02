@@ -1,5 +1,5 @@
 project: desid
-ignore_patterns: ["models/**/*/_*.*", "models/**/**/*/_*.*"]
+ignore_patterns: ["models/**/*/_*.*", "models/**/**/*/_*.*", "models/**/**/**/*/_*.*"]
 gateways:
     local:
         connection:
