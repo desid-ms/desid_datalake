@@ -1,10 +1,8 @@
 MODEL (
-    name siops.contas,
-    kind FULL
+    name siops.contas_operacionais,
+    kind VIEW
 );
 
-WITH 
-contas_operacionais AS (
     SELECT UNNEST([
         16,17,19,20,23,29,30,34,35,36,37,38,39,42,44,45,46,47,48,49,50,51,52,53,
         54,55,56,57,58,59,60,61,62,65,67,69,73,74,75,76,77,78,79,80,81,82,83,85,
@@ -46,69 +44,3 @@ contas_operacionais AS (
         2040,2041,2042,2043,2044,2045,2046,2048,2049,2052,2054,2055,2058,2059,
         2060,2061,2062,2063,2064,2065,2066
     ]) AS CO_ITEM
-),
-eventos_contas AS (
-    SELECT 
-        ITEM.CO_ITEM_EXIBICAO AS CONTA,
-        ITEM.NO_ITEM AS NOME_CONTA,
-        CASE 
-            WHEN ITEM.CO_SEQ_ITEM IN (SELECT CO_ITEM FROM contas_operacionais) THEN 'OPERACIONAL' ELSE 'AGREGADORA' 
-        END AS TIPO_CONTA,
-        CASE
-            WHEN PERFED.CO_ENTE_FEDERADO = 1 THEN 'ATIVO_MUNICIPIO'
-            WHEN PERFED.CO_ENTE_FEDERADO = 2 THEN 'ATIVO_ESTADO'
-            WHEN PERFED.CO_ENTE_FEDERADO = 3 THEN 'ATIVO_DF'
-            ELSE CAST(PERFED.CO_ENTE_FEDERADO AS VARCHAR)
-        END AS CO_ENTE_FEDERADO,
-        (
-            SELECT MIN(DT_DISPONIBILIZACAO)
-            FROM RAW_SIOPSUF.TB_PROJ_ESTRUTURA_VERSAO A
-            WHERE A.DS_VERSAO = '1.0'
-              AND A.CO_ANO_PER_ENTE_FED = PERFED.CO_SEQ_ANO_PER_ENTE_FED
-        ) AS DATA_ATUALIZACAO
-    FROM
-        RAW_SIOPSUF.RL_PROJ_ANOPERIODO_ENTE_FED PERFED
-        JOIN RAW_SIOPSUF.RL_PROJ_ANOPERIODOENTE_PASTA PERFEDPASTA
-            ON PERFED.CO_SEQ_ANO_PER_ENTE_FED = PERFEDPASTA.CO_ANOPERIODO_ENTE_FED
-        JOIN RAW_SIOPSUF.TB_PROJ_PASTA PASTA
-            ON PERFEDPASTA.CO_PASTA = PASTA.CO_SEQ_PASTA
-        JOIN RAW_SIOPSUF.RL_PROJ_PASTA_ITEM PASTAITEM
-            ON PERFEDPASTA.CO_SEQ_ANO_PER_ENTE_PASTA = PASTAITEM.CO_ANO_PER_ENTE_PASTA
-        JOIN RAW_SIOPSUF.TB_PROJ_ITEM ITEM
-            ON PASTAITEM.CO_ITEM = ITEM.CO_SEQ_ITEM
-    WHERE
-        PASTA.CO_SEQ_PASTA IN ('1', '2')
-), 
-contas_por_periodo AS (
-    SELECT *,
-        CONCAT(
-            EXTRACT(YEAR FROM data_atualizacao::DATE),
-            '-',
-            CASE
-                WHEN EXTRACT(MONTH FROM data_atualizacao::DATE) <= 2 THEN '1'
-                WHEN EXTRACT(MONTH FROM data_atualizacao::DATE) <= 4 THEN '2'
-                WHEN EXTRACT(MONTH FROM data_atualizacao::DATE) <= 6 THEN '3'
-                WHEN EXTRACT(MONTH FROM data_atualizacao::DATE) <= 8 THEN '4'
-                WHEN EXTRACT(MONTH FROM data_atualizacao::DATE) <= 10 THEN '5'
-                ELSE '6'
-            END
-        ) AS ANOBIMESTRE
-    FROM eventos_contas 
-    ORDER BY data_atualizacao, conta
-),
-pivot_contas AS (
-    PIVOT contas_por_periodo ON CO_ENTE_FEDERADO
-    USING LAST(co_ente_federado)
-    GROUP BY conta, nome_conta, tipo_conta, anobimestre
-) 
-
-SELECT  
-    CONTA,  
-    NOME_CONTA, 
-    TIPO_CONTA, 
-    ANOBIMESTRE, 
-    CASE WHEN ATIVO_DF IS NULL THEN 'N' ELSE 'S' END AS ATIVO_DF, 
-    CASE WHEN ATIVO_ESTADO IS NULL THEN 'N' ELSE 'S' END AS ATIVO_ESTADO, 
-    CASE WHEN ATIVO_MUNICIPIO IS NULL THEN 'N' ELSE 'S' END AS ATIVO_MUNICIPIO 
-FROM pivot_contas
-ORDER BY conta, anobimestre
