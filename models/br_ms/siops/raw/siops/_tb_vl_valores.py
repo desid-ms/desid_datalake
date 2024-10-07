@@ -40,7 +40,7 @@ def execute(
     port = '1521'
     service_name = 'RJPO2DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
-    query = "SELECT * FROM SIOPSUF.TB_VL_VALORES where NU_ANO > 2017"
+    query = "SELECT * FROM SIOPS.TB_VL_VALORES where NU_ANO > 2017"
 
     try:
         # Establish the connection
