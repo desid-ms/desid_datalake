@@ -62,15 +62,15 @@ import os
         "CO_PA_SEXO": "TEXT",
         "CO_PA_RACACOR": "TEXT",
         "CO_PA_MUNPCN": "TEXT",
-        "NU_PA_QTDPRO": "INT",
-        "NU_PA_QTDAPR": "INT",
-        "NU_PA_VALPRO": "DOUBLE",
-        "NU_PA_VALAPR": "DOUBLE",
+        "SUM_NU_PA_QTDPRO": "INT",
+        "SUM_NU_PA_QTDAPR": "INT",
+        "SUM_NU_PA_VALPRO": "DOUBLE",
+        "SUM_NU_PA_VALAPR": "DOUBLE",
         # "CO_PA_UFDIF": "TEXT",
         # "CO_PA_MNDIF": "TEXT",
         # "NU_PA_DIF_VAL": "DOUBLE",
-        "NU_VPA_TOT": "DOUBLE",
-        "NU_PA_TOT": "DOUBLE",
+        "SUM_NU_VPA_TOT": "DOUBLE",
+        "SUM_NU_PA_TOT": "DOUBLE",
         # "CO_PA_INDICA": "TEXT",
         # "CO_PA_CODOCO": "TEXT",
         # "CO_PA_FLQT": "TEXT",
@@ -128,15 +128,15 @@ import os
         "CO_PA_SEXO": "SEXO",
         "CO_PA_RACACOR": "RAÇA",
         "CO_PA_MUNPCN": "MUNICÍPIO RESIDÊNCIA",
-        "NU_PA_QTDPRO": "QUANTIDADE PRODUZIDA",
-        "NU_PA_QTDAPR": "QUANTIDADE APROVADA",
-        "NU_PA_VALPRO": "VALOR PRODUZIDO",
-        "NU_PA_VALAPR": "VALOR APROVADO",
+        "SUM_NU_PA_QTDPRO": "QUANTIDADE PRODUZIDA",
+        "SUM_NU_PA_QTDAPR": "QUANTIDADE APROVADA",
+        "SUM_NU_PA_VALPRO": "VALOR PRODUZIDO",
+        "SUM_NU_PA_VALAPR": "VALOR APROVADO",
         # "CO_PA_UFDIF": "UF RESIDENCIA DIFERENTE DA UF DA UNIDADE",
         # "CO_PA_MNDIF": "MUNICÍPIO RESIDENCIA DIFERENTE DO MUNICÍPIO DA UNIDADE",
         # "NU_PA_DIF_VAL": "DIFERENÇA DE VALOR",
-        "NU_VPA_TOT": "VALOR TOTAL",
-        "NU_PA_TOT": "VALOR TOTAL",
+        "SUM_NU_VPA_TOT": "VALOR TOTAL",
+        "SUM_NU_PA_TOT": "VALOR TOTAL",
         # "CO_PA_INDICA": "INDICADOR SA SITUAÇÃO DA PRODUÇÃO",
         # "CO_PA_CODOCO": "CÓDIGO DA OCORRÊNCIA",
         # "CO_PA_FLQT": "FLAG SITUAÇÃO",
@@ -161,39 +161,31 @@ def execute(
     service_name = 'RJPO1DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
     query = """
-    SELECT
-        CO_PA_CMP, CO_PA_MVM, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_UFMUN, CO_PA_MUNPCN, CO_PA_TPUPS,
-        CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_SEXO, CO_PA_ETNIA, CO_PA_RACACOR, CO_PA_NUIDADE,
-        CO_PA_CIDPRI, CO_PA_PROC_ID, CO_PA_TPFIN, CO_NATUREZA_JUR,
-        SUM(NU_PA_QTDPRO) AS SUM_NU_PA_QTDPRO,
-        SUM(NU_PA_QTDAPR) AS SUM_NU_PA_QTDAPR,
-        SUM(NU_PA_VALPRO) AS SUM_NU_PA_VALPRO,
-        SUM(NU_PA_VALAPR) AS SUM_NU_PA_VALAPR,
-        SUM(NU_VPA_TOT) AS SUM_NU_VPA_TOT,
-        SUM(NU_PA_TOT) AS SUM_NU_PA_TOT
-    FROM RAW_SIA__DEV.TB_PA
-    WHERE CO_PA_CMP > '202112'
-        AND CO_PA_CMP < '202301'
-        AND NU_PA_VALPRO > 0
+        SELECT 
+            CO_PA_CMP, CO_PA_MVM, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_UFMUN, CO_PA_MUNPCN, CO_PA_TPUPS, 
+            CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_SEXO, CO_PA_ETNIA, CO_PA_RACACOR, CO_PA_NUIDADE,
+            CO_PA_CIDPRI, CO_PA_PROC_ID, CO_NATUREZA_JUR, 
+            SUM(NU_PA_QTDPRO) AS SUM_NU_PA_QTDPRO,
+            SUM(NU_PA_QTDAPR) AS SUM_NU_PA_QTDAPR,
+            SUM(NU_PA_VALPRO) AS SUM_NU_PA_VALPRO,
+            SUM(NU_PA_VALAPR) AS SUM_NU_PA_VALAPR,
+            SUM(NU_VPA_TOT) AS SUM_NU_VPA_TOT,
+            SUM(NU_PA_TOT) AS SUM_NU_PA_TOT 
+        FROM SIA.TB_PA 
+        WHERE CO_PA_CMP = '202201' 
+        -- AND CO_PA_CMP < '202301' 
+        AND NU_PA_VALPRO >  0 
         AND NU_PA_VALAPR > 0
-    GROUP BY
-        CO_PA_CMP, CO_PA_MVM, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_UFMUN, CO_PA_MUNPCN, CO_PA_TPUPS,
-        CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_SEXO, CO_PA_ETNIA, CO_PA_RACACOR, CO_PA_NUIDADE,
-        CO_PA_CIDPRI, CO_PA_PROC_ID, CO_PA_TPFIN, CO_NATUREZA_JUR
-    -- SELECT 
-    --     CO_PA_CMP, CO_PA_MVM, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_UFMUN, CO_PA_MUNPCN, CO_PA_TPUPS,
-    --     CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_SEXO, CO_PA_ETNIA, CO_PA_RACACOR, CO_PA_NUIDADE, 
-    --     CO_PA_CIDPRI,CO_PA_PROC_ID, CO_PA_TPFIN,NU_PA_QTDPRO, NU_PA_QTDAPR, NU_PA_VALPRO, NU_PA_VALAPR, 
-    --     NU_VPA_TOT, NU_PA_TOT, CO_NATUREZA_JUR  
-    -- FROM SIA.TB_PA 
-    -- WHERE CO_PA_CMP > '202112' AND CO_PA_CMP < '202301' AND NU_PA_VALPRO > 0 AND NU_PA_VALAPR > 0
+        GROUP BY
+            CO_PA_CMP, CO_PA_MVM, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_UFMUN, CO_PA_MUNPCN, CO_PA_TPUPS,
+            CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_SEXO, CO_PA_ETNIA, CO_PA_RACACOR, CO_PA_NUIDADE,
+            CO_PA_CIDPRI, CO_PA_PROC_ID, CO_NATUREZA_JUR
     """
-
     try:
-        # Establish the connection
         with cx_Oracle.connect(username, password, dsn, encoding="UTF-8") as connection:
-            df = pd.read_sql(query, connection)
-        return df
+            for chunk in pd.read_sql(query, connection, chunksize = 1_000_000):
+                yield chunk
+
     except cx_Oracle.Error as error:
         print("Error while connecting to Oracle Database:", error)
         raise

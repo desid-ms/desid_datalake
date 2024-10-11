@@ -1,5 +1,7 @@
 MODEL (
     name siops.homologacoes,
+    
+    depends_on ["raw_siops.th_homologacao"],
     kind FULL
 );
 

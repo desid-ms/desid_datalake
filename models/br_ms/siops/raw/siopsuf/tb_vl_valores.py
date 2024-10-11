@@ -39,13 +39,15 @@ def execute(
     port = '1521'
     service_name = 'RJPO2DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
-    query = "SELECT * FROM SIOPSUF.TB_VL_VALORES where NU_ANO > 2017"
+    # NU_PERIODO = 2 -> 6o bimestre
+    query = "SELECT * FROM SIOPSUF.TB_VL_VALORES where NU_ANO = 2022 and NU_PERIODO=2"
 
     try:
-        # Establish the connection
+        # # Establish the connection
         with cx_Oracle.connect(username, password, dsn, encoding="UTF-8") as connection:
-            df = pd.read_sql(query, connection)
-        return df
+            for chunk in pd.read_sql(query, connection, chunksize = 1_000_000):
+                yield chunk
+
     except cx_Oracle.Error as error:
         print("Error while connecting to Oracle Database:", error)
         raise

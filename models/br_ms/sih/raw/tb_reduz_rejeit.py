@@ -41,16 +41,34 @@ def execute(
     service_name = 'RJPO1DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
     query = """
-     SELECT  DT_CMPT, NU_AIH, CO_IDENT, CO_CNES, NU_ESPECIALIDADE, CO_PROC_REALIZADO, NU_NATJUR,  QT_DIAS_PERM, NU_VAL_TOT, CO_FINANCIAMENTO,  CO_DIAG_PRI, CO_PACIENTE_RACA_COR, CO_ETNIA, NU_IDADE  FROM AIH.TB_REDUZ WHERE DT_CMPT > '202112' AND DT_CMPT <'202301'
-        UNION
-     SELECT DT_CMPT, NU_AIH, CO_IDENT, CO_CNES, NU_ESPECIALIDADE, CO_PROC_REALIZADO, NU_NATJUR,  QT_DIAS_PERM, NU_VAL_TOT, CO_FINANCIAMENTO,  CO_DIAG_PRI, CO_PACIENTE_RACA_COR, CO_ETNIA, NU_IDADE  FROM AIH.TB_REJEIT WHERE DT_CMPT > '202112' AND DT_CMPT <'202301'
-    """
+    WITH combined_data AS (
+        SELECT DT_CMPT, NU_AIH, CO_IDENT, CO_CNES, NU_ESPECIALIDADE, CO_PROC_REALIZADO, 
+            NU_NATJUR, QT_DIAS_PERM, NU_VAL_TOT, CO_FINANCIAMENTO
+        FROM AIH.TB_REDUZ
+        WHERE DT_CMPT > '202112' AND DT_CMPT < '202301'
+        
+        UNION ALL
+        
+        SELECT DT_CMPT, NU_AIH, CO_IDENT, CO_CNES, NU_ESPECIALIDADE, CO_PROC_REALIZADO, 
+            NU_NATJUR, QT_DIAS_PERM, NU_VAL_TOT, CO_FINANCIAMENTO
+        FROM AIH.TB_REJEIT
+        WHERE DT_CMPT > '202112' AND DT_CMPT < '202301'
+    )
+    SELECT DT_CMPT, CO_CNES, NU_ESPECIALIDADE, CO_PROC_REALIZADO, NU_NATJUR, 
+        CO_FINANCIAMENTO, 
+        SUM(QT_DIAS_PERM) AS SUM_QT_DIAS_PERM, 
+        SUM(NU_VAL_TOT) AS SUM_NU_VAL_TOT
+    FROM combined_data
+    GROUP BY DT_CMPT, CO_CNES, NU_ESPECIALIDADE, CO_PROC_REALIZADO, NU_NATJUR, CO_FINANCIAMENTO
+
+     """
 
     try:
-        # Establish the connection
+        # # Establish the connection
         with cx_Oracle.connect(username, password, dsn, encoding="UTF-8") as connection:
-            df = pd.read_sql(query, connection)
-        return df
+            for chunk in pd.read_sql(query, connection, chunksize =  1_000_000):
+                yield chunk
+
     except cx_Oracle.Error as error:
         print("Error while connecting to Oracle Database:", error)
         raise
