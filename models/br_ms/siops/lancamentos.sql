@@ -18,30 +18,19 @@ WITH
         FROM
             RAW.SIOPSUF__TB_VL_VALORES
     ),
-        -- apenas valores de contas operacionais
+    -- apenas valores de contas operacionais
     OPERACIONAIS AS (
         SELECT * FROM TODOS_VALORES WHERE CO_ITEM in 
         (
             SELECT CODIGO_CONTA_SIOPS::TEXT FROM SIOPS.CONTAS WHERE TIPO_CONTA = 'operacional'
         )
-    ) ,
+    ),
     -- apenas valores de receitas e despesas
     VALORES_RECEITAS_DESPESAS AS (
-        SELECT
-            *
-        FROM
-            OPERACIONAIS
-        WHERE
-            CO_PASTA_HIERARQUIA IN (
-                SELECT
-                    '2' AS pasta_hierarquia -- RECEITAS
-                UNION
-                SELECT DISTINCT
-                    pasta_hierarquia -- DESPESAS são pasta_hierarquia com fonte e subfuncao
-                FROM
-                    staging.siops__fontes_subfuncoes
-            )
-    ),
+        SELECT * FROM OPERACIONAIS 
+            WHERE (REGEXP_MATCHES(co_pasta_hierarquia, '^(3|4|6|7|8|9|10|86|87|88|89|90|94|95)_([1-9]|1[0-8])$') OR CO_PASTA = 1) 
+            AND CO_TIPO < 23 -- Remove fases que são Totais Gerais
+    ), 
     
     -- apenas valores que já foram homologados
     HOMOLOGADOS AS (
@@ -55,26 +44,32 @@ WITH
             JOIN STAGING.SIOPS__HOMOLOGADOS H ON H.PERIODO = P.PERIODO
             AND H.IBGE_ENTE = V.IBGE_ENTE
     )
-
-SELECT
-    H.COMPETENCIA, -- ANO-BIMESTRE do lançamento
-    H.IBGE_ENTE, -- Código IBGE de 6 dígitos referente ao ente federado
-    S.ENTE, -- Nome do Ente federado
-    S.CAPITAL, -- 1 se é capital de estado ou 0 se não é capital
-    S.REGIAO, -- Região do País do Ente Federado (NO, SU, CO, NE, SE)
-    S.UF, -- Unidade Federativa do ENTE ('BR' para estados e distrito federal)
-    S.ESFERA, -- D = Distrito, E = Estado, M = Município, U = União
-    S.POPULACAO, -- De 2024, segundo o SICONFI
-    C.NO_COLUNA AS FASE, -- Fase orçamentária
-    FS.FONTE, -- Fonte de recursos
-    FS.SUBFUNCAO AS DESTINACAO, -- Destinação de recursos (Função Saúde/Subfunção)
-    CT.CODIGO_CONTA AS CONTA, -- Item de Conta orçamentário do lançamento
-    CT.DESCRICAO_CONTA, -- Descrição da Conta Orçamentária
-    H.NU_VALOR AS VALOR_NOMINAL -- Valor nominal do lançamento
-FROM
-    HOMOLOGADOS H
-    LEFT JOIN SIOPS.CONTAS CT ON CT.CODIGO_CONTA_SIOPS = H.CO_ITEM
-    LEFT JOIN RAW.SIOPSUF__TB_PROJ_COLUNA C ON H.CO_TIPO = C.CO_SEQ_COLUNA
-    LEFT JOIN STAGING.SIOPS__FONTES_SUBFUNCOES FS ON FS.PASTA_HIERARQUIA = H.CO_PASTA_HIERARQUIA
-    LEFT JOIN SICONFI.ENTES S ON H.IBGE_ENTE = S.codigo_ibge_6
-    ORDER BY H.COMPETENCIA, IBGE_ENTE, FASE, CONTA, FONTE, SUBFUNCAO
+ SELECT
+     H.COMPETENCIA,
+     H.IBGE_ENTE,
+     S.ENTE,
+     CASE WHEN S.CAPITAL = 1 THEN 'S' ELSE 'N' END AS CAPITAL,
+     S.REGIAO,
+     S.UF,
+     CASE
+         WHEN S.ESFERA = 'D' THEN 'Distrital'
+         WHEN S.ESFERA = 'M' THEN 'Municipal'
+         WHEN S.ESFERA = 'E' THEN 'Estadual'
+         WHEN S.ESFERA = 'U' THEN 'Federal'
+     END AS ESFERA,
+     S.POPULACAO,
+     -- remove conteúdo entre parenteses e espaços em branco
+     TRIM(REGEXP_REPLACE(REGEXP_REPLACE(C.NO_COLUNA, '\s*=.*$', ''), '\s*\([a-z]\)', '')) AS FASE,
+     
+     FS.FONTE,
+     FS.SUBFUNCAO AS DESTINACAO,
+     CT.CODIGO_CONTA,
+     CT.DESCRICAO_CONTA AS CONTA,
+     H.NU_VALOR AS VALOR_NOMINAL
+ FROM
+     HOMOLOGADOS H 
+     JOIN SIOPS.CONTAS CT ON CT.CODIGO_CONTA_SIOPS = H.CO_ITEM
+     JOIN RAW.SIOPSUF__TB_PROJ_COLUNA C ON H.CO_TIPO = C.CO_SEQ_COLUNA
+     LEFT JOIN STAGING.SIOPS__FONTES_SUBFUNCOES FS ON FS.PASTA_HIERARQUIA = H.CO_PASTA_HIERARQUIA
+     JOIN SICONFI.ENTES S ON H.IBGE_ENTE = S.codigo_ibge_6
+ ORDER BY H.COMPETENCIA, IBGE_ENTE, FASE, CONTA, FONTE, SUBFUNCAO

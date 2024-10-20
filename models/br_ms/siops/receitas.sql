@@ -1,0 +1,10 @@
+MODEL (
+    name siops.receitas,
+);
+    
+    SELECT 
+    COMPETENCIA, IBGE_ENTE,  ENTE, CAPITAL, REGIAO, UF, ESFERA, POPULACAO, CODIGO_CONTA, CONTA, 
+    VALOR_NOMINAL AS RECEITAS_REALIZADAS
+    FROM siops.lancamentos
+    WHERE FASE = 'Receitas Realizadas Brutas'
+    ORDER BY COMPETENCIA, IBGE_ENTE, CODIGO_CONTA

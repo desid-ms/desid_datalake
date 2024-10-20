@@ -12,12 +12,12 @@ SELECT
    proc.procedimento_sus as descricao_procedimento, -- descrição do procedimento correspondente no SIGTAP
    pa.co_pa_tpfin as codigo_tipo_financiamento, -- código do tipo de financimento da produção
    t1.valor as tipo_financiamento_producao, -- descrição do tipo de financiamento da produção
-   f.ValorPAB2022 as fator_pab_procedimento, -- fator do Piso da Atenção Básica do procedimento
+   f.ValorPAB2022::decimal(18,2) as valor_pab_procedimento, -- valor procedimento de atenção básica em 2022
    proc.codigo_sha as codigo_sha_procedimento, -- código sha HC correspondente ao cuidado do procedimento
    pa.SUM_NU_PA_QTDPRO as quantidade_produzida,
    pa.SUM_NU_PA_QTDAPR as quantidade_aprovada,
-   pa.SUM_NU_PA_VALPRO as valor_produzido,
-   pa.SUM_NU_PA_VALAPR as valor_aprovado,
+   pa.SUM_NU_PA_VALPRO::decimal(18,2) as valor_produzido,
+   pa.SUM_NU_PA_VALAPR::decimal(18,2) as valor_aprovado,
    (pa.SUM_NU_PA_TOT/pa.LINHAS)::decimal(18,2) as valor_unitario_tabela_sigtap
  FROM
    raw.sia__tb_pa pa

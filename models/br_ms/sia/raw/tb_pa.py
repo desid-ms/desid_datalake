@@ -67,20 +67,20 @@ def execute(
     service_name = 'RJPO1DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
     query = """
-        SELECT 
+        SELECT
             CO_PA_CMP, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_TPUPS, CO_NATUREZA_JUR,
             CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_PROC_ID,
-            count(*) as LINHAS,  
+            COUNT(*) as LINHAS,
             SUM(NU_PA_QTDPRO) AS SUM_NU_PA_QTDPRO,
             SUM(NU_PA_QTDAPR) AS SUM_NU_PA_QTDAPR,
-            SUM(NU_PA_VALPRO) AS SUM_NU_PA_VALPRO,
-            SUM(NU_PA_VALAPR) AS SUM_NU_PA_VALAPR,
-            SUM(NU_VPA_TOT) AS SUM_NU_VPA_TOT,
-            SUM(NU_PA_TOT) AS SUM_NU_PA_TOT 
-        FROM SIA.TB_PA 
-        WHERE CO_PA_CMP >= '202201' 
-        AND CO_PA_CMP < '202301' 
-        AND NU_PA_VALPRO >  0 
+            CAST(SUM(NU_PA_VALPRO) AS DECIMAL(18,2)) AS SUM_NU_PA_VALPRO,
+            CAST(SUM(NU_PA_VALAPR) AS DECIMAL(18,2)) AS SUM_NU_PA_VALAPR,
+            CAST(SUM(NU_VPA_TOT) AS DECIMAL(18,2)) AS SUM_NU_VPA_TOT,
+            SUM(NU_PA_TOT) AS SUM_NU_PA_TOT
+        FROM SIA.TB_PA
+        WHERE CO_PA_CMP >= '202201'
+        AND CO_PA_CMP < '202301'
+        AND NU_PA_VALPRO > 0
         AND NU_PA_VALAPR > 0
         GROUP BY
             CO_PA_CMP, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_TPUPS,
