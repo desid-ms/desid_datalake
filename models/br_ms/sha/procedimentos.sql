@@ -7,15 +7,15 @@ MODEL (
 );
 
 SELECT 
-     f.codigo_procedimento_sigtap, 
-     p."Código TUSS" AS codigo_tuss, 
+     f.codigo_procedimento_sigtap as id_procedimento_sigtap, 
+     p.codigo_tuss,
      f.codigo_sha, 
-     p."Procedimento SUS" AS ds_procedimento_sus, 
-     p."Termo TUSS" AS ds_procedimento_tuss,  
+     p.procedimento_sus, 
+     p.termo_tuss AS ds_procedimento_tuss,  
      f.ds_sha_pt, 
-FROM raw_sha.funcao_procedimento f 
+FROM raw.sha__funcao_procedimento f 
  JOIN 
-     raw_sha.procedimentos p 
+     raw.sha__procedimentos p 
  ON 
-    f.codigo_procedimento_sigtap = p."Código SUS";
+    f.codigo_procedimento_sigtap::text = p.CODIGO_SUS;
 

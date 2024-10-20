@@ -6,7 +6,7 @@ from sqlmesh import ExecutionContext, model
 import os
 
 @model(
-    "raw_siopsuf.rl_proj_anoperiodo_ente_fed",
+    "raw.siopsuf__rl_proj_anoperiodo_ente_fed",
     columns={
         "CO_SEQ_ANO_PER_ENTE_FED": "INT",
         "CO_ENTE_FEDERADO": "INT",

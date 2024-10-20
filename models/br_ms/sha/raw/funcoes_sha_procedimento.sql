@@ -1,7 +1,6 @@
 MODEL (
-  name raw_sha.funcao_procedimento,
+  name raw.sha__funcao_procedimento,
   kind FULL
 );
 
-
-SELECT * FROM ST_READ('data/inputs/procedimento_sha.xlsx')
+SELECT * FROM read_csv_auto('data/inputs/sha/procedimento_sha2.csv') order by all

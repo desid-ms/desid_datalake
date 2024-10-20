@@ -6,7 +6,7 @@ from sqlmesh import ExecutionContext, model
 import os
 
 @model(
-    "raw_siops.tb_vl_valores",
+    "raw.siops__tb_vl_valores",
     # kind=INCREMENTAL_BY_PARTITION(NU_ANO, NU_PERIODO)
     columns={
         "CO_PASTA": "INT",
@@ -42,13 +42,13 @@ def execute(
     port = '1521'
     service_name = 'RJPO2DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
-    # NU_PERIODO = 2 -> 6o bimestre
+    # APENAS 2022 e NU_PERIODO = 2 que é o sexto bimestre
     query = "SELECT * FROM SIOPS.TB_VL_VALORES where NU_ANO = 2022 and NU_PERIODO=2"
 
     try:
         # # Establish the connection
         with cx_Oracle.connect(username, password, dsn, encoding="UTF-8") as connection:
-            for chunk in pd.read_sql(query, connection, chunksize = 1_000_000):
+            for chunk in pd.read_sql(query, connection, chunksize = 4_000_000):
                 yield chunk
         
     except cx_Oracle.Error as error:

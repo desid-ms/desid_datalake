@@ -4,9 +4,10 @@ MODEL (
     grain cnpj
 );
 
-
 select distinct
-  cod_ibge::UINTEGER as codigo_ibge,
+  
+  cod_ibge::text as codigo_ibge_7,
+  left(cod_ibge::text, 6) as codigo_ibge_6,
   ente::STRING,
   capital::STRING,
   regiao::STRING,
@@ -16,6 +17,6 @@ select distinct
   populacao::UINTEGER,
   cnpj::STRING,
 from 
-  read_json_auto('data/inputs/entes/**/*.json',
+  read_json_auto('data/inputs/siconfi/entes/**/*.json',
   format='array', 
   hive_partitioning=false);

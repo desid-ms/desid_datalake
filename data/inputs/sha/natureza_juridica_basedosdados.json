@@ -1,0 +1,409 @@
+[{
+  "id_natureza_juridica": "1341",
+  "descricao": "União",
+  "escopo": "a União, ente federativo com personalidade jurídica de direito público interno e capacidade política cujos órgãos exercem prerrogativas da soberania do Estado brasileiro, além de competências autônomas previstas nos arts. 21º ao 24 da Constituição Federal e no inciso I do art. 41 da Lei nº 10.406, de 10/01/2002 (Código Civil)"
+}, {
+  "id_natureza_juridica": "4111",
+  "descricao": "Leiloeiro",
+  "escopo": "o leiloeiro oficial (Decreto Federal n. º 21.981, de 19/10/1932, com as alterações promovidas pelo Decreto Federal n. º 22.427, de 01/02/1933); o leiloeiro rural (Lei n. º 4.021, de 20/12/1961)"
+}, {
+  "id_natureza_juridica": "1244",
+  "descricao": "Município",
+  "escopo": "os Municípios, pessoas jurídicas de direito público interno, entes dotados de autonomia e integrantes da República Federativa do Brasil, previstos nos arts. 1º e 18 da Constituição Federal e no inciso III do art. 41 da Lei nº 10.406, de 10/01/2002 (Código Civil)"
+}, {
+  "id_natureza_juridica": "2143",
+  "descricao": "Cooperativa",
+  "escopo": "as sociedades de pessoas que se obrigam, através da celebração de contratos de sociedades cooperativas, a contribuir, com bens ou serviços, para o exercício de uma atividade econômica, de proveito comum, sem objetivo de lucro, podendo ter por objeto qualquer gênero de serviço, operação ou atividade. As cooperativas independentemente da atividade que explorem, serão sempre consideradas sociedades simples, porém, devem arquivar seus atos no órgão executor do Registro Público de Empresas Mercantis (Junta Comercial)"
+}, {
+  "id_natureza_juridica": "3247",
+  "descricao": "Fundo Privado",
+  "escopo": "os fundos garantidores de parcerias público-privadas (FGP) da União, dos Estados, do Distrito Federal ou dos Municípios, previstos na Lei n. º 11.079, de 30/12/2004; os fundos de avais privados; os fundos patrimoniais criados pela Lei nº 13.800, de 14/01/2019"
+}, {
+  "id_natureza_juridica": "1201",
+  "descricao": "Fundo Público",
+  "escopo": "os fundos especiais de natureza contábil e/ou financeira, não dotados de personalidade jurídica, previstos nos artigos 71 a 74 da Lei n.º 4.320, de 17/03/1964, criados no âmbito de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, bem assim dos Ministérios Públicos e dos Tribunais de Contas."
+}, {
+  "id_natureza_juridica": "2011",
+  "descricao": "Empresa Pública",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, com patrimônio próprio e capital inteiramente público, pertencente à União, aos Estados, ao Distrito Federal ou aos Municípios, cuja criação é autorizada por lei para a exploração de atividade econômica, podendo revestir- se de qualquer das formas admitidas em direito, desde que compatíveis com sua especial natureza, podendo ser uni ou pluripessoal. Base legal: Constituição Federal, art. 37, inciso XIX, e 173, § 1º e seus incisos, §§ 2º e 3º, e Decreto-Lei n. º 200, de 25 de fevereiro de 1967, alterado pelo Decreto-Lei n. º 900, de 29 de setembro de 1969"
+}, {
+  "id_natureza_juridica": "1104",
+  "descricao": "Autarquia Federal",
+  "escopo": "as autarquias institucionais, especiais ou comuns, as corporativas e as territoriais, inclusive aquelas qualificadas como agências reguladoras ou agências executivas, as entidades de fiscalização do exercício profissional (conselhos federais e regionais), inclusive a Ordem dos Advogados do Brasil (OAB), os Territórios Federais e os fundos especiais da União, quando dotados de personalidade jurídica sob a forma de autarquia"
+}, {
+  "id_natureza_juridica": "3130",
+  "descricao": "Entidade Sindical",
+  "escopo": "sindicatos, federações, confederações e centrais sindicais, de trabalhadores ou patronais"
+}, {
+  "id_natureza_juridica": "3131",
+  "descricao": "Entidade Sindical",
+  "escopo": "os sindicatos, federações, confederações e centrais sindicais, de trabalhadores ou patronais"
+}, {
+  "id_natureza_juridica": "4022",
+  "descricao": "Segurado Especial",
+  "escopo": "o produtor, o parceiro, o meeiro, o comodatário e o arrendatário rurais, o pescador artesanal e o assemelhado, que exerçam essas atividades individualmente ou em regime de economia familiar, ainda que com o auxílio eventual de terceiros, bem como seus respectivos cônjuges ou companheiros e filhos maiores de dezesseis anos ou a eles equiparados, desde que trabalhem, comprovadamente, com o grupo familiar respectivo. Base legal: Lei n.º 8.212, de 24 de julho de 1991, art. 12, inciso VII (redação dada pela Lei n.º 8.398, de 07 de janeiro de 1992) c/c art. 1º Emenda Constitucional n.º 20/1998 e Decreto 3048/99, art. 9º, inciso VII; o mariscador, o caranguejeiro, o eviscerador (limpador de pescado), o observador de cardumes, o pescador de tartarugas e o catador de algas. Base legal: Art. 3º, § 6º, Instrução Normativa INSS/Diretoria Colegiada n.º 068, de 10/05/2002, alterada pela IN/INSS/Diretoria Colegiada n.º 80, de 27.08.2002"
+}, {
+  "id_natureza_juridica": "2291",
+  "descricao": "Consórcio Simples",
+  "escopo": "os consórcios simples previstos no artigo 56 da Lei Complementar n. º 123, de 14/12/2006"
+}, {
+  "id_natureza_juridica": "2275",
+  "descricao": "Empresa Binacional",
+  "escopo": "a Binacional Itaipu, a Alcântara Cyclone Space"
+}, {
+  "id_natureza_juridica": "3069",
+  "descricao": "Fundação Privada",
+  "escopo": "as fundações criadas pela iniciativa dos particulares, as fundações instituídas pela livre iniciativa dos particulares, pessoas físicas e/ou pessoas jurídicas, regidas inteiramente pelo direito privado, previstas nos artigos 44, inciso III, e 62 a 69 da Lei nº 10.406, de 10/01/2002 (Código Civil)"
+}, {
+  "id_natureza_juridica": "1120",
+  "descricao": "Autarquia Municipal",
+  "escopo": "as autarquias institucionais, especiais ou comuns, dos Municípios, inclusive aquelas qualificadas como agências reguladoras ou agências executivas e os fundos especiais dos Municípios, quando dotados de personalidade jurídica sob a forma de autarquia"
+}, {
+  "id_natureza_juridica": "3310",
+  "descricao": "Demais Condomínios",
+  "escopo": "os condomínios voluntários; os condomínios necessários"
+}, {
+  "id_natureza_juridica": "2160",
+  "descricao": "Grupo de Sociedades",
+  "escopo": "as sociedades que se encontram sob controle comum, a partir de ato formal de constituição (grupo de direito) ou não (grupo de fato), às quais são reservadas as designações “grupo de sociedades” ou “grupo”. Do grupo apenas participam a controladora e as sociedades que estejam sob seu controle direto ou indireto. O grupo se constitui mediante uma convenção ou contrato, registrado na Junta Comercial, no qual são declinados os fins almejados, os recursos que serão combinados, as atividades a serem empreendidas em comum, as relações entre as sociedades, a estrutura administrativa do grupo e as condições de coordenação ou de subordinação dos administradores das filiadas à administração geral. A formação do grupo não conduz à constituição de uma nova sociedade, tanto que não se cria uma pessoa jurídica, não se estabelece um capital comum, não se tem um patrimônio distinto. Base legal: Lei n. º 6.404, de 1976, art. 265 a 277"
+}, {
+  "id_natureza_juridica": "3999",
+  "descricao": "Associação Privada",
+  "escopo": "as associações privadas previstas nos artigos 53 a 61 da Lei n. º 10.406, de 10/01/2002 (Código Civil)"
+}, {
+  "id_natureza_juridica": "3239",
+  "descricao": "Comunidade Indígena",
+  "escopo": "as comunidades indígenas. Comunidade indígena é um conjunto de famílias índias que habitam numa mesma região e cultuam usos e costumes idênticos"
+}, {
+  "id_natureza_juridica": "3042",
+  "descricao": "Organização Social",
+  "escopo": "as fundações privadas, as fundações governamentais de direito privado e as associações, desde que qualificadas, na criação ou ao longo de sua existência, como organizações sociais nos termos da Lei nº 9.637, de 18 de maio de 1998"
+}, {
+  "id_natureza_juridica": "3085",
+  "descricao": "Condomínio Edilício",
+  "escopo": "os condomínios edilícios (anteriormente chamados de condomínios em edifícios), horizontais ou verticais, residenciais, comerciais ou mistos, shopping centers. Base Legal: Artigos 1.314 a 1.330 do Código Civil (Lei 10.406 de 10/01/2002)"
+}, {
+  "id_natureza_juridica": "1198",
+  "descricao": "Comissão Polinacional",
+  "escopo": "as comissões, sem personalidade jurídica, criadas por ato internacional celebrado pela República Federativa do Brasil e um ou mais países, para fins diversos"
+}, {
+  "id_natureza_juridica": "2232",
+  "descricao": "Sociedade Simples Pura",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, com finalidades lucrativas, que têm por objeto o exercício de atividade rural ou intelectual, de natureza científica, literária ou artística, não sujeitas à falência, identificadas por uma denominação, podendo ter duas categorias de sócios (obrigatoriamente, aqueles que contribuem na constituição do capital com bens inclusive dinheiro e, facultativamente, aqueles cuja contribuição consista apenas em prestação de serviços), com atos constitutivos, alteradores e extintivo registrados no Cartório de Registro Civil das Pessoas Jurídicas, não se revestindo de quaisquer das formas reguladas no Código Civil (Lei 10.406 de 10/01/2002). O contrato social obrigatoriamente terá que prevê se a responsabilidade dos sócios pelas obrigações contraídas pela sociedade simples pura é subsidiária ou não e as sociedades de advogados cujos atos são registrados na Seção da Ordem dos Advogados do Brasil (OAB)"
+}, {
+  "id_natureza_juridica": "4080",
+  "descricao": "Contribuinte Individual",
+  "escopo": "a pessoa física, proprietária ou não, que explora atividade agropecuária ou pesqueira, em caráter permanente ou temporário, diretamente ou por intermédio de prepostos, e com auxílio de empregados, utilizados a qualquer título, ainda que de forma não contínua; a pessoa física, proprietária ou não, que explora atividade de extração mineral, garimpo, em caráter permanente ou temporário, diretamente ou por intermédio de prepostos, e com auxílio de empregados, utilizados a qualquer título, ainda que de forma não contínua; o ministro de confissão religiosa e o membro de instituto de vida consagrada, de congregação ou ordem religiosa, quando mantidos pela entidade a que pertencem, salvo se filiados obrigatoriamente à Previdência Social em razão de outra atividade ou a outro regime previdenciário, militar ou civil, ainda que na condição de inativos; o brasileiro civil que trabalha no exterior para organismo oficial internacional do qual o Brasil é membro efetivo, ainda que lá domiciliado e contratado, salvo quando coberto por regime próprio de previdência social; o titular de firma individual urbana ou rural; o diretor não empregado e o membro de conselho de administração de sociedade anônima; Base legal: Lei nº 8.212, de 24 de julho de 1991, art. 12, inciso V, alíneas \"a\" a \"f\" (redação dada pela Lei nº 9.876, de 26 de novembro de 1999); Decreto nº 3.048, de 06 de maio de 1999, art 9º, inciso V, alíneas \"a\" a \"f\" (redação dada pelo Decreto nº 3.265, de 29 de novembro de 1999); todos os sócios, nas sociedades em nome coletivo e de capital e indústria; o sócio-gerente e o sócio cotista que recebam remuneração decorrente de seu trabalho na sociedade por cotas de responsabilidade limitada, urbana ou rural; o associado eleito para cargo de direção em cooperativa, associação ou entidade de qualquer natureza, ou finalidade, bem como o síndico ou administrador eleito para exercer atividade de direção condominial, desde que recebam remuneração; quem presta serviço de natureza urbana ou rural, em caráter eventual, a uma ou mais empresas, sem relação de emprego; a pessoa física que exerce, por conta própria, atividade econômica de natureza urbana, com fins lucrativos ou não; o aposentado de qualquer regime previdenciário nomeado magistrado classista da Justiça do Trabalho ou magistrado da Justiça Eleitoral. Base legal: Lei nº 8.212, de 1991, art 12, inciso V, alíneas \"g\" e \"h\" (redação dada pela Lei nº 9.876, de 1999); Decreto nº 3.048, de 1999, art 9º, inciso V, alíneas \"g\" a \"m\" (acrescentadas pelo Decreto nº 3.265, de 1999); o cooperado de cooperativa de produção que nesta condição presta serviço à sociedade cooperativa mediante remuneração ajustada ao trabalho executado. Base legal:Decreto nº 3.048, de 1999, art 9º, inciso V, alínea \"n\" (acrescentada pelo Decreto nº 4.032, de 26 de novembro de 2001); o condutor autônomo de veículo rodoviário, assim considerado aquele que exerce atividade profissional sem vínculo empregatício, quando proprietário, co-proprietário, ou promitente comprador de um só veículo; aquele que exerce atividade de auxiliar de condutor autônomo de veículo rodoviário, em automóvel cedido em regime de colaboração, nos termos da Lei 6.094/74; aquele que, pessoalmente, por conta própria e a seu risco, exerce pequena atividade comercial em via pública ou de porta em porta, como comerciante ambulante, nos termos da Lei 6586/78; o trabalhador associado a cooperativa que, nessa qualidade, presta serviços a terceiros; o membro de conselho fiscal de sociedades por ações; aquele que presta serviço de natureza não contínua, por conta própria, a pessoa ou família, no âmbito residencial desta, sem fins lucrativos; o notário ou tabelião e o oficial de registros ou registrador, titular de cartório, que detêm a delegação do exercício da atividade notarial e de registro, não remunerados pelos cofres públicos, admitidos a partir de 21/11/94"
+}, {
+  "id_natureza_juridica": "4081",
+  "descricao": "Contribuinte individual",
+  "escopo": "a pessoa física, proprietária ou não, que explora atividade pesqueira, em caráter permanente ou temporário, diretamente ou por intermédio de prepostos, e com auxílio de empregados, utilizados a qualquer título, ainda que de forma não contínua, a pessoa física, proprietária ou não, que explora atividade de extração mineral, garimpo, em caráter permanente ou temporário, diretamente ou por intermédio de prepostos, e com auxílio de empregados, utilizados a qualquer título, ainda que de forma não contínua, o ministro de confissão religiosa e o membro de instituto de vida consagrada, de congregação ou ordem religiosa, quando mantidos pela entidade a que pertencem, salvo se filiados obrigatoriamente à Previdência Social em razão de outra atividade ou a outro regime previdenciário, militar ou civil, ainda que na condição de inativos, o brasileiro civil que trabalha no exterior para organismo oficial internacional do qual o Brasil é membro efetivo, ainda que lá domiciliado e contratado, salvo quando coberto por regime próprio de previdência social, o titular de firma individual urbana ou rural, o diretor não empregado e o membro de conselho de administração de sociedade anônima. Base legal: Lei n.º 8.212, de 24 de julho de 1991, art. 12, inciso V, alíneas “a” a “f” (redação dada pela Lei n.º 9.876, de 26 de novembro de 1999); Decreto n.º 3.048, de 06 de maio de 1999, art. 9º, inciso V, alíneas “a” a “f” (redação dada pelo Decreto n.º 3.265, de 29 de novembro de 1999), todos os sócios, nas sociedades em nome coletivo e de capital e indústria, o sócio-gerente e o sócio cotista que recebam remuneração decorrente de seu trabalho na sociedade por cotas de responsabilidade limitada, urbana ou rural, o associado eleito para cargo de direção em cooperativa, associação ou entidade de qualquer natureza, ou finalidade, bem como o síndico ou administrador eleito para exercer atividade de direção condominial, desde que recebam remuneração, quem presta serviço de natureza urbana ou rural, em caráter eventual, a uma ou mais empresas, sem relação de emprego, a pessoa física que exerce, por conta própria, atividade econômica de natureza urbana, com fins lucrativos ou não, o aposentado de qualquer regime previdenciário nomeado magistrado classista da Justiça do Trabalho ou magistrado da Justiça Eleitoral. Base legal: Lei n. º 8.212, de 1991, art. 12, inciso V, alíneas “g” e “h” (redação dada pela Lei n. º 9.876, de 1999); Decreto n. º 3.048, de 1999, art. 9º, inciso V, alíneas “g” a “m” (acrescentadas pelo Decreto n. º 3.265, de 1999), o cooperado de cooperativa de produção que nesta condição presta serviço à sociedade cooperativa mediante remuneração ajustada ao trabalho executado. Base legal: Decreto n. º 3.048, de 1999, art. 9º, inciso V, alínea “n” (acrescentada pelo Decreto n. º 4.032, de 26 de novembro de 2001), o condutor autônomo de veículo rodoviário, assim considerado aquele que exerce atividade profissional sem vínculo empregatício, quando proprietário, coproprietário, ou promitente comprador de um só veículo, aquele que exerce atividade de auxiliar de condutor autônomo de veículo rodoviário, em automóvel cedido em regime de colaboração, nos termos da Lei 6.094/74; aquele que, pessoalmente, por conta própria e a seu risco, exerce pequena atividade comercial em via pública ou de porta em porta, como comerciante ambulante, nos termos da Lei 6586/78, o trabalhador associado a cooperativa que, nessa qualidade, presta serviços a terceiros, o membro de conselho fiscal de sociedades por ações, aquele que presta serviço de natureza não contínua, por conta própria, a pessoa ou família, no âmbito residencial desta, sem fins lucrativos, o notário ou tabelião e o oficial de registros ou registrador, titular de cartório, que detêm a delegação do exercício da atividade notarial e de registro, não remunerados pelos cofres públicos, admitidos a partir de 21/11/94, aquele que, na condição de pequeno feirante, compra para revenda produtos hortifrutigranjeiros ou assemelhados, a pessoa física que edifica obra de construção civil, o médico-residente de que trata a Lei 6.932/81, o incorporador de que trata o art. 29 da Lei n. º 4.591, de 16 de dezembro de 1964. Base legal: Decreto n. º 3.048, de 1999, art. 9º, parágrafo 15, incisos I a X e inciso XII (redação dada pelo Decreto n. º 3.265, de 1999), o pescador que trabalha em regime de parceria, meação ou arrendamento, em embarcação com mais de seis toneladas brutas, exceto se na condição de parceiro outorgado, quando sua embarcação não poderá ultrapassar dez toneladas de arqueação bruta (ver cod 402-2), o membro de conselho tutelar de que trata o art. 132 da Lei 8.069/, de 13 de julho de 1990, quando remunerado, o interventor, o liquidante, o administrador especial e o diretor fiscal de instituição financeira (bancos). Base legal: Decreto n. º 3.048, de 1999, art. 9º, parágrafo 15, incisos XI, XV e XVI (acrescentados pelo Decreto n. º 4.032, de 26 de novembro de 2001); IN/INSS/DC n. º 068, de 2002, art. 3º, parágrafo 3º, incisos I a III e art.4º, § 1º, o bolsista, da Fundação Habitacional do Exército contratado em conformidade com a Lei 6.855, de 18 de novembro de 1980 e o árbitro e seus auxiliares que atuam em conformidade com a Lei 9.615, de 24 de março de1998. Base legal: Decreto n. º 3.048, de 1999, art. 9º, parágrafo 15, incisos XIII e XIV (acrescentados pelo Decreto n. º 3.265, de 1999)"
+}, {
+  "id_natureza_juridica": "2330",
+  "descricao": "Cooperativas de Consumo",
+  "escopo": "as sociedades de pessoas dedicadas à compra em comum de artigos de consumo para seus cooperados"
+}, {
+  "id_natureza_juridica": "3220",
+  "descricao": "Organização Religiosa",
+  "escopo": "as organizações religiosas. Base legal: artigo 2º da Lei n.º 10.825, de 22/12/2003"
+}, {
+  "id_natureza_juridica": "2151",
+  "descricao": "Consórcio de Sociedades",
+  "escopo": "os consórcios constituídos por companhias ou quaisquer outras sociedades, sob o mesmo controle ou não, para a execução de determinado empreendimento, observado o disposto nos artigos 278 e 279 da Lei n. º 6.404, de 1976. Os consórcios não têm personalidade jurídica própria (as empresas que o constituem, sim). O contrato de consórcios e suas alterações são arquivados na Junta Comercial. Base legal: Lei n. º 6.404, de 1976, art. 278 e 279"
+}, {
+  "id_natureza_juridica": "2135",
+  "descricao": "Empresário (Individual)",
+  "escopo": "o empresário pessoa física que exerce profissionalmente atividade econômica, organizada para a produção ou circulação de bens ou de serviços, sem se constituir pessoa jurídica e sem a participação de qualquer sócio, mas que, para fins do Imposto de Renda é equiparado à pessoa jurídica. É obrigatória a inscrição do empresário na Junta Comercial, antes do início de sua atividade. O empresário responde ilimitadamente pelas obrigações empresárias assumidas. Base legal: Código Civil (Lei 10.406 de 10/01/2002, art. 966 e seguintes)"
+}, {
+  "id_natureza_juridica": "3301",
+  "descricao": "Organização Social (OS)",
+  "escopo": "as pessoas jurídicas de direito privado, sem fins lucrativos (as associações privadas, as fundações privadas, as fundações públicas de direito privado, e os consórcios públicos de direito privado), desde que tenham sido qualificadas como organização social nos termos da Lei Federal nº 9.637, de 15/05/1998, ou de lei estadual, ou distrital ou municipal"
+}, {
+  "id_natureza_juridica": "3077",
+  "descricao": "Serviço Social Autônomo",
+  "escopo": "as entidades pertencentes ao Sistema “S”: Senai, Sesi, Senac, Sesc, Senat, Sest, Senar, Sebrae, Sescoop, etc."
+}, {
+  "id_natureza_juridica": "2046",
+  "descricao": "Sociedade Anônima Aberta",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza empresária, cujos valores mobiliários de sua emissão estão admitidos à negociação no mercado de valores mobiliários, estando sob a fiscalização da Comissão de Valores Mobiliários (CVM). Base legal: Lei n. º 6.404, de 1976 (com a redação dada pela Lei n. º 10.303, de 31 de outubro de 2001), os bancos privados, quando assumirem a natureza jurídica de sociedade anônima aberta e as Empresas Binacionais Brasileiro- argentinas (EBBA), quando assumirem a natureza jurídica de sociedade anônima aberta"
+}, {
+  "id_natureza_juridica": "2283",
+  "descricao": "Consórcio de Empregadores",
+  "escopo": "os consórcios de empregadores previstos no artigo 25- a da Lei n. º 8.212, de 24/07/1991"
+}, {
+  "id_natureza_juridica": "2208",
+  "descricao": "Entidade Binacional Itaipu",
+  "escopo": "a Entidade Binacional Itaipu"
+}, {
+  "id_natureza_juridica": "1236",
+  "descricao": "Estado ou Distrito Federal",
+  "escopo": "os Estados, também chamados de Estados Federados ou Estados- Membros, pessoas jurídicas de direito público interno, entes dotados de autonomia e integrantes da República Federativa do Brasil, previstos nos arts. 1º e 18 da Constituição Federal e no inciso II do art. 41 da Lei nº 10.406, de 10/01/2002 (Código Civil); e o Distrito Federal, pessoa jurídica de direito público interno, ente dotado de autonomia e integrante da República Federativa do Brasil, previsto nos arts. 1º e 18 da Constituição Federal e no inciso II do art. 41 da Lei nº 10.406, de 10/01/2002 (Código Civil)"
+}, {
+  "id_natureza_juridica": "2054",
+  "descricao": "Sociedade Anônima Fechada",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza mercantil, as quais, ao invés das companhias abertas, não contam com a admissão dos valores mobiliários de sua emissão à negociação no mercado de valores mobiliários, não estando sujeitas, portanto, à fiscalização da Comissão de Valores Mobiliários (CVM). Base legal: Lei n. º 6.404, de 1976 (com a redação dada pela Lei n. º 10.303, de 2001), as subsidiárias integrais (art. 251 da Lei n. º 6.404, de 1976), as sociedades de garantia solidária (art. 25 da Lei no 9.841, de 5 de outubro de 1999), as sociedades de crédito ao microempreendedor (Resolução n. º 2.627, de 02 de agosto de 1999, art. 1º, § 1º, inciso I, do Conselho Monetário Nacional (CMN)), os bancos privados, quando assumirem a natureza jurídica de sociedade anônima fechada, as entidades de previdência complementar abertas (art. 36 da Lei Complementar n. º 109, de 29 de maio de 2001) e as Empresas Binacionais Brasileiro- argentinas (EBBA), quando se revestirem da forma de sociedade anônima fechada"
+}, {
+  "id_natureza_juridica": "2240",
+  "descricao": "Sociedade Simples Limitada",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, com finalidades lucrativas, que têm por objeto o exercício de atividade rural ou intelectual, de natureza científica, literária ou artística, não sujeitas à falência, identificadas por uma denominação ou razão social sempre seguidas da palavra “limitada” ou “Ltda.”, cujos atos constitutivo, alteradores e extintivo são registrados no Cartório de Registro Civil das Pessoas Jurídicas, com capital social dividido em quotas, iguais ou desiguais, cabendo uma ou mais a cada sócio, sendo a responsabilidade individual do sócio restrita ao valor de suas quotas, apesar de todos os sócios responderem solidariamente pela integralização do capital social"
+}, {
+  "id_natureza_juridica": "2224",
+  "descricao": "Clube/Fundo de Investimento",
+  "escopo": "os clubes de investimento regulados pela Comissão de Valores Mobiliários (CVM) ou pelo Banco Central do Brasil (Bacen), como, por exemplo, os clubes de investimento em ouro, os fundos de investimentos mobiliários, os fundos de investimento imobiliário regulados pela CVM e de renda variável ou de renda fixa, regulados pela CVM ou pelo Bacen, tais como: os fundos de investimento em títulos e valores mobiliários; os fundos de investimento em cotas de fundo de investimento em títulos e valores mobiliários; os fundos de investimento cultural e artístico (Ficart); os fundos mútuos de investimento em empresas emergentes; os fundos mútuos de investimento em empresas emergentes – capital estrangeiro; os fundos de investimento em direitos creditórios; os fundos de aplicação em quotas de fundos de investimento em direitos creditórios; os fundos de investimento financeiro (FIF); os fundos de aplicação em cotas de fundos de investimento financeiro; os fundos de investimento no exterior (Fiex); os fundos de investimento em “commodities”; os fundos de investimento em índice de mercado (fundo de índice)"
+}, {
+  "id_natureza_juridica": "5010",
+  "descricao": "Organização Internacional",
+  "escopo": "as sedes, no Brasil, de organizações internacionais; as representações, no exterior, de organizações internacionais com sede no Brasil; as representações, no Brasil, de organizações internacionais com sedes no Brasil ou no exterior. São exemplos de organizações internacionais: a) o Parlamento Latino-americano (Parlatino); b) a Agência Brasileiro-argentina de Contabilidade e Controle de Materiais Nucleares (ABACC); c) o Mercado Comum do Sul (Mercosul), d) a Comissão Jurídica Interamericana (CJI);  a Organização das Nações Unidas (ONU); o Fundo Monetário Internacional (FMI); o Banco Interamericano de Desenvolvimento (BID); o Banco Internacional de Reconstrução e Desenvolvimento (BIRD); a Organização Internacional do Trabalho (OIT); a União Internacional de Telecomunicações (UIT); a Organização dos Estados Americanos (OEA)"
+}, {
+  "id_natureza_juridica": "2038",
+  "descricao": "Sociedade de Economia Mista",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, cuja criação é autorizada por lei para a exploração de atividade econômica, sob a forma de sociedade anônima, cujas ações, com direito a voto, pertençam em sua maioria à União, aos Estados, ao Distrito Federal ou aos Municípios, sujeitando- se ao regime jurídico inerente ao das empresas privadas. Base legal: Constituição Federal, art. 37, inciso XIX, e 173 e §§; Decreto-Lei n. º 200, de 1967, alterado pelo Decreto-Lei n. º 900, de 1969; Lei n. º 6.404, de 15 de dezembro de 1976, art. 235 a 242"
+}, {
+  "id_natureza_juridica": "2062",
+  "descricao": "Sociedade Empresária Limitada",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza empresária, cujo capital social é dividido em quotas, iguais ou desiguais, cabendo uma ou diversas a cada sócio, que responde de forma restrita ao valor de suas quotas, porém todos os sócios respondem solidariamente pela integralização do capital social. A firma ou denominação social é sempre seguida da palavra “limitada” ou Ltda.”. Os seus atos constitutivos, alteradores e extintivo são arquivados na Junta Comercial. Base legal: Código Civil (Lei 10.406 de 10/01/2002, art. 1.052 a 1.087), as sociedades de crédito ao microempreendedor, quando assumirem a natureza jurídica de sociedade de responsabilidade limitada (Resolução CMN n. º 2.627, de 1999, art. 1º, § 1º, inciso II) e as Empresas Binacionais Brasileiro- argentinas (EBBA), quando adotarem a forma de sociedade de responsabilidade limitada"
+}, {
+  "id_natureza_juridica": "2216",
+  "descricao": "Empresa Domiciliada no Exterior",
+  "escopo": "as empresas domiciliadas no exterior que possuam, no Brasil, imóveis, aeronaves e demais bens sujeitos a registro de propriedade ou posse perante órgãos públicos localizados ou utilizados no Brasil. (Portaria Interministerial Ministro de Estado da Fazenda/Ministro de Estado das Relações Exteriores n. º 101, de 23 de abril de 2002)"
+}, {
+  "id_natureza_juridica": "4014",
+  "descricao": "Empresa Individual Imobiliária",
+  "escopo": "as empresas individuais imobiliárias, ou seja, as pessoas físicas que promovem loteamento, desmembramento ou incorporação imobiliários. As empresas individuais imobiliárias são equiparadas às pessoas jurídicas apenas para os efeitos da legislação do Imposto de Renda. Base legal: decreto-lei n.º 5.844, de 23 de setembro de 1943, art. 27; decreto-lei n.º 1.381, de 23 de dezembro de 1974, art. 1º e 3º, inciso III; decreto-lei n.º 1.510, de 27 de dezembro de 1976, art. 10, inciso I; Decreto n.º 3.000, de 26 de março de 1999, art. 146, inciso II, 150, inciso III, e 151 a 166"
+}, {
+  "id_natureza_juridica": "4120",
+  "descricao": "Produtor Rural (Pessoa Física)",
+  "escopo": "a pessoa física, não constituída sob a forma de empresário (individual), que realiza profissionalmente, na zona rural ou urbana, atividade rural (agricultura, pecuária, apicultura, avicultura, cunicultura, suinocultura, sericicultura, piscicultura e outras culturas animais, extração e exploração vegetal e animal)"
+}, {
+  "id_natureza_juridica": "2321",
+  "descricao": "Sociedade Unipessoal de Advogados",
+  "escopo": "o novo tipo jurídico criado pela Lei nº 13.247, de 12/01/2016, obrigadas a conter, ao final do Nome Empresarial, a expressão Sociedade Unipessoal (ou Individual) de Advocacia (ou de Advogados)"
+}, {
+  "id_natureza_juridica": "2100",
+  "descricao": "Sociedade de Capital e Indústria",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza mercantil, formadas por dois tipos de sócios: os sócios capitalistas que entram com recursos para a formação do capital e os sócios de indústria que contribuem apenas com o trabalho. A razão social é constituída com o nome dos sócios capitalistas, seguida da expressão \"e companhia\", por extenso ou abreviadamente. Os seus atos constitutivo, alteradores e extintivos são registrados e arquivados na Junta Comercial"
+}, {
+  "id_natureza_juridica": "3107",
+  "descricao": "Comissão de Conciliação Prévia",
+  "escopo": "as comissões de conciliação prévia de que trata o art. 1º da Lei n. º 9.958, de 12 de janeiro de 2000"
+}, {
+  "id_natureza_juridica": "2259",
+  "descricao": "Sociedade Simples em Nome Coletivo",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, com finalidades lucrativas, que têm por objeto o exercício de atividade rural ou intelectual, de natureza científica, literária ou artística, não sujeitas à falência, identificadas por uma firma social, na qual somente os sócios poderão figurar, sendo formada pelo nome de um deles aditado da expressão “e companhia” ou “e cia”, cujos atos constitutivo, alteradores e extintivo são registrados no Cartório de Registro Civil das Pessoas Jurídicas, constituídas de sócios exclusivamente pessoas físicas, os quais respondem solidária e ilimitadamente pelas obrigações sociais. Todavia, sem prejuízo da responsabilidade perante terceiros, podem os sócios, no ato constitutivo, ou por unânime convenção posterior, limitar entre si a responsabilidade de cada um"
+}, {
+  "id_natureza_juridica": "1163",
+  "descricao": "Órgão Público Autônomo Federal",
+  "escopo": "os órgãos públicos do Tribunal de Contas da União e os órgãos públicos integrantes do Ministério Público da União (Ministério Público Federal, Ministério Público do Trabalho, Ministério Público Militar e Ministério Público do Distrito Federal e dos Territórios)"
+}, {
+  "id_natureza_juridica": "4090",
+  "descricao": "Candidato a Cargo Político Eletivo",
+  "escopo": "as pessoas físicas candidatas a cargo político eletivo que são inscritas de ofício no Cadastro Nacional das Pessoas Jurídicas (CNPJ) administrado pela Receita Federal do Brasil. Base legal: Instrução Normativa Conjunta SRF/TSE n. º 183, de 26/07/2002"
+}, {
+  "id_natureza_juridica": "3115",
+  "descricao": "Entidade de Mediação e Arbitragem",
+  "escopo": "as entidades de mediação e arbitragem (juízos arbitrais) previstas na Lei n. º 9.307, de 1996"
+}, {
+  "id_natureza_juridica": "2119",
+  "descricao": "Sociedade Civil com Fins Lucrativos",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza civil, com finalidade econômica, resultantes de contrato entre pessoas, constituídas quase sempre com capital decorrente de contribuições de sócios. Os seus atos constitutivo, alteradores e extintivo são registrados e arquivados no Cartório de Registro Civil de Pessoa Jurídica, exceto os atos das sociedades civis de advogados que são registrados e arquivados na Seção da Ordem dos Advogados do Brasil (OAB) e as sociedades civis podem ser puras, não se revestindo de qualquer das formas estabelecidas nas leis comerciais, inclusive as sociedades civis de advogados, ou podem se revestir das seguintes formas: Sociedade por Quotas de Responsabilidade Limitada, Sociedade em Nome Coletivo, Sociedade em Comandita Simples, Sociedade em Comandita por Ações, Sociedade de Capital e Indústria e Sociedade em Conta de Participação"
+}, {
+  "id_natureza_juridica": "2127",
+  "descricao": "Sociedade em Conta de Participação",
+  "escopo": "as sociedades civis podem ser puras, não se revestindo de qualquer das formas estabelecidas nas leis comerciais, inclusive as sociedades civis de advogados, ou podem se revestir das seguintes formas: Sociedade por Quotas de Responsabilidade Limitada, Sociedade em Nome Coletivo, Sociedade em Comandita Simples, Sociedade em Comandita por Ações, Sociedade de Capital e Indústria e Sociedade em Conta de Participação"
+}, {
+  "id_natureza_juridica": "1180",
+  "descricao": "Órgão Público Autônomo Municipal",
+  "escopo": "os órgãos públicos do Tribunal de Contas do Município do Rio de Janeiro e os órgãos públicos do Tribunal de Contas do Município de São Paulo"
+}, {
+  "id_natureza_juridica": "1228",
+  "descricao": "Consórcio Público de Direito Privado",
+  "escopo": "os consórcios públicos de direito privado, qualquer que seja a combinação permitida pela legislação de espécies de entes federados (União, Estado, Distrito Federal ou Município) em sua composição, previstos na Lei nº 11.107, de 06/04/2005"
+}, {
+  "id_natureza_juridica": "3298",
+  "descricao": "Frente Plebiscitária ou Referendária",
+  "escopo": "as frentes plebiscitárias ou referendarias previstas no inciso IV do art. 8º da Lei nº 9.709, de 18/11/199, e nos artigos 14 a 25 da Resolução TSE nº 23.385, de 16/08/2012"
+}, {
+  "id_natureza_juridica": "2070",
+  "descricao": "Sociedade Empresária em Nome Coletivo",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza empresária, em que todos os sócios, pessoas físicas, respondem solidária e ilimitadamente pelas obrigações sociais. Todavia, sem prejuízo da responsabilidade perante terceiros, podem os sócios, no ato constitutivo, ou por unânime convenção posterior, limitar entre si a responsabilidade de cada um. Opera sob firma, na qual somente os nomes daqueles poderão figurar, bastando para formá-la aditar ao nome de um deles a expressão “e companhia” ou sua abreviatura. Os seus atos constitutivos, alteradores e extintivo são arquivados na Junta Comercial. Base legal: Código Civil (Lei 10.406 de 10/01/2002, art. 1.039 ao 1.044)"
+}, {
+  "id_natureza_juridica": "2076",
+  "descricao": "Sociedade Empresária em Nome Coletivo",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza empresária, em que todos os sócios, pessoas físicas, respondem solidária e ilimitadamente pelas obrigações sociais. Todavia, sem prejuízo da responsabilidade perante terceiros, podem os sócios, no ato constitutivo, ou por unânime convenção posterior, limitar entre si a responsabilidade de cada um. Opera sob firma, na qual somente os nomes daqueles poderão figurar, bastando para formá-la aditar ao nome de um deles a expressão \"e companhia\" ou sua abreviatura. Os seus atos constitutivos, alteradores e extintivo são arquivados na Junta Comercial"
+}, {
+  "id_natureza_juridica": "2267",
+  "descricao": "Sociedade Simples em Comandita Simples",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, com finalidades lucrativas, que têm por objeto o exercício de atividade rural ou intelectual, de natureza científica, literária ou artística, não sujeitas à falência, identificadas por denominação ou firma social, cujos atos constitutivos, alteradores e extintivo são registrados no Cartório de Registro Civil das Pessoas Jurídicas, com o capital social dividido em quotas subscritas por duas categorias de sócios: os sócios comanditados, exclusivamente pessoas físicas, responsáveis solidária e ilimitadamente pelas obrigações sociais; e os sócios comanditários, pessoas físicas ou jurídicas, responsáveis somente pelo valor de sua quota"
+}, {
+  "id_natureza_juridica": "3280",
+  "descricao": "Comitê Financeiro de Partido Político",
+  "escopo": "os comitês financeiros de partidos políticos, entes não dotados de personalidade jurídica, de vida transitória, não integrantes da estrutura interna do partido político, previstos no art. 19 da Lei nº 9.504, de 30/09/1997"
+}, {
+  "id_natureza_juridica": "5037",
+  "descricao": "Outras Instituições Extraterritoriais",
+  "escopo": "as agências de notícias, no Brasil, pertencentes às administrações públicas de outros países"
+}, {
+  "id_natureza_juridica": "5029",
+  "descricao": "Representação Diplomática Estrangeira",
+  "escopo": "as embaixadas, os consulados, os escritórios de representação e as demais unidades diplomáticas de governos estrangeiros no Brasil ou em organizações internacionais no Brasil"
+}, {
+  "id_natureza_juridica": "1112",
+  "descricao": "Autarquia Estadual ou do Distrito Federal",
+  "escopo": "as autarquias institucionais, especiais ou comuns, e as territoriais dos Estados ou do Distrito Federal, inclusive aquelas qualificadas como agências reguladoras ou agências executivas, os Territórios Estaduais (como o Distrito Estadual de Fernando de Noronha, a autarquia Territorial do Poder Executivo do Estado de Pernambuco) e os fundos especiais dos Estados ou do Distrito Federal, quando dotados de personalidade jurídica sob a forma de autarquia"
+}, {
+  "id_natureza_juridica": "3034",
+  "descricao": "Serviço Notarial e Registral (Cartório)",
+  "escopo": "os serviços notariais e registrais (cartórios), públicos ou privatizados"
+}, {
+  "id_natureza_juridica": "2089",
+  "descricao": "Sociedade Empresária em Comandita Simples",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza empresária, com o capital dividido em quotas subscritas por dois tipos de sócios: os sócios comanditados, pessoas físicas, que respondem solidária e ilimitadamente pelas obrigações sociais e os sócios comanditários, obrigados somente pelo valor de sua quota. A firma deverá conter o nome de pelo menos um dos sócios comanditados, com o aditivo “e companhia”, por extenso ou abreviadamente. Os seus atos constitutivo, alteradores e extintivo são arquivados na Junta Comercial. Base legal: Código Civil (Lei 10.406 de 10/01/2002, art. 1.045 a 1.051)"
+}, {
+  "id_natureza_juridica": "1015",
+  "descricao": "Órgão Público do Poder Executivo Federal",
+  "escopo": "embaixadas, os consulados, os escritórios de representações e demais unidades diplomáticas e consulares do Governo brasileiro em outros países ou em organizações internacionais, Conselho Nacional dos Direitos da Criança e do Adolescente (Conanda) e Advocacia-Geral da União"
+}, {
+  "id_natureza_juridica": "2348",
+  "descricao": "Empresa Simples de Inovação - Inova Simples",
+  "escopo": "A Empresa Simples de Inovação - Inova Simples, prevista no artigo 65-A, da Lei Complementar nº 123, de 14/12/2006, incluído pela Lei Complementar nº 167, de 24/04/2019"
+}, {
+  "id_natureza_juridica": "1031",
+  "descricao": "Órgão Público do Poder Executivo Municipal",
+  "escopo": "os órgãos públicos do Poder Executivo dos Municípios, as Prefeituras Municipais, as Secretarias Municipais e os conselhos municipais dos direitos da criança e do adolescente"
+}, {
+  "id_natureza_juridica": "1074",
+  "descricao": "Órgão Público do Poder Judiciário Federal",
+  "escopo": "os órgãos públicos do Poder Judiciário Federal"
+}, {
+  "id_natureza_juridica": "1040",
+  "descricao": "Órgão Público do Poder Legislativo Federal",
+  "escopo": "os órgãos públicos do Poder Legislativo Federal"
+}, {
+  "id_natureza_juridica": "1252",
+  "descricao": "Fundação Pública de Direito Privado Federal",
+  "escopo": "as fundações instituídas pela União, regidas por regime híbrido, ou seja, pelo direito privado derrogado por normas de direito público, previstas na Constituição Federal, art. 37, inciso XIX, segunda parte, e no Decreto-Lei nº 200, de 25/02/1967, artigo 5º, inciso IV, com a redação dada pela Lei nº 7.596, de 10/04/1987, art. 1º. Estas fundações não são espécies de autarquia e a sua instituição e extinção são autorizadas em lei federal específica, devendo os seus atos institutivos, alteradores ou extintivos serem obrigatoriamente registrados no Cartório de Registro Civil de Pessoas Jurídicas"
+}, {
+  "id_natureza_juridica": "2097",
+  "descricao": "Sociedade Empresária em Comandita por Ações",
+  "escopo": "as entidades dotadas de personalidade jurídica de direito privado, de natureza empresária, com o capital dividido em ações, regidas pelas normas relativas às companhia ou sociedades anônimas, com as alterações previstas nos artigos 1.090 a 1.092 do CC/2002, com dois tipos de sócios: os sócios comanditados com responsabilidade ilimitada, solidária e subsidiária pelas obrigações sociais (sócios diretores ou gerentes) e os sócios comanditários, com responsabilidade limitada e que só se obrigam a realizar as ações subscritas ou adquiridas. O nome empresarial da sociedade em comandita por ações pode ser denominação ou firma. A denominação deve conter algum elemento individualizador (nome de pessoa ou coisa, sigla, expressão de fantasia, etc.), devendo conter a indicação dos fins sociais. A firma deve conter o nome de um ou mais sócios de responsabilidade ilimitada (comanditados), com o aditamento, de forma abreviada ou não, da expressão “e companhia”, proibida a inclusão do nome de qualquer sócio de responsabilidade limitada (comanditário). Tanto na denominação quanto na firma é obrigatória a identificação do tipo societário pela locução “comandita por ações”, por extenso ou abreviadamente. Os seus atos constitutivo, alteradores e extintivo são arquivados na Junta Comercial. • Obs.: As sociedades por ações (isto é a sociedade anônima e também a do tipo “em comandita por ações”) são sempre empresárias, conforme estabelece o NCC no § único do art. 982. Base legal: Lei n. º 6.404, de 1976, art. 280 a 284. Código Civil (Lei 10.406 de 10/01/2002, art. 1.090 a 1.092)"
+}, {
+  "id_natureza_juridica": "1082",
+  "descricao": "Órgão Público do Poder Judiciário Estadual",
+  "escopo": "os órgãos públicos do Poder Judiciário dos Estados"
+}, {
+  "id_natureza_juridica": "1139",
+  "descricao": "Fundação Pública de Direito Público Federal",
+  "escopo": "as fundações criadas pela União, regidas inteiramente pelo direito público, previstas na Constituição Federal, art. 37, inciso XIX, primeira parte. Estas fundações, também conhecidas por fundações autárquicas ou autarquias fundacionais, são espécies de autarquia e são criadas e extintas diretamente por lei federal específica, não sujeitando, portanto, os seus atos constitutivos, alteradores ou extintivos ao registro no Cartório de Registro Civil de Pessoas Jurídicas"
+}, {
+  "id_natureza_juridica": "1066",
+  "descricao": "Órgão Público do Poder Legislativo Municipal",
+  "escopo": "os órgãos públicos do Poder Legislativo dos Municípios"
+}, {
+  "id_natureza_juridica": "3271",
+  "descricao": "Órgão de Direção Local de Partido Político",
+  "escopo": "os órgãos de direção locais de partidos políticos, qualquer que seja o nome conferido pelo estatuto partidário (comissão provisória, diretório, comitê etc), com abrangência igual ou menor ao território municipal ou igual ou menor ao território do Distrito Estadual de Fernando de Noronha. São exemplos de órgãos de direção locais de partido político aqueles com abrangência limitada ao território: a) de um município ou do Distrito Estadual de Fernando de Noronha; b) de um distrito (divisão administrativa do município); c) de uma Região Administrativa do Distrito Federal; d) de uma zona eleitoral, quando esta abranger parte de um município; e) de um bairro."
+}, {
+  "id_natureza_juridica": "1279",
+  "descricao": "Fundação Pública de Direito Privado Municipal",
+  "escopo": "as fundações instituídas pelos Municípios, regidas por regime híbrido, isto é, pelo direito privado derrogado por normas de direito público, previstas na Constituição Federal, art. 37, inciso XIX, segunda parte. Estas fundações não são espécies de autarquia e a sua instituição e extinção são autorizadas em lei municipal específica, devendo os seus atos institutivos, alteradores ou extintivos serem obrigatoriamente registrados no Cartório de Registro Civil de Pessoas Jurídicas"
+}, {
+  "id_natureza_juridica": "1317",
+  "descricao": "Fundo Público da Administração Direta Federal",
+  "escopo": "os fundos especiais de natureza contábil e/ou financeira, não dotados de personalidade jurídica, previstos nos artigos 71 a 74 da Lei n. º 4.320, de 17/03/1964, criados no âmbito de Poder da União, bem como dos Ministérios Públicos e dos Tribunais de Contas"
+}, {
+  "id_natureza_juridica": "1155",
+  "descricao": "Fundação Pública de Direito Público Municipal",
+  "escopo": "as fundações criadas pelos Municípios, regidas inteiramente pelo direito público, previstas na Constituição Federal, art. 37, inciso XIX, primeira parte. Estas fundações, também conhecidas por fundações autárquicas ou autarquias fundacionais, são espécies de autarquia e são criadas e extintas diretamente por lei municipal específica, não sujeitando, portanto, seus atos constitutivos, alteradores ou extintivos ao registro no Cartório de Registro Civil de Pessoas Jurídicas"
+}, {
+  "id_natureza_juridica": "3212",
+  "descricao": "Fundação ou Associação Domiciliada no Exterior",
+  "escopo": "as fundações e associações domiciliadas no exterior que possuam imóveis, aeronaves e demais bens sujeitos a registro de propriedade ou posse perante órgãos públicos localizados ou utilizados no Brasil"
+}, {
+  "id_natureza_juridica": "1333",
+  "descricao": "Fundo Público da Administração Direta Municipal",
+  "escopo": "os fundos especiais de natureza contábil e/ou financeira, não dotados de personalidade jurídica, previstos nos artigos 71 a 74 da Lei n. º 4.320, de 17/03/1964, criados no âmbito de Poder dos Municípios, bem como dos Ministérios Públicos e dos Tribunais de Contas"
+}, {
+  "id_natureza_juridica": "1287",
+  "descricao": "Fundo Público da Administração Indireta Federal",
+  "escopo": "os fundos públicos da administração indireta Federal, dotados de personalidade jurídica, criados no âmbito de Poder da União"
+}, {
+  "id_natureza_juridica": "3255",
+  "descricao": "Órgão de Direção Nacional de Partido Político",
+  "escopo": "os órgãos de direção nacional de partido político, qualquer que seja o nome conferido pelo estatuto partidário (comissão provisória, diretório, comitê etc.), com abrangência no território nacional"
+}, {
+  "id_natureza_juridica": "3263",
+  "descricao": "Órgão de Direção Regional de Partido Político",
+  "escopo": "os órgãos de direção regionais de partido político, qualquer que seja o nome conferido pelo estatuto partidário (comissão provisória, diretório, comitê etc.), com abrangência menor do que o Território Nacional e maior do que o território municipal ou maior do que o território do Distrito Estadual de Fernando de Noronha. São exemplos de órgãos de direção regionais de partido político aqueles com abrangência limitada ao território: a) de uma Região do Brasil (Norte, Sul, Nordeste, Sudeste e Centro- Oeste); b) de um Estado ou do Distrito Federal; c) de uma zona eleitoral, na hipótese desta abranger mais de um município; d) de dois ou mais municípios, inclusive em regiões metropolitanas"
+}, {
+  "id_natureza_juridica": "2178",
+  "descricao": "Estabelecimento, no Brasil, de Sociedade Estrangeira",
+  "escopo": "as sociedades que se encontram sob controle comum, a partir de ato formal de constituição (grupo de direito) ou não (grupo de fato), às quais são reservadas as designações “grupo de sociedades” ou “grupo”. Do grupo apenas participam a controladora e as sociedades que estejam sob seu controle direto ou indireto. O grupo se constitui mediante uma convenção ou contrato, registrado na Junta Comercial, no qual são declinados os fins almejados, os recursos que serão combinados, as atividades a serem empreendidas em comum, as relações entre as sociedades, a estrutura administrativa do grupo e as condições de coordenação ou de subordinação dos administradores das filiadas à administração geral. A formação do grupo não conduz à constituição de uma nova sociedade, tanto que não se cria uma pessoa jurídica, não se estabelece um capital comum, não se tem um patrimônio distinto. Base legal: Lei n. º 6.404, de 1976, art. 265 a 277"
+}, {
+  "id_natureza_juridica": "1309",
+  "descricao": "Fundo Público da Administração Indireta Municipal",
+  "escopo": "os fundos públicos da administração indireta Federal, dotados de personalidade jurídica, criados no âmbito de Poder dos Municípios"
+}, {
+  "id_natureza_juridica": "3093",
+  "descricao": "Unidade Executora (Programa Dinheiro Direto na Escola)",
+  "escopo": "as unidades executoras do Programa Dinheiro Direto na Escola do Fundo Nacional de Desenvolvimento da Educação: caixas escolares, conselhos escolares, associações de pais e mestres, círculos de mestres e similares."
+}, {
+  "id_natureza_juridica": "3328",
+  "descricao": "Plano de Benefícios de Previdência Complementar Fechada",
+  "escopo": "os planos de benefícios, operacionalizados por Entidades Fechadas de Previdência Complementar, autorizados e regulados pela Superintendência Nacional de Previdência Complementar (Previc), conforme Lei Complementar no. 109, de 29 de maio de 2001"
+}, {
+  "id_natureza_juridica": "1171",
+  "descricao": "Órgão Público Autônomo Estadual ou do Distrito Federal",
+  "escopo": "os órgãos públicos do Tribunal de Contas do Estado, os órgãos públicos do Tribunal de Contas dos Municípios, os órgãos públicos do Tribunal de Contas do Distrito Federal, os órgãos públicos do Ministério Público Estadual e as Defensorias Públicas dos Estados"
+}, {
+  "id_natureza_juridica": "3050",
+  "descricao": "Organização da Sociedade Civil de Interesse Público (Oscip)",
+  "escopo": "as organizações da sociedade civil de interesse público (Oscip), pessoa jurídica de direito privado, que atendam ao disposto na Lei nº 9.790, de 23 de março de 1999."
+}, {
+  "id_natureza_juridica": "1210",
+  "descricao": "Consórcio Público de Direito Público (Associação Pública)",
+  "escopo": "os consórcios públicos constituídos sob a forma de associação pública, qualquer que seja a combinação permitida pela legislação de espécies de entes federados (União, Estado, Distrito Federal ou Município) em sua composição, previstos na Lei nº 11.107, de 06/04/2005"
+}, {
+  "id_natureza_juridica": "1023",
+  "descricao": "Órgão Público do Poder Executivo Estadual ou do Distrito Federal",
+  "escopo": "órgãos públicos do Poder Executivo dos Estados ou do Distrito Federal, Governadoria do Estado ou do Distrito Federal, Secretarias Estaduais ou do Distrito Federal, conselhos dos direitos da criança e do adolescente, criados por Estado ou pelo Distrito Federal"
+}, {
+  "id_natureza_juridica": "2313",
+  "descricao": "Empresa Individual de Responsabilidade Limitada (de Natureza Simples)",
+  "escopo": "a Empresa Individual de Responsabilidade Limitada (Eireli), cuja natureza seja simples (não- empresária), prevista na Lei no. 12.441, de 11/07/2011"
+}, {
+  "id_natureza_juridica": "5002",
+  "descricao": "Organização Internacional e Outras Instituições Extraterritoriais",
+  "escopo": "as sedes, no Brasil, de organizações internacionais; as representações, no exterior, de organizações internacionais com sede no Brasil; as representações, no Brasil, de organizações internacionais com sedes no Brasil ou no exterior; as embaixadas, consulados, escritórios de representação e demais unidades diplomáticas e consulares de governos estrangeiros no Brasil ou em organizações internacionais no Brasil; as agências de notícias, no Brasil, pertencentes às administrações públicas de outros países. São exemplos de organizações internacionais: o Parlamento Latino-Americano (Parlatino); a Agência Brasileiro-Argentina de Contabilidade e Controle de Materiais Nucleares (ABACC); o Mercado Comum do Sul (Mercosul); a Comissão Jurídica Interamericana (CJI); a Organização das Nações Unidas (ONU); o Fundo Monetário Internacional (FMI); o Banco Interamericano de Desenvolvimento (BID); o Banco Internacional de Reconstrução e Desenvolvimento (BIRD); a Organização Internacional do Trabalho (OIT); a União Internacional de Telecomunicações (UIT); a Organização dos Estados Americanos (OEA)"
+}, {
+  "id_natureza_juridica": "1058",
+  "descricao": "Órgão Público do Poder Legislativo Estadual ou do Distrito Federal",
+  "escopo": "os órgãos públicos do Poder Legislativo dos Estados ou do Distrito Federal"
+}, {
+  "id_natureza_juridica": "2194",
+  "descricao": "Estabelecimento, no Brasil, de Empresa Binacional Argentino-Brasileira",
+  "escopo": "as filiais, no Brasil, de Empresas Binacionais Argentino-Brasileiras (EBAB)"
+}, {
+  "id_natureza_juridica": "3204",
+  "descricao": "Estabelecimento, no Brasil, de Fundação ou Associação Estrangeiras",
+  "escopo": "as filiais, no Brasil, de associação ou fundação estrangeiras, ou seja, a associação ou fundação constituídas de acordo com a legislação estrangeira e que tenha a sede de sua administração no exterior; as organizações não-governamentais (ONG), de nacionalidade estrangeira, quando assumirem a natureza jurídica de fundação privada ou de associação"
+}, {
+  "id_natureza_juridica": "1260",
+  "descricao": "Fundação Pública de Direito Privado Estadual ou do Distrito Federal",
+  "escopo": "as fundações instituídas pelos Estados ou pelo Distrito Federal, regidas por regime híbrido, ou seja, pelo direito privado derrogado por normas de direito público, previstas na Constituição Federal, art. 37, inciso XIX, segunda parte. Estas fundações não são espécies de autarquia e a sua instituição e extinção são autorizadas em lei estadual ou distrital específica, devendo os seus atos institutivos, alteradores ou extintivos serem obrigatoriamente registrados no Cartório de Registro Civil de Pessoas Jurídicas"
+}, {
+  "id_natureza_juridica": "1147",
+  "descricao": "Fundação Pública de Direito Público Estadual ou do Distrito Federal",
+  "escopo": "as fundações criadas pelo Estado ou pelo Distrito Federal, regidas inteiramente pelo direito público, previstas na Constituição Federal, art. 37, inciso XIX, primeira parte. Estas fundações, também conhecidas por fundações autárquicas ou autarquias fundacionais, são espécies de autarquia e são criadas e extintas diretamente por lei estadual ou distrital específicas, não sujeitando, portanto, os seus atos constitutivos, alteradores ou extintivos ao registro no Cartório de Registro Civil de Pessoas Jurídicas"
+}, {
+  "id_natureza_juridica": "1325",
+  "descricao": "Fundo Público da Administração Direta Estadual ou do Distrito Federal",
+  "escopo": "os fundos especiais de natureza contábil e/ou financeira, não dotados de personalidade jurídica, previstos nos artigos 71 a 74 da Lei n. º 4.320, de 17/03/1964, criados no âmbito de Poder dos Estados ou do Distrito Federal, bem como dos Ministérios Públicos e dos Tribunais de Contas"
+}, {
+  "id_natureza_juridica": "2305",
+  "descricao": "Empresa Individual de Responsabilidade Limitada (de Natureza Empresária)",
+  "escopo": "a Empresa Individual de Responsabilidade Limitada (Eireli), cuja natureza seja empresária (não- simples), prevista na Lei no. 12.441, de 11/07/2011"
+}, {
+  "id_natureza_juridica": "1295",
+  "descricao": "Fundo Público da Administração Indireta Estadual ou do Distrito Federal",
+  "escopo": "os fundos públicos da administração indireta Federal, dotados de personalidade jurídica, criados no âmbito de Poder dos Estados ou do Distrito Federal"
+}]

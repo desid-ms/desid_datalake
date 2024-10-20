@@ -1,6 +1,6 @@
 MODEL (
-  name raw_sha.procedimentos,
+  name raw.sha__procedimentos,
   kind FULL
 );
 
- SELECT * FROM ST_READ('data/inputs/tuss_sigtap_procedimentos.csv') order by all;
+ SELECT * FROM ST_READ('data/inputs/sha/tuss_sigtap_procedimentos2.csv') order by all

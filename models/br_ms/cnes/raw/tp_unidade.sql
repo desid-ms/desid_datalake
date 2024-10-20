@@ -1,9 +1,9 @@
 MODEL (
-    name raw_cnes.tp_unidade,
+    name raw.cnes__tp_unidade,
     kind FULL
 );
 
-SELECT * FROM read_csv_auto('data/inputs/tp_unidade.csv', 
+SELECT * FROM read_csv_auto('data/inputs/sha/tp_unidade.csv', 
     delim='!', 
     header=true, 
     columns={

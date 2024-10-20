@@ -1,0 +1,3091 @@
+[{
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "AC",
+  "cobertura_temporal": "(1).0",
+  "valor": "alcool e crack"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "AO",
+  "cobertura_temporal": "(1).0",
+  "valor": "alcool e outras drogas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "O",
+  "cobertura_temporal": "(1).0",
+  "valor": "outras drogas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "CO",
+  "cobertura_temporal": "(1).0",
+  "valor": "crack e outras drogas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "C",
+  "cobertura_temporal": "(1).0",
+  "valor": "crack"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "A",
+  "cobertura_temporal": "(1).0",
+  "valor": "alcool"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_droga",
+  "chave": "ACO",
+  "cobertura_temporal": "(1).0",
+  "valor": "alcool, crack e outras drogas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_idade",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "anos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_idade",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "anos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_idade",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "meses"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "tipo_idade",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "dias"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "origem_paciente",
+  "chave": "2",
+  "cobertura_temporal": null,
+  "valor": "atencao basica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "origem_paciente",
+  "chave": "3",
+  "cobertura_temporal": null,
+  "valor": "servico de urgencia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "origem_paciente",
+  "chave": "1",
+  "cobertura_temporal": null,
+  "valor": "demanda espontanea"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "origem_paciente",
+  "chave": "4",
+  "cobertura_temporal": null,
+  "valor": "outro caps"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "origem_paciente",
+  "chave": "6",
+  "cobertura_temporal": null,
+  "valor": "hospital psiquiatrico"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "origem_paciente",
+  "chave": "5",
+  "cobertura_temporal": null,
+  "valor": "hospital dia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "2",
+  "cobertura_temporal": null,
+  "valor": "continuidade do acompanhamento na atencao basica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "3",
+  "cobertura_temporal": null,
+  "valor": "alta"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "0",
+  "cobertura_temporal": null,
+  "valor": "permanencia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "6",
+  "cobertura_temporal": null,
+  "valor": "ignorado"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "1",
+  "cobertura_temporal": null,
+  "valor": "continuidade do acompanhamento em outr caps"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "4",
+  "cobertura_temporal": null,
+  "valor": "obito"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "destino_paciente",
+  "chave": "5",
+  "cobertura_temporal": null,
+  "valor": "ignorado"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "amarela"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "99",
+  "cobertura_temporal": "(1).0",
+  "valor": "sem informacao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "raca/cor nao exigido"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "parda"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "branca"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "indigena"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "preta"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "eletivo"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "99",
+  "cobertura_temporal": "(1).0",
+  "valor": "informacao inexistente"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "acidente no trajeto para o trabalho"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "urgencia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "carater atendimento nao informado"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "acidente no local trabalho ou a servico da empresa"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "outros tipos de acidente de transito"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "6",
+  "cobertura_temporal": "(1).0",
+  "valor": "outros tipos lesoes/envenenamentos (agentes fisicos, quimicos)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "114",
+  "cobertura_temporal": "(1).0",
+  "valor": "iugoslavia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "127",
+  "cobertura_temporal": "(1).0",
+  "valor": "svalbard e jan mayer,is"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "188",
+  "cobertura_temporal": "(1).0",
+  "valor": "djibuti"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "322",
+  "cobertura_temporal": "(1).0",
+  "valor": "polinesia francesa"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "35",
+  "cobertura_temporal": "(1).0",
+  "valor": "espanha"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "78",
+  "cobertura_temporal": "(1).0",
+  "valor": "sao cristovao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "95",
+  "cobertura_temporal": "(1).0",
+  "valor": "austria"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "128",
+  "cobertura_temporal": "(1).0",
+  "valor": "tchecoslovaquia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "211",
+  "cobertura_temporal": "(1).0",
+  "valor": "nguane"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "348",
+  "cobertura_temporal": "(1).0",
+  "valor": "russia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "42",
+  "cobertura_temporal": "(1).0",
+  "valor": "china"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "58",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas falklands"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "111",
+  "cobertura_temporal": "(1).0",
+  "valor": "irlanda do norte"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "171",
+  "cobertura_temporal": "(1).0",
+  "valor": "acores"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "227",
+  "cobertura_temporal": "(1).0",
+  "valor": "somalia, republica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "304",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas marshall"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "10",
+  "cobertura_temporal": "(1).0",
+  "valor": "brasil"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "104",
+  "cobertura_temporal": "(1).0",
+  "valor": "grecia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "219",
+  "cobertura_temporal": "(1).0",
+  "valor": "reuniao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "231",
+  "cobertura_temporal": "(1).0",
+  "valor": "territ. britanico do oceano indico"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "265",
+  "cobertura_temporal": "(1).0",
+  "valor": "macau"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "334",
+  "cobertura_temporal": "(1).0",
+  "valor": "antartica francesa"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "69",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilha milhos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "144",
+  "cobertura_temporal": "(1).0",
+  "valor": "chechen ingusth"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "159",
+  "cobertura_temporal": "(1).0",
+  "valor": "ossetia setentrional"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "164",
+  "cobertura_temporal": "(1).0",
+  "valor": "tuvin"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "183",
+  "cobertura_temporal": "(1).0",
+  "valor": "chade"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "294",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas cantao e enderburg"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "333",
+  "cobertura_temporal": "(1).0",
+  "valor": "antartico britanico, territorio"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "55",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica dominicana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "92",
+  "cobertura_temporal": "(1).0",
+  "valor": "venezuela"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "174",
+  "cobertura_temporal": "(1).0",
+  "valor": "alto volta"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "303",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas marianas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "308",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas palau"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "119",
+  "cobertura_temporal": "(1).0",
+  "valor": "noruega"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "122",
+  "cobertura_temporal": "(1).0",
+  "valor": "paises baixos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "313",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas linha"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "321",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas pitcairin"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "341",
+  "cobertura_temporal": "(1).0",
+  "valor": "terras austrais"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "23",
+  "cobertura_temporal": "(1).0",
+  "valor": "chile"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "60",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas guadalupe"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "79",
+  "cobertura_temporal": "(1).0",
+  "valor": "sao vicente"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "179",
+  "cobertura_temporal": "(1).0",
+  "valor": "botsuana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "203",
+  "cobertura_temporal": "(1).0",
+  "valor": "madeira"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "213",
+  "cobertura_temporal": "(1).0",
+  "valor": "nigeria"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "228",
+  "cobertura_temporal": "(1).0",
+  "valor": "suazilandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "251",
+  "cobertura_temporal": "(1).0",
+  "valor": "emirados arabes unidos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "168",
+  "cobertura_temporal": "(1).0",
+  "valor": "uzbequistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "223",
+  "cobertura_temporal": "(1).0",
+  "valor": "santa helena"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "252",
+  "cobertura_temporal": "(1).0",
+  "valor": "filipinas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "280",
+  "cobertura_temporal": "(1).0",
+  "valor": "tregua, estado"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "305",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas macdonal e heard"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "325",
+  "cobertura_temporal": "(1).0",
+  "valor": "samoa ocidental"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "327",
+  "cobertura_temporal": "(1).0",
+  "valor": "sarawak"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "126",
+  "cobertura_temporal": "(1).0",
+  "valor": "suecia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "199",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas canarias"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "204",
+  "cobertura_temporal": "(1).0",
+  "valor": "malawi"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "222",
+  "cobertura_temporal": "(1).0",
+  "valor": "saara espanhol"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "270",
+  "cobertura_temporal": "(1).0",
+  "valor": "nepal"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "295",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas carolinas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "307",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas norfolk"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "323",
+  "cobertura_temporal": "(1).0",
+  "valor": "sabah"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "90",
+  "cobertura_temporal": "(1).0",
+  "valor": "suriname"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "246",
+  "cobertura_temporal": "(1).0",
+  "valor": "bhutan"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "249",
+  "cobertura_temporal": "(1).0",
+  "valor": "china (taiwan)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "291",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica de fiji"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "306",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas niue"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "109",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas do canal"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "112",
+  "cobertura_temporal": "(1).0",
+  "valor": "irlanda"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "116",
+  "cobertura_temporal": "(1).0",
+  "valor": "luxemburgo"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "124",
+  "cobertura_temporal": "(1).0",
+  "valor": "romenia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "181",
+  "cobertura_temporal": "(1).0",
+  "valor": "camaroes"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "197",
+  "cobertura_temporal": "(1).0",
+  "valor": "ifni"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "244",
+  "cobertura_temporal": "(1).0",
+  "valor": "birmania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "310",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas tokelau"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "51",
+  "cobertura_temporal": "(1).0",
+  "valor": "costa rica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "110",
+  "cobertura_temporal": "(1).0",
+  "valor": "inglaterra"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "118",
+  "cobertura_temporal": "(1).0",
+  "valor": "monaco"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "160",
+  "cobertura_temporal": "(1).0",
+  "valor": "quirguistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "180",
+  "cobertura_temporal": "(1).0",
+  "valor": "burundi"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "296",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas do pacifico"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "93",
+  "cobertura_temporal": "(1).0",
+  "valor": "albania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "151",
+  "cobertura_temporal": "(1).0",
+  "valor": "kalmir"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "156",
+  "cobertura_temporal": "(1).0",
+  "valor": "lituania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "169",
+  "cobertura_temporal": "(1).0",
+  "valor": "yakut"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "283",
+  "cobertura_temporal": "(1).0",
+  "valor": "vietna do sul"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "102",
+  "cobertura_temporal": "(1).0",
+  "valor": "finlandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "237",
+  "cobertura_temporal": "(1).0",
+  "valor": "zambia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "269",
+  "cobertura_temporal": "(1).0",
+  "valor": "mongolia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "328",
+  "cobertura_temporal": "(1).0",
+  "valor": "territorio de cocos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "97",
+  "cobertura_temporal": "(1).0",
+  "valor": "chipre"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "212",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica do niger"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "218",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica centro africana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "278",
+  "cobertura_temporal": "(1).0",
+  "valor": "sri-lanka"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "339",
+  "cobertura_temporal": "(1).0",
+  "valor": "apatrida"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "59",
+  "cobertura_temporal": "(1).0",
+  "valor": "granada"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "87",
+  "cobertura_temporal": "(1).0",
+  "valor": "guiana francesa"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "105",
+  "cobertura_temporal": "(1).0",
+  "valor": "holanda"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "120",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica de malta"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "261",
+  "cobertura_temporal": "(1).0",
+  "valor": "kmer/camboja"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "43",
+  "cobertura_temporal": "(1).0",
+  "valor": "coreia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "52",
+  "cobertura_temporal": "(1).0",
+  "valor": "cuba"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "139",
+  "cobertura_temporal": "(1).0",
+  "valor": "bashkista"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "210",
+  "cobertura_temporal": "(1).0",
+  "valor": "mocambique"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "250",
+  "cobertura_temporal": "(1).0",
+  "valor": "coveite"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "268",
+  "cobertura_temporal": "(1).0",
+  "valor": "mascate"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "331",
+  "cobertura_temporal": "(1).0",
+  "valor": "tuvalu"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "338",
+  "cobertura_temporal": "(1).0",
+  "valor": "antartico noruegues"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "30",
+  "cobertura_temporal": "(1).0",
+  "valor": "alemanha"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "45",
+  "cobertura_temporal": "(1).0",
+  "valor": "portugal"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "46",
+  "cobertura_temporal": "(1).0",
+  "valor": "belize"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "54",
+  "cobertura_temporal": "(1).0",
+  "valor": "comunidade dominicana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "106",
+  "cobertura_temporal": "(1).0",
+  "valor": "hungria"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "125",
+  "cobertura_temporal": "(1).0",
+  "valor": "san marino"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "141",
+  "cobertura_temporal": "(1).0",
+  "valor": "buryat"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "170",
+  "cobertura_temporal": "(1).0",
+  "valor": "abissinia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "206",
+  "cobertura_temporal": "(1).0",
+  "valor": "mali"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "209",
+  "cobertura_temporal": "(1).0",
+  "valor": "mauritania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "229",
+  "cobertura_temporal": "(1).0",
+  "valor": "sudao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "258",
+  "cobertura_temporal": "(1).0",
+  "valor": "iraque"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "288",
+  "cobertura_temporal": "(1).0",
+  "valor": "australia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "25",
+  "cobertura_temporal": "(1).0",
+  "valor": "uruguai"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "76",
+  "cobertura_temporal": "(1).0",
+  "valor": "roncador"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "153",
+  "cobertura_temporal": "(1).0",
+  "valor": "khakass"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "259",
+  "cobertura_temporal": "(1).0",
+  "valor": "israel"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "347",
+  "cobertura_temporal": "(1).0",
+  "valor": "armenia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "61",
+  "cobertura_temporal": "(1).0",
+  "valor": "guatemala"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "72",
+  "cobertura_temporal": "(1).0",
+  "valor": "panama"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "96",
+  "cobertura_temporal": "(1).0",
+  "valor": "bulgaria"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "198",
+  "cobertura_temporal": "(1).0",
+  "valor": "ascensao e tristao da cunha,is"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "242",
+  "cobertura_temporal": "(1).0",
+  "valor": "arabia saudita"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "243",
+  "cobertura_temporal": "(1).0",
+  "valor": "bahrein"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "279",
+  "cobertura_temporal": "(1).0",
+  "valor": "tailandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "326",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas santa cruz"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "340",
+  "cobertura_temporal": "(1).0",
+  "valor": "dependencia de ross"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "130",
+  "cobertura_temporal": "(1).0",
+  "valor": "croacia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "138",
+  "cobertura_temporal": "(1).0",
+  "valor": "azerbaijao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "142",
+  "cobertura_temporal": "(1).0",
+  "valor": "carelia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "143",
+  "cobertura_temporal": "(1).0",
+  "valor": "cazaquistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "152",
+  "cobertura_temporal": "(1).0",
+  "valor": "karachaevocherkess"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "163",
+  "cobertura_temporal": "(1).0",
+  "valor": "turcomenistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "184",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas comores"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "286",
+  "cobertura_temporal": "(1).0",
+  "valor": "arquipelago midway"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "299",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas howland e jarvis"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "312",
+  "cobertura_temporal": "(1).0",
+  "valor": "kalimatan"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "344",
+  "cobertura_temporal": "(1).0",
+  "valor": "guine bissau"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "28",
+  "cobertura_temporal": "(1).0",
+  "valor": "antigua e. dep. barbuda"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "63",
+  "cobertura_temporal": "(1).0",
+  "valor": "honduras britanicas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "100",
+  "cobertura_temporal": "(1).0",
+  "valor": "escocia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "146",
+  "cobertura_temporal": "(1).0",
+  "valor": "dagesta"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "224",
+  "cobertura_temporal": "(1).0",
+  "valor": "sao tome e principe"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "233",
+  "cobertura_temporal": "(1).0",
+  "valor": "togo"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "271",
+  "cobertura_temporal": "(1).0",
+  "valor": "oman"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "44",
+  "cobertura_temporal": "(1).0",
+  "valor": "barbados"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "77",
+  "cobertura_temporal": "(1).0",
+  "valor": "santa lucia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "75",
+  "cobertura_temporal": "(1).0",
+  "valor": "quitasueno"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "91",
+  "cobertura_temporal": "(1).0",
+  "valor": "trinidad e tobago"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "137",
+  "cobertura_temporal": "(1).0",
+  "valor": "montenegro"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "240",
+  "cobertura_temporal": "(1).0",
+  "valor": "namibia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "256",
+  "cobertura_temporal": "(1).0",
+  "valor": "indonesia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "300",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilha johnston e sand"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "332",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas wallis e futuna"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "103",
+  "cobertura_temporal": "(1).0",
+  "valor": "gibraltar"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "136",
+  "cobertura_temporal": "(1).0",
+  "valor": "eslovaquia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "192",
+  "cobertura_temporal": "(1).0",
+  "valor": "gambia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "205",
+  "cobertura_temporal": "(1).0",
+  "valor": "madagascar"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "272",
+  "cobertura_temporal": "(1).0",
+  "valor": "palestina"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "289",
+  "cobertura_temporal": "(1).0",
+  "valor": "arquipelago de bismark"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "337",
+  "cobertura_temporal": "(1).0",
+  "valor": "antartico argentino"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "145",
+  "cobertura_temporal": "(1).0",
+  "valor": "chuvash"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "161",
+  "cobertura_temporal": "(1).0",
+  "valor": "tadjiquistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "26",
+  "cobertura_temporal": "(1).0",
+  "valor": "colombia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "175",
+  "cobertura_temporal": "(1).0",
+  "valor": "angola"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "186",
+  "cobertura_temporal": "(1).0",
+  "valor": "costa do marfim"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "235",
+  "cobertura_temporal": "(1).0",
+  "valor": "uganda"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "282",
+  "cobertura_temporal": "(1).0",
+  "valor": "vietna do norte"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "320",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas pascoa"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "83",
+  "cobertura_temporal": "(1).0",
+  "valor": "bermudas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "99",
+  "cobertura_temporal": "(1).0",
+  "valor": "eire"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "165",
+  "cobertura_temporal": "(1).0",
+  "valor": "ucrania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "189",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica arabe do egito"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "208",
+  "cobertura_temporal": "(1).0",
+  "valor": "mauricio"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "214",
+  "cobertura_temporal": "(1).0",
+  "valor": "papua nova guine"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "234",
+  "cobertura_temporal": "(1).0",
+  "valor": "tunisia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "239",
+  "cobertura_temporal": "(1).0",
+  "valor": "zimbabwe"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "297",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas christmas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "301",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas kingman reef"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "309",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas salomao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "343",
+  "cobertura_temporal": "(1).0",
+  "valor": "cabo verde"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "74",
+  "cobertura_temporal": "(1).0",
+  "valor": "porto rico"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "190",
+  "cobertura_temporal": "(1).0",
+  "valor": "etiopia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "257",
+  "cobertura_temporal": "(1).0",
+  "valor": "ira"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "260",
+  "cobertura_temporal": "(1).0",
+  "valor": "jordania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "274",
+  "cobertura_temporal": "(1).0",
+  "valor": "ruiquiu,is"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "330",
+  "cobertura_temporal": "(1).0",
+  "valor": "tonga"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "70",
+  "cobertura_temporal": "(1).0",
+  "valor": "monte serrat"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "172",
+  "cobertura_temporal": "(1).0",
+  "valor": "afar frances"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "195",
+  "cobertura_temporal": "(1).0",
+  "valor": "guine"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "247",
+  "cobertura_temporal": "(1).0",
+  "valor": "catar"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "275",
+  "cobertura_temporal": "(1).0",
+  "valor": "cingapura"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "314",
+  "cobertura_temporal": "(1).0",
+  "valor": "nauru"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "88",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica guiana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "101",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas faroes"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "149",
+  "cobertura_temporal": "(1).0",
+  "valor": "gorno altai"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "178",
+  "cobertura_temporal": "(1).0",
+  "valor": "benin"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "201",
+  "cobertura_temporal": "(1).0",
+  "valor": "liberia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "215",
+  "cobertura_temporal": "(1).0",
+  "valor": "pracas norte africanas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "241",
+  "cobertura_temporal": "(1).0",
+  "valor": "afeganistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "273",
+  "cobertura_temporal": "(1).0",
+  "valor": "paquistao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "207",
+  "cobertura_temporal": "(1).0",
+  "valor": "marrocos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "262",
+  "cobertura_temporal": "(1).0",
+  "valor": "kuwait"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "324",
+  "cobertura_temporal": "(1).0",
+  "valor": "samoa americana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "29",
+  "cobertura_temporal": "(1).0",
+  "valor": "antilhas holandesas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "154",
+  "cobertura_temporal": "(1).0",
+  "valor": "komi"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "177",
+  "cobertura_temporal": "(1).0",
+  "valor": "bechuanalandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "193",
+  "cobertura_temporal": "(1).0",
+  "valor": "gana"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "276",
+  "cobertura_temporal": "(1).0",
+  "valor": "sequin"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "350",
+  "cobertura_temporal": "(1).0",
+  "valor": "tanzania"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "24",
+  "cobertura_temporal": "(1).0",
+  "valor": "paraguai"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "32",
+  "cobertura_temporal": "(1).0",
+  "valor": "gra-bretanha"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "62",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica do haiti"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "166",
+  "cobertura_temporal": "(1).0",
+  "valor": "udmurt"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "225",
+  "cobertura_temporal": "(1).0",
+  "valor": "seychelles"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "232",
+  "cobertura_temporal": "(1).0",
+  "valor": "transkei"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "281",
+  "cobertura_temporal": "(1).0",
+  "valor": "turquia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "285",
+  "cobertura_temporal": "(1).0",
+  "valor": "arquipelago manahiki"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "287",
+  "cobertura_temporal": "(1).0",
+  "valor": "ashmore e cartier"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "329",
+  "cobertura_temporal": "(1).0",
+  "valor": "timor"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "349",
+  "cobertura_temporal": "(1).0",
+  "valor": "senegal"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "27",
+  "cobertura_temporal": "(1).0",
+  "valor": "equador"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "68",
+  "cobertura_temporal": "(1).0",
+  "valor": "martinica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "191",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica do gabao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "315",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas nova caledonia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "39",
+  "cobertura_temporal": "(1).0",
+  "valor": "italia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "66",
+  "cobertura_temporal": "(1).0",
+  "valor": "jamaica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "71",
+  "cobertura_temporal": "(1).0",
+  "valor": "nicaragua"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "81",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas virgens britanicas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "85",
+  "cobertura_temporal": "(1).0",
+  "valor": "mexico"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "117",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas de man"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "132",
+  "cobertura_temporal": "(1).0",
+  "valor": "eslovenia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "196",
+  "cobertura_temporal": "(1).0",
+  "valor": "guine equatorial"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "266",
+  "cobertura_temporal": "(1).0",
+  "valor": "malasia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "345",
+  "cobertura_temporal": "(1).0",
+  "valor": "iemen do sul"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "33",
+  "cobertura_temporal": "(1).0",
+  "valor": "aruba"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "167",
+  "cobertura_temporal": "(1).0",
+  "valor": "uniao sovietica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "200",
+  "cobertura_temporal": "(1).0",
+  "valor": "lesoto"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "202",
+  "cobertura_temporal": "(1).0",
+  "valor": "libia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "226",
+  "cobertura_temporal": "(1).0",
+  "valor": "serra leoa"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "267",
+  "cobertura_temporal": "(1).0",
+  "valor": "maldivas,is"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "80",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas turca"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "140",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica da bielorrussia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "185",
+  "cobertura_temporal": "(1).0",
+  "valor": "congo"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "253",
+  "cobertura_temporal": "(1).0",
+  "valor": "hong-kong"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "346",
+  "cobertura_temporal": "(1).0",
+  "valor": "kara kalpak"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "31",
+  "cobertura_temporal": "(1).0",
+  "valor": "belgica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "65",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas serranas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "157",
+  "cobertura_temporal": "(1).0",
+  "valor": "mari"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "187",
+  "cobertura_temporal": "(1).0",
+  "valor": "daome"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "216",
+  "cobertura_temporal": "(1).0",
+  "valor": "protetor do sudoeste africano"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "298",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas gilbert"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "22",
+  "cobertura_temporal": "(1).0",
+  "valor": "bolivia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "53",
+  "cobertura_temporal": "(1).0",
+  "valor": "curacao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "57",
+  "cobertura_temporal": "(1).0",
+  "valor": "estados assoc. das antilhas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "73",
+  "cobertura_temporal": "(1).0",
+  "valor": "panama(zona do canal)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "129",
+  "cobertura_temporal": "(1).0",
+  "valor": "estado da cidade do vaticano"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "217",
+  "cobertura_temporal": "(1).0",
+  "valor": "quenia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "293",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas baker"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "21",
+  "cobertura_temporal": "(1).0",
+  "valor": "argentina"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "56",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica de el salvador"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "84",
+  "cobertura_temporal": "(1).0",
+  "valor": "groenlandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "108",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas cosmoledo (lomores)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "121",
+  "cobertura_temporal": "(1).0",
+  "valor": "pais de gales"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "173",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica da africa do sul"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "236",
+  "cobertura_temporal": "(1).0",
+  "valor": "zaire"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "318",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas novas hebridas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "47",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas turks e caicos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "86",
+  "cobertura_temporal": "(1).0",
+  "valor": "st. pierre et miquelon"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "263",
+  "cobertura_temporal": "(1).0",
+  "valor": "laos"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "135",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica tcheca"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "194",
+  "cobertura_temporal": "(1).0",
+  "valor": "gaza"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "254",
+  "cobertura_temporal": "(1).0",
+  "valor": "iemen"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "264",
+  "cobertura_temporal": "(1).0",
+  "valor": "libano"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "277",
+  "cobertura_temporal": "(1).0",
+  "valor": "siria"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "284",
+  "cobertura_temporal": "(1).0",
+  "valor": "mianma"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "336",
+  "cobertura_temporal": "(1).0",
+  "valor": "antartico chileno"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "107",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas baleares"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "150",
+  "cobertura_temporal": "(1).0",
+  "valor": "kabardino balkar"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "182",
+  "cobertura_temporal": "(1).0",
+  "valor": "ceuta e melilla"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "220",
+  "cobertura_temporal": "(1).0",
+  "valor": "rodesia (zimbabwe)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "221",
+  "cobertura_temporal": "(1).0",
+  "valor": "ruanda"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "317",
+  "cobertura_temporal": "(1).0",
+  "valor": "nova zelandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "34",
+  "cobertura_temporal": "(1).0",
+  "valor": "canada"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "238",
+  "cobertura_temporal": "(1).0",
+  "valor": "burkina fasso"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "248",
+  "cobertura_temporal": "(1).0",
+  "valor": "ceilao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "316",
+  "cobertura_temporal": "(1).0",
+  "valor": "nova guine"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "162",
+  "cobertura_temporal": "(1).0",
+  "valor": "tartaria"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "245",
+  "cobertura_temporal": "(1).0",
+  "valor": "brunei"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "292",
+  "cobertura_temporal": "(1).0",
+  "valor": "guam"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "319",
+  "cobertura_temporal": "(1).0",
+  "valor": "territorio de papua"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "335",
+  "cobertura_temporal": "(1).0",
+  "valor": "terr. antartico da australia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "37",
+  "cobertura_temporal": "(1).0",
+  "valor": "franca"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "38",
+  "cobertura_temporal": "(1).0",
+  "valor": "suica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "41",
+  "cobertura_temporal": "(1).0",
+  "valor": "japao"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "82",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas virgens americanas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "134",
+  "cobertura_temporal": "(1).0",
+  "valor": "bosnia herzegovina"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "148",
+  "cobertura_temporal": "(1).0",
+  "valor": "georgia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "155",
+  "cobertura_temporal": "(1).0",
+  "valor": "letonia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "158",
+  "cobertura_temporal": "(1).0",
+  "valor": "moldavia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "230",
+  "cobertura_temporal": "(1).0",
+  "valor": "tanganica"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "255",
+  "cobertura_temporal": "(1).0",
+  "valor": "india"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "302",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas macquaire"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "36",
+  "cobertura_temporal": "(1).0",
+  "valor": "estados unidos da america (eua)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "40",
+  "cobertura_temporal": "(1).0",
+  "valor": "comunidade das bahamas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "67",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas malvinas"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "94",
+  "cobertura_temporal": "(1).0",
+  "valor": "andorra"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "131",
+  "cobertura_temporal": "(1).0",
+  "valor": "servia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "133",
+  "cobertura_temporal": "(1).0",
+  "valor": "republica da macedonia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "147",
+  "cobertura_temporal": "(1).0",
+  "valor": "estonia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "176",
+  "cobertura_temporal": "(1).0",
+  "valor": "argelia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "311",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas wake"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "64",
+  "cobertura_temporal": "(1).0",
+  "valor": "honduras"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "89",
+  "cobertura_temporal": "(1).0",
+  "valor": "peru"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "98",
+  "cobertura_temporal": "(1).0",
+  "valor": "dinamarca"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "113",
+  "cobertura_temporal": "(1).0",
+  "valor": "islandia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "115",
+  "cobertura_temporal": "(1).0",
+  "valor": "liechtenstein"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "123",
+  "cobertura_temporal": "(1).0",
+  "valor": "polonia"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "290",
+  "cobertura_temporal": "(1).0",
+  "valor": "ilhas cook"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "nacionalidade_paciente",
+  "chave": "342",
+  "cobertura_temporal": "(1).0",
+  "valor": "bangladesh"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "local_realizacao_atendimento",
+  "chave": "C",
+  "cobertura_temporal": "(1).0",
+  "valor": "centro de atenção psicossocial (caps)"
+}, {
+  "id_tabela": "psicossocial",
+  "nome_coluna": "local_realizacao_atendimento",
+  "chave": "T",
+  "cobertura_temporal": null,
+  "valor": "territorio"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "raca/cor nao exigido"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "amarela"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "preta"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "parda"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "branca"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "99",
+  "cobertura_temporal": "(1).0",
+  "valor": "sem informacao"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "raca_cor_paciente",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "indigena"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "acidente no trajeto para o trabalho"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "6",
+  "cobertura_temporal": "(1).0",
+  "valor": "outros tipos lesoes/envenenamentos (agentes fisicos, quimicos)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "acidente no local trabalho ou a servico da empresa"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "urgencia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "carater atendimento nao informado"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "99",
+  "cobertura_temporal": "(1).0",
+  "valor": "informacao inexistente"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "eletivo"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "carater_atendimento",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "outros tipos de acidente de transito"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "instrumento_registro",
+  "chave": "S",
+  "cobertura_temporal": "(1).0",
+  "valor": "autorizacao do procedimento ambulatorial de alta complexidade (APAC) secundario"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "instrumento_registro",
+  "chave": "C",
+  "cobertura_temporal": "(1).0",
+  "valor": "boletim de procedimento ambulatorial consolidado (bpa-c)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "instrumento_registro",
+  "chave": "A",
+  "cobertura_temporal": "(1).0",
+  "valor": "registro de acoes ambulatoriais de saude (raas)  de atencao domiciliar"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "instrumento_registro",
+  "chave": "P",
+  "cobertura_temporal": "(1).0",
+  "valor": "autorizacao do procedimento ambulatorial de alta complexidade (APAC) principal"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "instrumento_registro",
+  "chave": "I",
+  "cobertura_temporal": "(1).0",
+  "valor": "boletim de procedimento ambulatorial individualizado (bpa-i)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "instrumento_registro",
+  "chave": "B",
+  "cobertura_temporal": "(1).0",
+  "valor": "registro de acoes ambulatoriais de saude (raas)  psicossocial"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "43",
+  "cobertura_temporal": "(1).0",
+  "valor": "obito com declaracao de obito fornecida pelo svo"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "18",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta por outros motivos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "21",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por caracteristicas proprias da doenca"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "41",
+  "cobertura_temporal": "(1).0",
+  "valor": "obito com declaracao de obito fornecida medico assist"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "13",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta da puerpera e permanenencia do recem nascido"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "11",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta curado"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "51",
+  "cobertura_temporal": "(1).0",
+  "valor": "encerramento administrativo"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "15",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta com previsao de retorno p/acompanhantes do paciente"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "28",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por outros motivos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "16",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta por evasao"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "17",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta da puerpera e recem nascido"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "26",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por mudanca de procedimento"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "12",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta melhorado"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "24",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por processo-doacao de orgaos-doador vivo"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "25",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por processo-doacao de orgaos-doador morto"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "31",
+  "cobertura_temporal": "(1).0",
+  "valor": "transferido para outro estabelecimento"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "23",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por impossibilidade socio-familiar"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "producao sem motivo de saida (bpa-c ou pba-i)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "22",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por intercorrencia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "42",
+  "cobertura_temporal": "(1).0",
+  "valor": "obito com declaracao de obito fornecida pelo instituto medico legal (iml)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "14",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta a pedido"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "motivo_saida_paciente",
+  "chave": "27",
+  "cobertura_temporal": "(1).0",
+  "valor": "permanencia por reoperacao"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_situacao_produzida",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "totalmente"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_situacao_produzida",
+  "chave": "6",
+  "cobertura_temporal": "(1).0",
+  "valor": "aprovado parcialmente"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_situacao_produzida",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "nao aprovado"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "complexidade_procedimento",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "nao se aplica"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "complexidade_procedimento",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "media complexidade"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "complexidade_procedimento",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "alta complexidade"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "complexidade_procedimento",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "atencao basica (pab)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "assitencia farmaceutica"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "7",
+  "cobertura_temporal": "(1).0",
+  "valor": "vigilancia em saude"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "incetivo - mac"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "atencao basica (pab)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "6",
+  "cobertura_temporal": "(1).0",
+  "valor": "media e alta complexidade - mac"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "fundo de acoes estrategicas e compensacoes faec"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "tipo_financiamento_producao",
+  "chave": "8",
+  "cobertura_temporal": "(1).0",
+  "valor": "gestao em saude"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "45",
+  "cobertura_temporal": "(1).0",
+  "valor": "projeto olhar brasil"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "67",
+  "cobertura_temporal": "(1).0",
+  "valor": "atencao especializada em saude auditiva"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "65",
+  "cobertura_temporal": "(1).0",
+  "valor": "medicamentos em urgencia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "9",
+  "cobertura_temporal": "(1).0",
+  "valor": "atendimento/acompanhamento em reabilitacao fisica, mental, visual, auditiva, e multiplas deficiencias"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "18",
+  "cobertura_temporal": "(1).0",
+  "valor": "tratamentos odontologicos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "1014",
+  "cobertura_temporal": "(1).0",
+  "valor": "faec eletiv (21012-cod ant a tab unif-val p/2008-01)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "30",
+  "cobertura_temporal": "(1).0",
+  "valor": "sequenciais"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "diagnostico em laboratorio clinico"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "52",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgias eletivas - componente iii"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "16",
+  "cobertura_temporal": "(1).0",
+  "valor": "tratamento em oncologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "1012",
+  "cobertura_temporal": "(1).0",
+  "valor": "faec cnrac (21012-cod ant a tab unif-val p/2008-01)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "11",
+  "cobertura_temporal": "(1).0",
+  "valor": "atendimento/acompanhamento em saude do idoso"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "15",
+  "cobertura_temporal": "(1).0",
+  "valor": "tratamento de doencas do aparelho da visao"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "55",
+  "cobertura_temporal": "(1).0",
+  "valor": "transplante - histocompatibilidade"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "36",
+  "cobertura_temporal": "(1).0",
+  "valor": "OPM em queimados"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "53",
+  "cobertura_temporal": "(1).0",
+  "valor": "protese mamaria - exames"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "58",
+  "cobertura_temporal": "(1).0",
+  "valor": "exames do leite materno"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "60",
+  "cobertura_temporal": "(1).0",
+  "valor": "sangue e homoderivativos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "57",
+  "cobertura_temporal": "(1).0",
+  "valor": "controle de qualidade do exame citopatologico do colo de utero"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "5",
+  "cobertura_temporal": "(1).0",
+  "valor": "diagnostico em otorrinolaringologia/fonoaudiologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "41",
+  "cobertura_temporal": "(1).0",
+  "valor": "central nacional de regulacao de alta complexidade (CNRAC)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "8",
+  "cobertura_temporal": "(1).0",
+  "valor": "atencao domiciliar"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "nao discriminado\\nao se aplica"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "79",
+  "cobertura_temporal": "(1).0",
+  "valor": "pre-cirurgico em cirurgias prioritarias"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "78",
+  "cobertura_temporal": "(1).0",
+  "valor": "qualisus cardio"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "71",
+  "cobertura_temporal": "(1).0",
+  "valor": "diagnostico tratamento em oncologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "coleta/exame anatomo-patologico colo uterino"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "24",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia do aparelho digestivo, orgaos anexos e parede abdominal (inclui pre e pos operatorio)"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "38",
+  "cobertura_temporal": "(1).0",
+  "valor": "OPM para transplantes"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "68",
+  "cobertura_temporal": "(1).0",
+  "valor": "terapias especializadas em agiologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "6",
+  "cobertura_temporal": "(1).0",
+  "valor": "diagnostico em psicologia/psiquiatria"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "14",
+  "cobertura_temporal": "(1).0",
+  "valor": "tratamento de doencas do sistema nervoso central e periferico"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "21",
+  "cobertura_temporal": "(1).0",
+  "valor": "deformidade labio-palatal e cranio-facial"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "59",
+  "cobertura_temporal": "(1).0",
+  "valor": "atencao as pessoas em situacao de violencia sexual"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "25",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia do aparelho geniturinario"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "9999",
+  "cobertura_temporal": "(1).0",
+  "valor": "nao discriminado\\nao se aplica"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "74",
+  "cobertura_temporal": "(1).0",
+  "valor": "telemedicina em urgencia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "49",
+  "cobertura_temporal": "(1).0",
+  "valor": "implementar cirg. Cv pediatrica"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "70",
+  "cobertura_temporal": "(1).0",
+  "valor": "OPME nao relacionados ao ato cirurgico"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "7",
+  "cobertura_temporal": "(1).0",
+  "valor": "consultas medicas/outros profissionais de nivel superior"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "22",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia do aparelho da visao"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "50",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgias eletivas - componente i"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "63",
+  "cobertura_temporal": "(1).0",
+  "valor": "cadeiras de rodas"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "64",
+  "cobertura_temporal": "(1).0",
+  "valor": "sistema de frequencia modulada pessoal - FM"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "54",
+  "cobertura_temporal": "(1).0",
+  "valor": "protese mamaria - cirurgia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "37",
+  "cobertura_temporal": "(1).0",
+  "valor": "OPM em nefrologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "13",
+  "cobertura_temporal": "(1).0",
+  "valor": "atendimento/acompanhamento de diagnostico de doencas endocrinas/metabolicas e nutricionais"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "27",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia reparadora para lipodistrofia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "35",
+  "cobertura_temporal": "(1).0",
+  "valor": "OPM em odontologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "62",
+  "cobertura_temporal": "(1).0",
+  "valor": "doencas raras"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "20",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgias de ouvido, nariz e garganta"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "66",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgias eletivas - componente unico"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "19",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia do sistema nervoso central e periferico"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "76",
+  "cobertura_temporal": "(1).0",
+  "valor": "hemodinamica em atendimento de urgencia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "diagnostico em neurologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "69",
+  "cobertura_temporal": "(1).0",
+  "valor": "tratamento de doenca macular"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "17",
+  "cobertura_temporal": "(1).0",
+  "valor": "nefrologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "39",
+  "cobertura_temporal": "(1).0",
+  "valor": "incentivos ao pre-natal e nascimento"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "72",
+  "cobertura_temporal": "(1).0",
+  "valor": "diagnostico de trombofilia em gestante"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "44",
+  "cobertura_temporal": "(1).0",
+  "valor": "redesignacao e acompanhamento"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "10",
+  "cobertura_temporal": "(1).0",
+  "valor": "antendimento/acompanhamento psicossocial"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "33",
+  "cobertura_temporal": "(1).0",
+  "valor": "medicamentos para transplante"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "40",
+  "cobertura_temporal": "(1).0",
+  "valor": "incentivo ao registro civil de nascimento"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "23",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia do aparelho circulatorio"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "80",
+  "cobertura_temporal": "(1).0",
+  "valor": "reducao das filas de procedimentos eletivos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "73",
+  "cobertura_temporal": "(1).0",
+  "valor": "reabilitacao pos covid-19"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "43",
+  "cobertura_temporal": "(1).0",
+  "valor": "politica nacional de cirurgias eletivas"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "29",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgia orofacial"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "48",
+  "cobertura_temporal": "(1).0",
+  "valor": "projeto olhar brasil - oculos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "75",
+  "cobertura_temporal": "(1).0",
+  "valor": "fisioterapia cardiovascular"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "32",
+  "cobertura_temporal": "(1).0",
+  "valor": "transplantes de orgaos, tecidos e celulas"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "28",
+  "cobertura_temporal": "(1).0",
+  "valor": "outras cirurgias plasticas/reparadoras"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "56",
+  "cobertura_temporal": "(1).0",
+  "valor": "triagem neonatal"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "12",
+  "cobertura_temporal": "(1).0",
+  "valor": "atendimento/acompanhamento de queimados"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "26",
+  "cobertura_temporal": "(1).0",
+  "valor": "tratamento de queimados"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "61",
+  "cobertura_temporal": "(1).0",
+  "valor": "mamografia para rastreamento em faixa etaria recomendada"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "46",
+  "cobertura_temporal": "(1).0",
+  "valor": "mamografia para rastreamento"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "47",
+  "cobertura_temporal": "(1).0",
+  "valor": "projeto olhar brasil -consulta"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "coleta de material"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "77",
+  "cobertura_temporal": "(1).0",
+  "valor": "exames sorologicos e imunologicos"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "31",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgias em nefrologia"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "34",
+  "cobertura_temporal": "(1).0",
+  "valor": "OPM auditivas"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "42",
+  "cobertura_temporal": "(1).0",
+  "valor": "regularodores de atividade hormonal - inibidores de prolactina"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "subtipo_financiamento_producao",
+  "chave": "51",
+  "cobertura_temporal": "(1).0",
+  "valor": "cirurgias eletivas - componente ii"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "compatibilidade_idade_procedimento",
+  "chave": "1",
+  "cobertura_temporal": "(1).0",
+  "valor": "idade compativel com o sigtap"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "compatibilidade_idade_procedimento",
+  "chave": "4",
+  "cobertura_temporal": "(1).0",
+  "valor": "idade em branco"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "compatibilidade_idade_procedimento",
+  "chave": "0",
+  "cobertura_temporal": "(1).0",
+  "valor": "idade nao exigida"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "compatibilidade_idade_procedimento",
+  "chave": "3",
+  "cobertura_temporal": "(1).0",
+  "valor": "idade inexistente"
+}, {
+  "id_tabela": "producao_ambulatorial",
+  "nome_coluna": "compatibilidade_idade_procedimento",
+  "chave": "2",
+  "cobertura_temporal": "(1).0",
+  "valor": "idade for a da faixa do sigtap"
+}]

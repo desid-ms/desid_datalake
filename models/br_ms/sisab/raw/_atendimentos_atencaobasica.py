@@ -7,7 +7,7 @@ import cx_Oracle
 import os
 
 @model(
-    "raw_sisab.vw_sisab_cges",
+    "raw.sisab__vw_sisab_cges",
     columns={
           "ANO": "INT",
           

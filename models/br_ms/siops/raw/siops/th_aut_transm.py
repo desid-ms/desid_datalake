@@ -7,13 +7,15 @@ from sqlmesh.core.model.kind import ModelKindName
 import os
 
 @model(
-    "raw_siops.th_homologacao",
+    "raw.siops__th_aut_transm",
     columns={
-        "ENTE": "INT",
+        "CO_MUNICIPIO": "INT",
         "NU_ANO": "INT",
         "NU_PERIODO": "INT",
         "NU_SEQ": "INT",
         "DT_HOMOLOGACAO": "TEXT",
+        "ST_HOMOLOGADO": "TEXT",
+    
     },
 )
 def execute(
@@ -32,34 +34,14 @@ def execute(
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
     query = """
         SELECT
-            CO_MUNICIPIO AS ENTE,
+            CO_MUNICIPIO,
             NU_ANO,
             NU_PERIODO,
-            MAX(NU_SEQ) AS NU_SEQ,
-            MAX(DT_HOMOLOGACAO) AS DT_HOMOLOGACAO 
+            NU_SEQ,
+            DT_HOMOLOGACAO, 
+            ST_HOMOLOGADO 
         FROM
             SIOPS.TH_AUT_TRANSM
-        WHERE
-            NU_ANO > 2017
-            AND ST_HOMOLOGADO = 'S'
-        GROUP BY
-            CO_MUNICIPIO, NU_ANO, NU_PERIODO
-
-        UNION ALL
-
-        SELECT
-            CO_UF AS ENTE,
-            NU_ANO,
-            NU_PERIODO,
-            MAX(NU_SEQ) AS NU_SEQ,
-            MAX(DT_HOMOLOGACAO) AS DT_HOMOLOGACAO 
-        FROM
-            SIOPSUF.TH_AUT_TRANSM
-        WHERE
-            NU_ANO > 2017
-            AND ST_HOMOLOGADO = 'S'
-        GROUP BY
-            CO_UF, NU_ANO, NU_PERIODO
     """
     
     try:

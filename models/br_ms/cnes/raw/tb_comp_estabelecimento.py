@@ -7,7 +7,7 @@ import cx_Oracle
 import os
 
 @model(
-    "raw_cnes.tb_comp_estabelecimento",
+    "raw.cnes__tb_comp_estabelecimento",
     # kind = dict (name = ModelKindName.INCREMENTAL_BY_UNIQUE_KEY, unique_key = "CO_UNIDADE"),
     columns={
         
@@ -16,10 +16,13 @@ import os
         "NO_FANTASIA": "TEXT",
         "DT_ATUALIZACAO": "TEXT",  
         "TP_UNIDADE": "TEXT",
+        'TP_PFPJ'   : 'TEXT',
         "NU_CNPJ_MANTENEDORA": "TEXT",
         "TP_GESTAO": "TEXT",
+        "TP_PRESTADOR": "TEXT",
         "NU_LATITUDE": "TEXT",
         "NU_LONGITUDE": "TEXT",
+        "CO_NATUREZA_ORGANIZACAO": "TEXT",
         "CO_NATUREZA_JUR": "TEXT"}
 )
 
@@ -37,7 +40,13 @@ def execute(
     port = '1521'
     service_name = 'RJPO1DR.saude.gov'
     dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
-    query = "SELECT NU_COMP, CO_CNES, NO_FANTASIA, NU_CNPJ_MANTENEDORA, TP_GESTAO, CO_NATUREZA_JUR, TP_UNIDADE,  TP_GESTAO, NU_LATITUDE, NU_LONGITUDE, CO_NATUREZA_JUR, DT_ATUALIZACAO FROM CNES.TB_COMP_ESTABELECIMENTO tce WHERE NU_COMP ='202212'"
+    query = """
+        SELECT NU_COMP, CO_CNES, NO_FANTASIA, TP_PFPJ, NU_CNPJ_MANTENEDORA, TP_GESTAO, 
+        CO_NATUREZA_JUR, CO_NATUREZA_ORGANIZACAO, TP_UNIDADE,  TP_GESTAO, TP_PRESTADOR, 
+        NU_LATITUDE, NU_LONGITUDE, CO_NATUREZA_JUR, DT_ATUALIZACAO 
+        FROM CNES.TB_COMP_ESTABELECIMENTO tce 
+        WHERE NU_COMP >='202201' AND NU_COMP <='202212'
+    """
 
     try:
         # Establish the connection

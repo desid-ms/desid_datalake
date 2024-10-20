@@ -7,7 +7,7 @@ from sqlmesh.core.model.kind import ModelKindName
 import os
 
 @model(
-    "raw_siops.tb_municipio",
+    "raw.siops__tb_municipio",
     kind = dict (name = ModelKindName.INCREMENTAL_BY_UNIQUE_KEY, unique_key = "CO_MUNICIPIO"),
     columns={
         "CO_MUNICIPIO": "TEXT",
