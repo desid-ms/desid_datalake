@@ -1,24 +1,25 @@
 MODEL (
-    name siops.saldos_despesas,
+    name siops.despesas,
     -- audits (
     --     saldo_positivo(blocking:=false),
     -- )
 );
-SELECT *,
-       (Despesas_Empenhadas - Despesas_Liquidadas) AS Saldo_Empenho,
-       (Despesas_Liquidadas - Despesas_Pagas) AS Saldo_Liquidado
+SELECT  competencia, ibge, ente, capital, regiao, uf, esfera, populacao, conta, ds_conta, fonte, destinacao, despesas_empenhadas, despesas_liquidadas, 
+       (Despesas_Empenhadas - Despesas_Liquidadas) AS saldo_empenho,
+       despesas_pagas,
+       (Despesas_Liquidadas - Despesas_Pagas) AS saldo_liquidado
 FROM (
-    SELECT COMPETENCIA, IBGE_ENTE,  ENTE, CAPITAL, REGIAO, UF, ESFERA, POPULACAO, CODIGO_CONTA, CONTA, fonte, destinacao, fase, valor_nominal
+    SELECT competencia, ibge, ente, capital, regiao, uf, esfera, populacao, conta, ds_conta, fonte, destinacao, fase, valor_nominal
     
     FROM siops.lancamentos WHERE FASE IN ('Despesas Empenhadas',  'Despesas Liquidadas', 'Despesas Pagas')
 ) AS src
 PIVOT (
    SUM(valor_nominal) FOR fase IN (
-        'Despesas Empenhadas' AS Despesas_Empenhadas,
-        'Despesas Liquidadas' AS Despesas_Liquidadas,
-        'Despesas Pagas' AS Despesas_Pagas
+        'Despesas Empenhadas' AS despesas_empenhadas,
+        'Despesas Liquidadas' AS despesas_liquidadas,
+        'Despesas Pagas' AS despesas_pagas
     )
-) ORDER BY competencia, ibge_ente, codigo_conta;
+) ORDER BY competencia, ibge, conta;
 
 
 -- AUDIT (

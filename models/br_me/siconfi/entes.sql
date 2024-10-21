@@ -8,14 +8,19 @@ select distinct
   
   cod_ibge::text as codigo_ibge_7,
   left(cod_ibge::text, 6) as codigo_ibge_6,
-  ente::STRING,
-  capital::STRING,
-  regiao::STRING,
-  uf::STRING,
-  esfera::STRING,
-  exercicio::UINTEGER,
-  populacao::UINTEGER,
-  cnpj::STRING,
+  ente::STRING as ENTE,
+  capital::STRING as capital,
+  case regiao::STRING 
+  when 'NO' THEN 'N'
+  when 'SU' THEN 'S'
+  else regiao::STRING
+  END as regiao 
+  ,
+  uf::STRING as UF,
+  esfera::STRING as esfera,
+  exercicio::UINTEGER as exercicio,
+  populacao::UINTEGER as populacao,
+  cnpj::STRING as cnpj,
 from 
   read_json_auto('data/inputs/siconfi/entes/**/*.json',
   format='array', 
