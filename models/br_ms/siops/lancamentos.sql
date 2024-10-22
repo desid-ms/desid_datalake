@@ -1,7 +1,14 @@
 MODEL (
     name siops.lancamentos, 
     depends_on ["staging.siops__periodos", "staging.siops__homologados", "siconfi.entes"],
-    kind FULL);
+    kind FULL,
+    audits(
+        number_of_rows(threshold := 3000000),
+        not_null(columns := (competencia, ibge, ente, capital, regiao, uf, esfera, fase, conta, ds_conta, valor_nominal)),
+        accepted_values(column := competencia, is_in=('2022-6')), -- períodos válidos
+        accepted_range(column := valor_nominal, min_v := 0, max_v := 1000000000000, inclusive := false, blocking:=false),
+    )
+);
 
 WITH
     -- TODOS_VALORES une tb_vl_valores de estados e municípios
@@ -60,7 +67,8 @@ WITH
      END AS esfera,
      S.POPULACAO as populacao,
      -- remove conteúdo entre parenteses e espaços em branco
-     TRIM(REGEXP_REPLACE(REGEXP_REPLACE(C.NO_COLUNA, '\s*=.*$', ''), '\s*\([a-z]\)', '')) AS fase,
+    --  TRIM(REGEXP_REPLACE(REGEXP_REPLACE(C.NO_COLUNA, '\s*=.*$', ''), '\s*\([a-z]\)', '')) AS fase,
+    C.NO_COLUNA as fase,
      FS.FONTE as fonte,
      FS.SUBFUNCAO AS destinacao,
      CT.CODIGO_CONTA AS conta,

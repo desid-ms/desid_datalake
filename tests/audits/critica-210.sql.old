@@ -1,0 +1,26 @@
+-- Para municipios
+-- •	(crítica 210) o valor da receita realizada bruta de IPTU (coluna  c), conta 1.1.1.8.01.1.0 não pode ser igual a zero (exceto municípios com código: 130020  130063  130115  130230  290590  292420  251335  140002  140023  140028  140040  140050  140060  140070);
+-- somar para dar o valor da mãe
+
+
+AUDIT (
+  name todos_municipios_tem_receita_iptu,
+  dialect duckdb
+);
+
+WITH RECURSIVE constants (exceptions) AS (
+      SELECT ARRAY[130020, 130063, 130115, 130230, 290590, 292420, 251335, 
+                   140002, 140023, 140028, 140040, 140050, 140060, 140070]::int[]
+  ),
+  receitas_iptu AS (
+      SELECT ibge, ente, SUM(receitas_realizadas) AS receita_iptu_baixa
+      FROM siops.receitas 
+      -- WHERE fase = 'Receitas Realizadas Brutas' 
+      WHERE esfera = 'Municipal' 
+      AND conta LIKE '1.1.1.8.01.1%'
+      GROUP BY ibge
+  )
+  SELECT r.ibge, r.ente, r.total_receita_realizada 
+  FROM receitas_iptu r, constants c
+  WHERE r.total_receita_realizada < 5 
+  AND NOT (r.ibge = ANY(c.exceptions));
