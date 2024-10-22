@@ -28,6 +28,11 @@ PIVOT (
     (FORMAT PARQUET, PARTITION_BY (competencia), OVERWRITE, FILENAME_PATTERN 'siops__despesas_{uuid}')
 );
 
+@IF(
+  @runtime_stage = 'evaluating',
+  COPY (select * from siops.despesas where capital = 'S') TO 'data/outputs/siops__despesas' 
+    (FORMAT PARQUET, PARTITION_BY (competencia), OVERWRITE, FILENAME_PATTERN 'siops__despesas_capitais_{uuid}')
+);
 
 AUDIT (
     name saldo_positivo,
