@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10"
-sqlmesh = "0.123.3"
+sqlmesh = {extras = ["web"], version = "^0.128.0"}
 duckdb = "^1.0.0"
 numpy = "^2.0.1"
 pandas = "^2.2.2"
@@ -16,6 +16,9 @@ ipykernel = "^6.29.5"
 cx-oracle = "^8.3.0"
 oracledb = "^2.4.1"
 sqlalchemy = "^2.0.35"
+fastduck = "^0.0.14"
+tqdm = "^4.66.5"
+ipywidgets = "^8.1.5"
 
 
 [tool.poetry.group.dev.dependencies]
