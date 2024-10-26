@@ -7,7 +7,7 @@ SELECT
    pa.co_pa_cmp as competencia, -- ano e mês da producao ambulatorial
    pa.co_pa_coduni as cnes_estabelecimento, -- id do estabelecimento no CNES
    e.codigo_sha as codigo_sha_estabelecimento_competencia, -- codigo sha do estabelecimento no momento da competencia
-   e.tipo_provedor as tipo_provedor_competencia,
+   e.tipo_provedor as tipo_provedor_competencia, -- tipo do provedor (publico federal, contratado, sem fins lucrativos etc)
    pa.co_pa_cbocod as cbo_executante, -- código brasileiro de ocupações (CBO) do profissional de saúde executante
    o.descricao AS profissional_saude_executante, -- descrição da ocupação do profissional de saúde executante no CBO
    pa.co_pa_proc_id AS codigo_procedimento, -- código do procedimento realizado no SIGTAP
