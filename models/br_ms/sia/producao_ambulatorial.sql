@@ -7,6 +7,7 @@ SELECT
    pa.co_pa_cmp as competencia, -- ano e mês da producao ambulatorial
    pa.co_pa_coduni as cnes_estabelecimento, -- id do estabelecimento no CNES
    e.codigo_sha as codigo_sha_estabelecimento_competencia, -- codigo sha do estabelecimento no momento da competencia
+   e.tipo_provedor as tipo_provedor_competencia,
    pa.co_pa_cbocod as cbo_executante, -- código brasileiro de ocupações (CBO) do profissional de saúde executante
    o.descricao AS profissional_saude_executante, -- descrição da ocupação do profissional de saúde executante no CBO
    pa.co_pa_proc_id AS codigo_procedimento, -- código do procedimento realizado no SIGTAP
@@ -35,3 +36,11 @@ SELECT
    sha.provedores e ON e.id_provedor::int = pa.co_pa_coduni::int AND e.competencia::int = pa.co_pa_cmp::int
  
 
+-- Quadro 4 – Variável CBO
+
+-- SE PA_CBOCOD CBO 352210, 515105, 515120, 515125, 515130 ACS7 Caso Contrário Outro
+
+
+-- Quadro 5 – Variável SAUDE
+
+-- SE PA_CBOCOD SAUDE 322415, 3516058, CBO = ACS 0 Caso Contrário 1

@@ -21,10 +21,11 @@ SELECT
            WHEN e.co_natureza_jur IN ('1198', '1201', '1210', '1228') AND e.tp_gestao = 'E' THEN 'estadual'
            WHEN e.co_natureza_jur IN ('1198', '1201', '1210', '1228') THEN 'outra entidade pública'
            WHEN e.co_natureza_jur BETWEEN '2000' and '2999' THEN 'contratado'
-           WHEN e.co_natureza_jur BETWEEN '3000' and '2999' THEN 'sem fins lucrativos'
+           WHEN e.co_natureza_jur BETWEEN '3000' and '3999' THEN 'sem fins lucrativos'
        END,
     'ignorado'
-   ) AS tipo_gasto,
+   ) AS tipo_provedor,
+       
    e.tp_gestao AS codigo_tipo_gestao, --código cnes do tipo de gestão 
    t2.valor AS tipo_gestao
 FROM
