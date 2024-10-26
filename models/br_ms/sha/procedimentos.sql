@@ -1,21 +1,16 @@
 MODEL (
-    name sha.procedimentos,
-    kind INCREMENTAL_BY_UNIQUE_KEY  (
-        unique_key codigo_procedimento_sigtap
-    )
-    
+    name sha.procedimentos
 );
 
 SELECT 
-     f.codigo_procedimento_sigtap as id_procedimento_sigtap, 
-     p.codigo_tuss,
-     f.codigo_sha, 
-     p.procedimento_sus, 
-     p.termo_tuss AS ds_procedimento_tuss,  
-     f.ds_sha_pt, 
-FROM raw.sha__funcao_procedimento f 
- JOIN 
-     raw.sha__procedimentos p 
- ON 
-    f.codigo_procedimento_sigtap::text = p.CODIGO_SUS;
+    competencia,
+    codigo_procedimento::int as codigo_procedimento,
+    procedimento,
+    codigo_cid,
+    doenca_tratada,
+    codigo_tipo_financiamento,
+    hc.codigo_sha     
+FROM sigtap.procedimentos s 
 
+LEFT JOIN 
+     raw.sha__hc_sigtap hc on hc.codigo_procedimento_sigtap::int = codigo_procedimento::int  

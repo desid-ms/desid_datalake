@@ -31,11 +31,11 @@ SELECT
     e.NU_LONGITUDE AS longitude_estabelecimento
 FROM
     raw.cnes__tb_comp_estabelecimento e
-    LEFT JOIN raw.cnes__tipos t1 ON e.tp_unidade = t1.chave
+    LEFT JOIN raw.cnes__tipos t1 ON e.tp_unidade::int = t1.chave::int
         AND t1.id_tabela = 'estabelecimento' AND t1.nome_coluna = 'tipo_unidade'
     LEFT JOIN raw.cnes__tipos t2 ON e.tp_gestao = t2.chave
         AND t2.id_tabela = 'estabelecimento' AND t2.nome_coluna = 'tipo_gestao'
     LEFT JOIN raw.cnes__tipos t3 ON e.tp_pfpj = t3.chave
         AND t3.id_tabela = 'estabelecimento' AND t3.nome_coluna = 'tipo_pessoa'
-    LEFT JOIN raw.cnes__tipos t4 ON e.co_natureza_organizacao = t4.chave
+    LEFT JOIN raw.cnes__tipos t4 ON e.co_natureza_organizacao::int = t4.chave::int
         AND t4.id_tabela = 'estabelecimento' AND t4.nome_coluna = 'tipo_natureza_administrativa';

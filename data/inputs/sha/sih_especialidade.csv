@@ -1,0 +1,15 @@
+codigo,descricao,codigo_sha
+1,Cirurgia,
+2,Obstetrícia,
+3,Clínica médica,
+4,Crônicos,"HC.3.1"
+5,Psiquiatria,"HC.3.1"
+6,Pneumologia sanitária,
+7,Pediatria,
+8,Reabilitação,"HC.2.1"
+9,"Hospital dia (cirúrgicos)","HC.1.2"
+10,"Hospital dia (AIDS)","HC.1.2"
+11,"Hospital dia (fibrose cística)","HC.1.2"
+12,"Hospital dia (intercorrência pós transplantes)","HC.1.2"
+13,"Hospital dia (geriatria)","HC.3.2"
+14,"Hospital dia (saúde mental)","HC.1.2"

@@ -1,0 +1,59 @@
+0301Consultas / Atendimentos / Acompanhamentos                                                          202212
+0801Ações relacionadas ao estabelecimento                                                               202212
+0201Coleta de material                                                                                  202212
+0101Ações coletivas/individuais em saúde                                                                202212
+0701Órteses, próteses e materiais especiais não relacionados ao ato cirúrgico                           202212
+0601Medicamentos de dispensação excepcional                                                             202212
+0501Coleta e exames para fins de doação de orgãos, tecidos e células e de transplante                   202212
+0401Pequenas cirurgias e cirurgias de pele, tecido subcutâneo e mucosa                                  202212
+0202Diagnóstico em laboratório clínico                                                                  202212
+0102Vigilância em saúde                                                                                 202212
+0802Ações relacionadas ao atendimento                                                                   202212
+0702Órteses, próteses e materiais especiais relacionados ao ato cirúrgico                               202212
+0602Medicamentos estratégicos                                                                           202212
+0502Avaliação de morte encefálica                                                                       202212
+0402Cirurgia de glândulas endócrinas                                                                    202212
+0302Fisioterapia                                                                                        202212
+0203Diagnóstico por anatomia patológica e citopatologia                                                 202212
+0803Autorização / regulação                                                                             202212
+0603Medicamentos de âmbito hospitalar e urgência                                                        202212
+0403Cirurgia do sistema nervoso central e periférico                                                    202212
+0303Tratamentos clínicos (outras especialidades)                                                        202212
+0503Ações relacionadas à doação de orgãos e tecidos para transplante                                    202212
+0504Processamento de tecidos para transplante                                                           202212
+0404Cirurgia das vias aéreas superiores, da face, da cabeça e do pescoço                                202212
+0204Diagnóstico por radiologia                                                                          202212
+0604Componente especializado da assistência farmacêutica                                                202212
+0304Tratamento em oncologia                                                                             202212
+0305Tratamento em nefrologia                                                                            202212
+0405Cirurgia do aparelho da visão                                                                       202212
+0205Diagnóstico por ultrasonografia                                                                     202212
+0505Transplante de orgãos, tecidos e células                                                            202212
+0506Acompanhamento e intercorrências no pré e pós-transplante                                           202212
+0206Diagnóstico por tomografia                                                                          202212
+0406Cirurgia do aparelho circulatório                                                                   202212
+0306Hemoterapia                                                                                         202212
+0307Tratamentos odontológicos                                                                           202212
+0207Diagnóstico por ressonância magnética                                                               202212
+0407Cirurgia do aparelho digestivo, orgãos anexos e parede abdominal                                    202212
+0208Diagnóstico por medicina nuclear in vivo                                                            202212
+0308Tratamento de lesões, envenenamentos e outros, decorrentes de causas externas                       202212
+0408Cirurgia do sistema osteomuscular                                                                   202212
+0409Cirurgia do aparelho geniturinário                                                                  202212
+0309Terapias especializadas                                                                             202212
+0209Diagnóstico por endoscopia                                                                          202212
+0410Cirurgia de mama                                                                                    202212
+0310Parto e nascimento                                                                                  202212
+0210Diagnóstico por radiologia intervencionista                                                         202212
+0411Cirurgia obstétrica                                                                                 202212
+0211Métodos diagnósticos em especialidades                                                              202212
+0412Cirurgia torácica                                                                                   202212
+0212Diagnóstico e procedimentos especiais em hemoterapia                                                202212
+0213Diagnóstico em vigilância epidemiológica e ambiental                                                202212
+0413Cirurgia reparadora                                                                                 202212
+0414Bucomaxilofacial                                                                                    202212
+0214Diagnóstico por teste rápido                                                                        202212
+0415Outras cirurgias                                                                                    202212
+0416Cirurgia em oncologia                                                                               202212
+0417Anestesiologia                                                                                      202212
+0418Cirurgia em nefrologia                                                                              202212

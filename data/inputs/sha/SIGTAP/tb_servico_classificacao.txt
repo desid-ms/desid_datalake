@@ -1,0 +1,414 @@
+165001Referência para Atenção Integral às Pessoas em Situação de Violência Sexual                                                                           202212
+166001Água de Consumo                                                                                                                                       202212
+167001ODONTOLOGIA - PROJETO SAÚDE NA ESCOLA (PSE)                                                                                                           202212
+168001Atenção Especializada Em Doenças Raras                                                                                                                202212
+169001Urologia em Geral                                                                                                                                     202212
+170001Núcleo de Segurança do Paciente                                                                                                                       202212
+173001Recebimento e Inspeção                                                                                                                                202212
+174001Indivíduos em Geral                                                                                                                                   202212
+100001Atendimento em presídio até 100 presos                                                                                                                202212
+101001Saúde da família                                                                                                                                      202212
+102001Estratégia de Agentes Comunitários de Saúde - EACS                                                                                                    202212
+103001Ambulância de transporte                                                                                                                              202212
+104001Central de Regulação de Internações Hospitalares                                                                                                      202212
+105001Neurocirurgia do trauma e anomalias do desenvolvimento                                                                                                202212
+106001Testagem e aconselhamento                                                                                                                             202212
+107001Serviço de Atenção à Saúde Auditiva na Média Complexidade                                                                                             202212
+108001Atendimento/acompanhamento em saúde do trabalhador                                                                                                    202212
+109001Unidade sócio-educativa com até 40 adolecentes                                                                                                        202212
+110001Atenção à infertilidade                                                                                                                               202212
+111001Diagnóstico e tratamento                                                                                                                              202212
+112001Acompanhamento do pré-natal de risco habitual                                                                                                         202212
+113001Assitência Domiciliar                                                                                                                                 202212
+114001Dentística                                                                                                                                            202212
+115001Residência terapêutica em saúde mental                                                                                                                202212
+116001Eletrofisiologia                                                                                                                                      202212
+117001Tratamento da lipodistrofia do portador de HIV / AIDS                                                                                                 202212
+118001Cirurgia torácica                                                                                                                                     202212
+119001Abordagem e tratamento do fumante                                                                                                                     202212
+120001Exames anatomopatológicos                                                                                                                             202212
+121001Radiologia                                                                                                                                            202212
+122001Teste Ergométrico                                                                                                                                     202212
+123001OPM auxiliares de locomoção                                                                                                                           202212
+124001Diagnóstico/Tratamento das doenças endócrinas, metabólicas e nutricionais                                                                             202212
+125001Dispensação de Medicamentos do Componente Especializado da Assistência Farmaceutica.                                                                  202212
+126001Assistência fisioterapêutica em alterações obstétricas, neonatais e uroginecológicas                                                                  202212
+127001Tratamento clínico, cirúrgico, reparador e acompanhamento ao obeso                                                                                    202212
+128001Procedimentos destinados à obtenção do sangue para fins de assitência hemoterápica                                                                    202212
+129001Exames de histocompatibilidade por meio de sorologia                                                                                                  202212
+130001Tratamento Dialítico-Hemodiálise                                                                                                                      202212
+131001Diagnóstico em oftalmologia                                                                                                                           202212
+132001Oncologia pediátrica                                                                                                                                  202212
+133001Tratamento de Doenças das Vias Aéreas Inferiores                                                                                                      202212
+134001Acupuntura                                                                                                                                            202212
+135001Reabilitação Visual                                                                                                                                   202212
+136001Enteral                                                                                                                                               202212
+137001Exame eletrocardiográfico por telemedicina                                                                                                            202212
+138001Diagnóstico e tratamento em cintura escapular                                                                                                         202212
+139001Tratamento de recém-nascido com hipotireoidismo e fenilcetonuria                                                                                      202212
+141001Vigilância epidemiológica                                                                                                                             202212
+142001Do aparelho digestivo                                                                                                                                 202212
+143001Transporte terrestre                                                                                                                                  202212
+144001Coleta realizada fora das estrutura laboratorial                                                                                                      202212
+145001Exames Bioquimicos                                                                                                                                    202212
+146001Diagnóstica                                                                                                                                           202212
+147001NASF 1                                                                                                                                                202212
+148001Saúde mental                                                                                                                                          202212
+149001Rim                                                                                                                                                   202212
+150001Fístula arteriovenosa sem enxerto                                                                                                                     202212
+151001Medicina nuclear in vivo                                                                                                                              202212
+152001Atenção Básica à Populações Indígenas                                                                                                                 202212
+153001Acompanhamento Clínico, pré e pós operatório e hormonioterapia.                                                                                       202212
+154001Banco de valvula cardiaca humana                                                                                                                      202212
+155001Serviço de Traumatologia e Ortopedia                                                                                                                  202212
+156001Atenção as Pessoas Ostomizadas I                                                                                                                      202212
+157001Laboratorio Regional de Protese Dentaria                                                                                                              202212
+158001Serviço de Atenção Integral em Hanseniase Tipo I                                                                                                      202212
+159001Atenção Primária                                                                                                                                      202212
+160001Teleconsultoria Assíncrona                                                                                                                            202212
+161001Equipe de Consultório na Rua - Modalidade I                                                                                                           202212
+162001ADULTO                                                                                                                                                202212
+163001NEONATAL CONVENCIONAL                                                                                                                                 202212
+164001Dispensação de OPM Auxiliares de Locomoção                                                                                                            202212
+100002Atendimento em manicômio até 100 presos                                                                                                               202212
+174002Grupos Especiais                                                                                                                                      202212
+102002Estratégia de Agentes Comunitários de Saúde com Saúde Bucal - (modalidade I)                                                                          202212
+103002Unidade de suporte básico de vida terrestre (USB)                                                                                                     202212
+104002Cental de Regulação de Consultas e Exames                                                                                                             202212
+105002Coluna e nervos periféricos                                                                                                                           202212
+106002Diagnóstico e tratamento                                                                                                                              202212
+107002Serviço de Atenção à Saúde Auditiva na Alta Complexidade                                                                                              202212
+108002Centro de referência em saúde do trabalhador CEREST estadual                                                                                          202212
+109002Unidade sócio-educativa com de 41 a 100 adolecentes                                                                                                   202212
+110002Contracepção clínica                                                                                                                                  202212
+111002Tratamento multidrogas resistentes                                                                                                                    202212
+112002Acompanhamento do pré-natal de alto risco                                                                                                             202212
+113002Internação Domiciliar                                                                                                                                 202212
+114002Endodontia                                                                                                                                            202212
+115002Atendimento psicossocial                                                                                                                              202212
+116002Cirurgia cardiovascular (adulto)                                                                                                                      202212
+117002Tratamento em queimados                                                                                                                               202212
+120002Exames citopatológicos                                                                                                                                202212
+121002Ultra-sonografia                                                                                                                                      202212
+122002Teste de Holter                                                                                                                                       202212
+123002OPM ortopédicas                                                                                                                                       202212
+124002Cirurgia de glândulas endócrinas                                                                                                                      202212
+125002Farmácia Popular                                                                                                                                      202212
+126002Assistência fisioterapêutica em alterações oncológicas                                                                                                202212
+128002Diagnóstico em hemoterapia                                                                                                                            202212
+129002Exames de histocompatibilidade por sorologia e biologia                                                                                               202212
+131002Tratamento clínico do aparelho da visão                                                                                                               202212
+132002Hematologia                                                                                                                                           202212
+133002Diagnóstico em Pneumologia                                                                                                                            202212
+134002Fitoterapia                                                                                                                                           202212
+135002Reabilitação Intelectual                                                                                                                              202212
+136002Enteral/Parenteral                                                                                                                                    202212
+138002Diagnóstico e tratamento em membros superiores                                                                                                        202212
+139002Tratamento de recém-nascido com doenças falciformes                                                                                                   202212
+141002Vigilância sanitária                                                                                                                                  202212
+142002Do aparelho respiratório                                                                                                                              202212
+143002Transporte aéreo                                                                                                                                      202212
+145002Exames hematológicos e hemostasia                                                                                                                     202212
+146002Cirúrgica                                                                                                                                             202212
+147002NASF 2                                                                                                                                                202212
+148002AIDS                                                                                                                                                  202212
+149002Medula óssea                                                                                                                                          202212
+150002Fístula arteriovenosa com enxerto                                                                                                                     202212
+151002Medicina nuclear in vitro                                                                                                                             202212
+153002Cirurgia e Acompanhamento pré e pós oreratório                                                                                                        202212
+154002Banco de tecido musculo esqueletico                                                                                                                   202212
+155002Serviço de Traumatologia e Ortopedia Pediátrica (até 21 anos de idade)                                                                                202212
+156002Atenção as Pessoas Ostomizadas II                                                                                                                     202212
+158002Serviço de Atenção Integral em Hanseniase Tipo II                                                                                                     202212
+159002Atenção Básica com Saúde Bucal                                                                                                                        202212
+160002Teleconsultoria Síncrona                                                                                                                              202212
+161002Equipe de Consultório na Rua - Modalidade II                                                                                                          202212
+162002NEONATAL                                                                                                                                              202212
+163002NEONATAL CANGURU                                                                                                                                      202212
+164002Manutenção e Adaptação de OPM Auxiliares de Locomoção                                                                                                 202212
+165002Serviço de Referência para Atenção Integral à Saúde de Adolescentes em Situação de Violência Sexual                                                   202212
+166002Água de Ambiental                                                                                                                                     202212
+167002ODONTOLOGIA - PROJETO BRASIL ALFABETIZADO (PBA)                                                                                                       202212
+168002Referência em Doenças Raras                                                                                                                           202212
+169002Litotripsia                                                                                                                                           202212
+173002Armazenamento e Controle                                                                                                                              202212
+101002Saúde bucal MI                                                                                                                                        202212
+100003Atendimento em presídio acima de 100 presos                                                                                                           202212
+173003Distribuição                                                                                                                                          202212
+102003Estratégia de Agentes Comunitários de Saúde com Saúde Bucal - (modalidade II)                                                                         202212
+103003Unidade de suporte avançado de vida terrestre (USA)                                                                                                   202212
+104003Central de Regulação de Urgências                                                                                                                     202212
+105003Tumores do sistema nervoso                                                                                                                            202212
+106003Diagnóstico, tratamento e capacitação técnica                                                                                                         202212
+107003Terapia fonoaudiológica                                                                                                                               202212
+108003VIGILÂNCIA EM SAÚDE DO TRABALHADOR (VISAT)                                                                                                            202212
+109003Unidade sócio-educativa com de 101 a 180 adolecentes                                                                                                  202212
+110003Laqueadura                                                                                                                                            202212
+112003Parto em gestação de risco habitual                                                                                                                   202212
+113003Equipe Multidisciplinar de Atenção Domiciliar - EMAD                                                                                                  202212
+114003Periodontia clínica                                                                                                                                   202212
+115003Serviço Hospitalar para Atenção a Saúde Mental                                                                                                        202212
+116003Cirurgia cardiovascular (Pediátrico)                                                                                                                  202212
+117003Tratamento da lipoatrofia facial do portador de HIV / AIDS                                                                                            202212
+120003Monitoramento Externo da Qualidade dos Exames Citopatologicos do Colo do Útero                                                                        202212
+121003Tomografia computadorizada                                                                                                                            202212
+122003Exame Eletrocardiográfico                                                                                                                             202212
+123003OPM auditivas                                                                                                                                         202212
+125003Farmácia com manipulação homeopática                                                                                                                  202212
+126003Assistência fisioterapêutica em oftalmologia                                                                                                          202212
+128003Procedimentos especiais em hemoterapia                                                                                                                202212
+130003Confeccção/Intervenção de Acessos para Diálise                                                                                                        202212
+131003Tratamento cirúrgico do aparelho da visão                                                                                                             202212
+132003Oncologia clínica                                                                                                                                     202212
+133003Diagnóstico em Pneumologia por Telemedicina                                                                                                           202212
+134003Outras Práticas em Medicina Tradicional Chinesa                                                                                                       202212
+135003Reabilitação Física                                                                                                                                   202212
+136003Enteral/Parenteral, com manipulação/fabricação                                                                                                        202212
+138003Diagnóstico e tratamento em coluna vertebral e caixa torácica                                                                                         202212
+139003Tratamento de recém-nascido com fibrose cística                                                                                                       202212
+141003Vigilância ambiental                                                                                                                                  202212
+142003Do aparelho urinário                                                                                                                                  202212
+143003Transporte marítimo                                                                                                                                   202212
+145003Exames sorológicos e imunológicos                                                                                                                     202212
+147003NASF Intermunicipal                                                                                                                                   202212
+148003Geriátrico                                                                                                                                            202212
+149003Coração                                                                                                                                               202212
+151003Medicina nuclear in vivo por telemedicina                                                                                                             202212
+155003Serviço de Traumatologia e Ortopedia de Urgência                                                                                                      202212
+158003Serviço de Atenção Integral em Hanseniase Tipo III                                                                                                    202212
+159003Academia da Saúde                                                                                                                                     202212
+160003Segunda Opinião Formativa                                                                                                                             202212
+161003Equipe de Consultório na Rua - Modalidade III                                                                                                         202212
+162003PEDIÁTRICO                                                                                                                                            202212
+163003PEDIÁTRICO                                                                                                                                            202212
+164003Dispensação de OPM Ortopédica                                                                                                                         202212
+165003Serviço de Referência para Atenção Integral à Saúde de Crianças em Situação de Violência Sexual                                                       202212
+166003Água de Hemodiálise                                                                                                                                   202212
+167003OFTALMOLOGIA - PROJETO SAÚDE NA ESCOLA (PSE)                                                                                                          202212
+101003Saúde bucal MII                                                                                                                                       202212
+100004Atendimento em manicômio acima de 100 presos                                                                                                          202212
+101004Saúde da Família para a População Ribeirinha                                                                                                          202212
+104004Unidade de autorizações de TFD intermunicipais                                                                                                        202212
+105004Neurocirurgia vascular                                                                                                                                202212
+106004Assistência Domiciliar Terapêutica em AIDS-ADT                                                                                                        202212
+107004Diagnóstico em audiologia/otologia                                                                                                                    202212
+109004Unidade sócio-educativa com mais de 180 adolecentes                                                                                                   202212
+110004Vasectomia                                                                                                                                            202212
+112004Parto em gestação de alto risco                                                                                                                       202212
+113004Equipe Multidisciplinar de Apoio - EMAP                                                                                                               202212
+114004Moldagem/Manutenção                                                                                                                                   202212
+115004Serviço Residencial Terapêutico Tipo I - SRT tipo I                                                                                                   202212
+116004Cirurgia vascular                                                                                                                                     202212
+121004Ressonância magnética                                                                                                                                 202212
+122004Exame Eletroencefalográfico                                                                                                                           202212
+123004OPM oftalmológicas                                                                                                                                    202212
+125004Dispensação de medicamentos estratégicos                                                                                                              202212
+126004Assistência fisioterapêutica cardiovasculares e pneumo-funcionais                                                                                     202212
+128004Medicina transfusional                                                                                                                                202212
+130004Tratamento Nefrologia em Geral                                                                                                                        202212
+131004Projeto Olhar Brasil                                                                                                                                  202212
+132004Radioterapia                                                                                                                                          202212
+134004Práticas Corpo-mente                                                                                                                                  202212
+135004Reabilitação visual/mental/múltiplas deficiências                                                                                                     202212
+138004Diagnóstico e tratamento em cintura pélvica                                                                                                           202212
+139004Tratamento de recém-nascido com outras doenças congênitas                                                                                             202212
+140004Estabilização de paciente crítico/grave                                                                                                               202212
+141004Núcleo de vigilância hospitalar                                                                                                                       202212
+142004Do aparelho ginecológico                                                                                                                              202212
+145004Exames coprológicos                                                                                                                                   202212
+147004NASF 3                                                                                                                                                202212
+148004Fibrose cística                                                                                                                                       202212
+149004Pulmão                                                                                                                                                202212
+152004Saneamento a Populações Indígenas                                                                                                                     202212
+159004Estratégia de Saúde da Família                                                                                                                        202212
+162004QUEIMADOS                                                                                                                                             202212
+163004ADULTO                                                                                                                                                202212
+164004Manutenção e Adaptação de OPM Ortopédica                                                                                                              202212
+165004Serviço de Referência para Atenção Integral à Saúde de Homens em Situação de Violência Sexual                                                         202212
+166004Água Mineral                                                                                                                                          202212
+167004OFTALMOLOGIA - PROJETO BRASIL ALFABETIZADO (PBA)                                                                                                      202212
+173004Transporte                                                                                                                                            202212
+131005Diagnóstico em Oftalmologia por Telemedicina                                                                                                          202212
+130005Tratamento Diálitico Peritonial                                                                                                                       202212
+134005Homeopatia                                                                                                                                            202212
+135005Reabiliatação Auditiva                                                                                                                                202212
+138005Diagnóstico e tratamento em membros inferiores                                                                                                        202212
+139005Acompanhamento a pacientes com diagnósticos de Hiperplasia Adrenal Congênita                                                                          202212
+140005Atendimento ao paciente com Acidente Vascular Cerebral (AVC)                                                                                          202212
+145005Exames de uroanálise                                                                                                                                  202212
+148005Cirúrgico / Diagnóstico                                                                                                                               202212
+149005Córnea / Esclera                                                                                                                                      202212
+152005Atenção Especializada a Populações Indígenas                                                                                                          202212
+159005Saúde Bucal                                                                                                                                           202212
+162005DOENÇA CORONARIANA (UCO)                                                                                                                              202212
+164005Dispensação de OPM Auditiva                                                                                                                           202212
+165005Serviço de Referência para Atenção Integral à Saúde de Pessoas Idosas em Situação de Violência Sexual                                                 202212
+166005Alimentos                                                                                                                                             202212
+101005Saúde da Família para a População Ribeirinha-Saúde Bucal MI                                                                                           202212
+103005Unidade de Suporte Básico de vida: Equipe Embarcação                                                                                                  202212
+104005Unidade de autorizações de TFD interestaduais                                                                                                         202212
+105005Tratamento neurocirúrgico da dor funcional                                                                                                            202212
+106005Unidade Dispensadora de Medicamentos - UDM                                                                                                            202212
+107005Implante Coclear                                                                                                                                      202212
+109005Atenção Básica à Adolescentes em Unidade Socioeducativa                                                                                               202212
+112005Centro de parto normal                                                                                                                                202212
+113005Equipe de cuidados domiciliares                                                                                                                       202212
+114005Cirurgia oral                                                                                                                                         202212
+115005Serviço Residencial Terapêutico Tipo II - SRT tipo II                                                                                                 202212
+116005Cardiologia intervencionista (hemodinâmica)                                                                                                           202212
+122005Teste Ergométrico por Telemedicina                                                                                                                    202212
+123005OPM em gastroenterologia                                                                                                                              202212
+125005Dispensação de medicamentos básicos                                                                                                                   202212
+126005Assistência fisioterapêutica nas disfunções músculo-esqueléticas (todas as origens)                                                                   202212
+132005Oncologia cirúrgica                                                                                                                                   202212
+130006Tratamento em DRC                                                                                                                                     202212
+131006Projeto Olhar Brasil - Programa Saúde na Escola (PSE)                                                                                                 202212
+134006Termalismo/Crenoterapia                                                                                                                               202212
+139006Acompanhamento a pacientes com diagnósticos de Deficiência Biotinidase                                                                                202212
+140006Pronto Atendimento Clínico                                                                                                                            202212
+145006Exames hormonais                                                                                                                                      202212
+148006Acompanhamento pós-transplante de medula óssea                                                                                                        202212
+149006Fígado                                                                                                                                                202212
+159006Núcleo Ampliado de Saúde da Família e Atenção Primária                                                                                                202212
+164006Manutenção e Adaptação de OPM Auditiva                                                                                                                202212
+165006Serviço de referência para interrupção de gravidez nos casos previstos em LEI                                                                         202212
+166006Células, Tecidos e Órgãos                                                                                                                             202212
+101006Saúde da Família Fluvial                                                                                                                              202212
+103006Veículos de intervenção rápida                                                                                                                        202212
+104006Central Estadual de Regulação da Alta Complexidade                                                                                                    202212
+105006Investigação e cirurgia de epilepsia                                                                                                                  202212
+107006Triagem Auditiva Neonatal                                                                                                                             202212
+112006Casa da Gestante, Bebê e Puérpera                                                                                                                     202212
+114006Cirurgia buco-maxilo-facial                                                                                                                           202212
+115006UA Adulto                                                                                                                                             202212
+116006Cardiologia Endovascular Extracardíaco                                                                                                                202212
+121006Radiologia intervencionista                                                                                                                           202212
+122006Teste Holter por Telemedicina                                                                                                                         202212
+123006OPM em urologia                                                                                                                                       202212
+125006Farmácia Hospitalar                                                                                                                                   202212
+126006Assistência fisioterapêutica em queimados                                                                                                             202212
+131007Projeto Olhar Brasil - Programa Brasil Alfabetizado (PBA)                                                                                             202212
+134007Antroposofia Aplicada à Saúde                                                                                                                         202212
+126007Assistência fisioterapêutica nas alterações em neurologia                                                                                             202212
+125007Farmácia Viva                                                                                                                                         202212
+123007OPM em odontologia                                                                                                                                    202212
+122007Exame Eletrocardiografico por Telemedicina                                                                                                            202212
+121007Radiologia por telemedicina                                                                                                                           202212
+116007Cardiologia Clínica                                                                                                                                   202212
+115007UA Infantojuvenil                                                                                                                                     202212
+114007Atendimento à pessoa com deficiência                                                                                                                  202212
+112007Atenção especializada ao seguimento do recém-nascido e crianças egressos de unidades neonatais (ANEO)                                                 202212
+107007Diagnóstico em Audiologia/Otologia por Telemedicina                                                                                                   202212
+105007Tratamento endovascular                                                                                                                               202212
+104007Regulação Nacional de Alta Complexidade                                                                                                               202212
+103007Outros veículos                                                                                                                                       202212
+101007Saúde da Família Fluvial com Saúde Bucal                                                                                                              202212
+166007Medicamentos                                                                                                                                          202212
+165007Atenção Ambulatorial  ás Pessoas em Situação de Violência Sexual                                                                                      202212
+164007Dispensação de OPM Oftalmológica                                                                                                                      202212
+159007Atenção Primária para População Ribeirinha                                                                                                            202212
+149007Pâncreas                                                                                                                                              202212
+145007Exames de  vigilância epidemiológica e  ambiental                                                                                                     202212
+140007Pronto Atendimento Pediátrico                                                                                                                         202212
+135007Oficina Ortopédica Fixa                                                                                                                               202212
+122008Exame Eletroencefalografico por Telemedicina                                                                                                          202212
+126008Diagnóstico cinético funcional                                                                                                                        202212
+115008Unidade de Atenção em Regime Residencial                                                                                                              202212
+166008Saneantes Domissanitários                                                                                                                             202212
+165008Coleta de  Vestígios de Violência Sexual                                                                                                              202212
+134008Práticas Expressivas                                                                                                                                  202212
+135008Oficina Ortopédica Intinerante Terrestre                                                                                                              202212
+121008Ultra-sonografia por telemedicina                                                                                                                     202212
+140008Pronto Atendimento Obstétrico                                                                                                                         202212
+107008Atenção Especializada às Pessoas com Deficiência Auditiva                                                                                             202212
+145008Exames toxicológicos ou de monitorização terapêutica                                                                                                  202212
+149008Retirada de orgãos                                                                                                                                    202212
+152008Hospitalidade Indígena                                                                                                                                202212
+112008Atenção especializada gestação de alto risco (AGAR)                                                                                                   202212
+159008Consultório na Rua                                                                                                                                    202212
+123008OPM buco-maxilo-facial                                                                                                                                202212
+164008Manutenção e Adaptação de OPM Oftalmológica                                                                                                           202212
+105008Neurocirurgia funcional estereotáxica                                                                                                                 202212
+104008Regulação Ambulatorial de Média Complexidade                                                                                                          202212
+116008Serviço de Atenção Cardiovascular/Cardiologia Angiologia                                                                                              202212
+101008ESF Tipo I, II, III, IV ou Transitória                                                                                                                202212
+103008Ambulância de resgate                                                                                                                                 202212
+105009Polissonografia                                                                                                                                       202212
+166009Produtos para a Saúde                                                                                                                                 202212
+145009Exames microbiológicos                                                                                                                                202212
+121009Tomografia computadorizada por telemedicina                                                                                                           202212
+164009Substitução/Troca de OPM                                                                                                                              202212
+134009Ayurveda                                                                                                                                              202212
+123009Substituição/Troca em órteses/próteses                                                                                                                202212
+104009Regulação do Acesso a Ações e Serviços de Saúde                                                                                                       202212
+149009Pele                                                                                                                                                  202212
+140009Pronto Atendimento Psiquiátrico                                                                                                                       202212
+152009Gestão da Atenção e Saneamento à Populações Indígenas                                                                                                 202212
+122009Exame Eletroneuromiografia                                                                                                                            202212
+101009ESF Tipo I, II, III, IV ou Transitória com Saúde Bucal MI                                                                                             202212
+135009Oficina Ortopédica Intinerante Fluvial                                                                                                                202212
+115009Tratamento em Regime de Internação para Transtornos Mentais e Dependência Química                                                                     202212
+159009Atenção Primária para População Prisional                                                                                                             202212
+134010Práticas Naturais                                                                                                                                     202212
+159010Atenção Primária para Adolescentes em Unidade Socioeducativa                                                                                          202212
+123010OPM em queimados                                                                                                                                      202212
+135010Atenção Fonoaudiológica                                                                                                                               202212
+152010Saúde Bucal à Populações Indígenas                                                                                                                    202212
+103010Motolância                                                                                                                                            202212
+164010OPM em gastroenterologia                                                                                                                              202212
+149010Válvulas cardíacas                                                                                                                                    202212
+121010Ressonância magnética por telemedicina                                                                                                                202212
+166010Cosméticos                                                                                                                                            202212
+145010Exames em outros líquidos biológicos                                                                                                                  202212
+140010Pronto Atendimento Oftalmológico                                                                                                                      202212
+122010Exame videoeletroencefalografia                                                                                                                       202212
+101010ESF Tipo I, II, III, IV ou Transitória com Saúde Bucal MII                                                                                            202212
+123011OPM em nefrologia                                                                                                                                     202212
+122011Potenciais Evocados                                                                                                                                   202212
+121011Radiologia intervencionista por telemedicina                                                                                                          202212
+103011Unidade de Suporte Avançado de vida: Equipe Embarcação                                                                                                202212
+101011ESF Transitória                                                                                                                                       202212
+166011Desinfestantes                                                                                                                                        202212
+164011OPM em Urologia                                                                                                                                       202212
+149011Osteocondroligamentos                                                                                                                                 202212
+145011Exames de genética                                                                                                                                    202212
+140011Pronto Atendimento Odontológico                                                                                                                       202212
+135011Atenção Fisioterapeutica                                                                                                                              202212
+134011Práticas Manuais                                                                                                                                      202212
+135012Atenção à Saúde das Pessoas Ostomizadas I                                                                                                             202212
+123012OPM - Projeto Olhar Brasil                                                                                                                            202212
+103012Equipe Aeromédico                                                                                                                                     202212
+145012Exames para triagem neonatal                                                                                                                          202212
+121012Mamografia                                                                                                                                            202212
+101012Saúde da Família para a População Ribeirinha - Saúde Bucal MII                                                                                        202212
+134012Práticas Psicodinâmicas                                                                                                                               202212
+122012Potenciais Evocados por Telemedicina                                                                                                                  202212
+140012Pronto Socorro Pediátrico                                                                                                                             202212
+166012Imunobiológicos                                                                                                                                       202212
+149012Separação, avaliação biomicroscópica e conservação da córnea/esclera                                                                                  202212
+123013OPM Projeto Olhar Brasil - Programa Saúde na Escola (PSE)                                                                                             202212
+101013ESB MI                                                                                                                                                202212
+140013Pronto Socorro Obstétrico                                                                                                                             202212
+166013Insumos Farmacêuticos                                                                                                                                 202212
+149013Contagem endotelial corneana                                                                                                                          202212
+121013Mamografia por Telemedicina                                                                                                                           202212
+135013Atenção à Saúde das Pessoas Ostomizadas II                                                                                                            202212
+145013Exames imunohematológicos                                                                                                                             202212
+134013Ozônioterapia                                                                                                                                         202212
+149014Acompanhamento de paciente transplantado                                                                                                              202212
+166014Material Biológico                                                                                                                                    202212
+140014Pronto Socorro Cardiovascular                                                                                                                         202212
+123014OPM Projeto Olhar Brasil - Programa Brasil Alfabetizado (PBA)                                                                                         202212
+134014Aromaterapia                                                                                                                                          202212
+101014ESB MII                                                                                                                                               202212
+140015Pronto Socorro Neurologia/Neurocirurgia                                                                                                               202212
+166015Sangue e Hemoderivados                                                                                                                                202212
+134015Imposição de Mãos                                                                                                                                     202212
+149015Ações para doação e captação de órgãos e tecidos                                                                                                      202212
+149016Retirada de globo ocular humano para transplante                                                                                                      202212
+166016Surtos de Toxinfecção                                                                                                                                 202212
+140016Pronto Socorro Traumato-Ortopédico                                                                                                                    202212
+166017Diversos                                                                                                                                              202212
+140017Pronto Socorro Odontológico                                                                                                                           202212
+140018Pronto Socorro Oftalmológico                                                                                                                          202212
+140019Pronto Socorro Geral/Clínico                                                                                                                          202212

@@ -1,5 +1,5 @@
 MODEL (
-    name raw.sia__tipos,
+    name raw.sha__tipos,
     kind FULL
 );
 

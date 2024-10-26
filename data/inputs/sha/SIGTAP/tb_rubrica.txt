@@ -1,0 +1,30 @@
+040009Atendimento/acompanhamento em reabilitação física, mental, visual, auditiva e múltiplas deficiências202212
+040013Atendimento/acompanhamento de diagnóstico de doenças endocrinas/metabólicas e nutricionais          202212
+040017Nefrologia                                                                                          202212
+040024Cirurgia do aparelho digestivo, orgãos anexos e parede abdominal(inclui pré e pós operatório)       202212
+040028Outras cirurgias plásticas/reparadoras                                                              202212
+040030Sequenciais                                                                                         202212
+040032Transplantes de orgãos, tecidos e células                                                           202212
+040033Medicamentos para transplante                                                                       202212
+040038OPM para transplantes                                                                               202212
+040041Central Nacional de Regulação de Alta Complexidade (CNRAC)                                          202212
+040044Redesignação e Acompanhamento                                                                       202212
+040049Implementar Cirg. CV Pediátrica                                                                     202212
+040055Transplante - Histocompatibilidade                                                                  202212
+040062Doenças Raras                                                                                       202212
+040063Cadeiras de Rodas                                                                                   202212
+040065Medicamentos em Urgência                                                                            202212
+040066Cirurgias Eletivas - Componente Único                                                               202212
+040067Atenção Especializada em Saúde Auditiva                                                             202212
+040068Terapias Especializadas em Angiologia                                                               202212
+040069Tratamento de Doença Macular                                                                        202212
+040070OPME Não Relacionados ao Ato Cirúrgico                                                              202212
+040071Diagnóstico/tratamento em oncologia                                                                 202212
+040072Diagnóstico de trombofilia em gestante                                                              202212
+040073Reabilitação Pós-COVID-19                                                                           202212
+040074Telemedicina em Urgência                                                                            202212
+040075Fisioterapia Cardiovascular                                                                         202212
+040076Hemodinâmica em atendimento de urgência                                                             202212
+040077Exames Sorológicos e Imunológicos                                                                   202212
+040078QualiSUS Cardio.                                                                                    202212
+040079Pré-cirúrgico em Cirurgias Prioritárias                                                             202212

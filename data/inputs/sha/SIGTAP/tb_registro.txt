@@ -1,0 +1,10 @@
+01BPA (Consolidado)                                 202212
+02BPA (Individualizado)                             202212
+03AIH (Proc. Principal)                             202212
+04AIH (Proc. Especial)                              202212
+05AIH (Proc. Secundário)                            202212
+06APAC (Proc. Principal)                            202212
+07APAC (Proc. Secundário)                           202212
+08RAAS (Atenção Domiciliar)                         202212
+09RAAS (Atenção Psicossocial)                       202212
+10e-SUS APS (Atenção Primária à Saúde)              202212

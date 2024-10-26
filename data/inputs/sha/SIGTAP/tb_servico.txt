@@ -1,0 +1,73 @@
+100Serviço de Atenção a Saúde no Sistema Penitenciário                                                                     202212
+101Estratégia de Saúde da Família                                                                                          202212
+102Estratégias de Agentes Comunitário de Saúde                                                                             202212
+103Serviço de Atendimento Móvel de Urgências                                                                               202212
+104Regulação Assistêncial dos Serviços de Saúde                                                                            202212
+105Serviço de Atenção em Neurologia/ Neurocirurgia                                                                         202212
+106Serviço de Atenção a DST/HIV/AIDS                                                                                       202212
+107Serviço de Atenção a Saúde Auditiva                                                                                     202212
+108Serviço de Atenção a Saúde do Trabalhador                                                                               202212
+109Serviço de Atenção a Saúde dos Adolecentes em Conflito com a Lei, em Regime de Internação e Internação Provisória       202212
+110Serviço de Atenção a Saúde Reprodutiva                                                                                  202212
+111Serviço de Atenção ao Paciente com Tuberculose                                                                          202212
+112Serviço de Atenção ao Pré-Natal e Nascimento                                                                            202212
+113Serviço de Atenção Domiciliar                                                                                           202212
+114Serviço de Atenção em Saúde Bucal                                                                                       202212
+115Serviço de Atenção Psicossocial                                                                                         202212
+116Serviço de Atenção Cardiovascular/Cardiologia                                                                           202212
+117Serviço de Cirurgia Reparadora                                                                                          202212
+118Serviço de Cirurgia Torácica                                                                                            202212
+119Serviço de Controle de Tabagismo                                                                                        202212
+120Serviço de Diagnóstico por Anatomia Patológica e/ou Citopatologia                                                       202212
+121Diagnóstico por Imagem                                                                                                  202212
+122Serviço de Diagnóstico por Métodos Gráficos/Dinâmicos                                                                   202212
+123Serviço de Dispensação de Órteses, Próteses e Materiais Especiais                                                       202212
+124Serviço de Endocrinologia                                                                                               202212
+125Serviço de Farmácia                                                                                                     202212
+126Serviço de Fisioterapia                                                                                                 202212
+127Serviço de Atenção à Obesidade                                                                                          202212
+128Serviço de Hemoterapia                                                                                                  202212
+129Servico de Laboratório de Histocompatibilidade                                                                          202212
+130Atenção à Doença Renal Crônica                                                                                          202212
+131Serviço de Oftalmologia                                                                                                 202212
+132Serviço de Oncologia                                                                                                    202212
+133Serviço de Pneumologia                                                                                                  202212
+134Serviço de Práticas Integrativas e Complementares                                                                       202212
+135Serviço de Reabilitação                                                                                                 202212
+136Serviço de Suporte Nutricional                                                                                          202212
+137Serviço de Telemedicina                                                                                                 202212
+138Serviço de Traumato-Ortopedia                                                                                           202212
+139Serviço de Triagem Neonatal                                                                                             202212
+140Serviço de Urgência e Emergência                                                                                        202212
+141Serviço de Vigilância em Saúde                                                                                          202212
+142Serviço de Endoscopia                                                                                                   202212
+143Serviço Móvel de Urgência (exceto SAMU)                                                                                 202212
+144Serviço Posto de Coleta de Materiais Biológicos                                                                         202212
+145Serviço de Diagnóstico por Laboratório Clínico                                                                          202212
+146Serviço de Videolaparoscopia                                                                                            202212
+147Serviço de Apoio a Saúde da Família                                                                                     202212
+148Hospital-Dia                                                                                                            202212
+149Transplante                                                                                                             202212
+150Cirurgia Vascular                                                                                                       202212
+151Medicina Nuclear                                                                                                        202212
+152Atenção à Saúde da População Indígena                                                                                   202212
+153Atenção Especializada no Processo Transexualizador                                                                      202212
+154Serviço de Banco de Tecidos                                                                                             202212
+155Serviço de Traumatologia  Ortopedia                                                                                     202212
+156Serviço de Atenção á Saúde das Pessoas Ostomizadas                                                                      202212
+157Serviço de Laboratorio de Protese Dentaria                                                                              202212
+158Serviço de Atenção Integral em Hanseniase                                                                               202212
+159Atenção Primária                                                                                                        202212
+160Teleconsultoria                                                                                                         202212
+161Consultório na Rua                                                                                                      202212
+162Serviço de Terapia Intensiva                                                                                            202212
+163Serviço de Cuidados Intermediários                                                                                      202212
+164Serviço de Órteses,Próteses e Materiais Especiais em Reabilitação                                                       202212
+165Atenção às Pessoas em Situação de Violência Sexual                                                                      202212
+166Serviço de  Análise Laboratorial  de Produtos Sujeitos á  Vigilância Sanitária                                          202212
+167Atendimento Itinerante de Asistência e Ensino em Saúde                                                                  202212
+168Atenção Às Pessoas com Doenças Raras                                                                                    202212
+169Serviço de Atenção em Urologia                                                                                          202212
+170Comissões e Comitês                                                                                                     202212
+173Logística de Imunobiológicos                                                                                            202212
+174Imunização                                                                                                              202212

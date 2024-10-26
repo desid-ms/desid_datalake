@@ -32,7 +32,8 @@ AUDIT (
   dialect duckdb
 );
 -- Para municipios
--- •	(crítica 210) o valor da receita realizada bruta de IPTU (coluna  c), conta 1.1.1.8.01.1.0 não pode ser igual a zero (exceto municípios com código: 130020  130063  130115  130230  290590  292420  251335  140002  140023  140028  140040  140050  140060  140070);
+-- •	(crítica 210) o valor da receita realizada bruta de IPTU (coluna  c), conta 1.1.1.8.01.1.0 não pode ser igual a zero 
+-- (exceto municípios com código: 130020  130063  130115  130230  290590  292420  251335  140002  140023  140028  140040  140050  140060  140070);
 -- somar para dar o valor da mãe
 WITH RECURSIVE constants (exceptions) AS (
       SELECT ARRAY[130020, 130063, 130115, 130230, 290590, 292420, 251335, 
