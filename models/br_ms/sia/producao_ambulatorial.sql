@@ -20,27 +20,24 @@ SELECT
    pa.SUM_NU_PA_QTDAPR as quantidade_aprovada,
    pa.SUM_NU_PA_VALPRO::decimal(18,2) as valor_produzido,
    pa.SUM_NU_PA_VALAPR::decimal(18,2) as valor_aprovado,
-   (valor_produzido/quantidade_produzida) as valor_unitario, -- valor_produzido/quantidade_produzida
-   (pa.SUM_NU_PA_TOT/pa.LINHAS)::decimal(18,2) as valor_unitario_tabela_sigtap 
- FROM
+  --  (valor_produzido/quantidade_produzida) as valor_unitario, -- valor_produzido/quantidade_produzida
+  --  (pa.SUM_NU_PA_TOT/pa.LINHAS)::decimal(18,2) as valor_unitario_tabela_sigtap 
+FROM
    raw.sia__tb_pa pa
- LEFT JOIN
-   br_mte.cbo o ON LPAD(pa.co_pa_cbocod, 6, '0') = LPAD(o.cbo_2002, 6, '0')  -- Left Padding para lidar com os zeros
- LEFT JOIN
-    raw.sia__valor_pab f on f.proc_rea = pa.co_pa_proc_id
- LEFT JOIN raw.sha__tipos t1 ON pa.co_pa_tpfin::int = t1.chave::int
-        AND t1.id_tabela = 'producao_ambulatorial' AND t1.nome_coluna = 'tipo_financiamento_producao'
- LEFT JOIN
-   sha.procedimentos proc ON pa.co_pa_proc_id::int = proc.codigo_procedimento::int
- LEFT JOIN
-   sha.provedores e ON e.id_provedor::int = pa.co_pa_coduni::int AND e.competencia::int = pa.co_pa_cmp::int
+LEFT JOIN
+   br_mte.cbo o ON LPAD(pa.co_pa_cbocod, 6, '0') = LPAD(o.cbo_2002, 6, '0')
+LEFT JOIN
+   raw.sia__valor_pab f on f.proc_rea = pa.co_pa_proc_id
+LEFT JOIN 
+   raw.sha__tipos t1 ON CAST(pa.co_pa_tpfin AS INTEGER) = CAST(t1.chave AS INTEGER)
+   AND t1.id_tabela = 'producao_ambulatorial' 
+   AND t1.nome_coluna = 'tipo_financiamento_producao'
+LEFT JOIN
+  sha.procedimentos proc ON CAST(pa.co_pa_proc_id AS INTEGER) = CAST(proc.codigo_procedimento AS INTEGER)
+LEFT JOIN
+   sha.provedores e ON CAST(e.id_provedor AS INTEGER) = CAST(pa.co_pa_coduni AS INTEGER) 
+   AND CAST(e.competencia AS INTEGER) = CAST(pa.co_pa_cmp AS INTEGER)
+WHERE 
+   pa.co_pa_tpfin not in ('02', '07')
+   AND pa.SUM_NU_PA_QTDPRO > 0
  
-
--- Quadro 4 – Variável CBO
-
--- SE PA_CBOCOD CBO 352210, 515105, 515120, 515125, 515130 ACS7 Caso Contrário Outro
-
-
--- Quadro 5 – Variável SAUDE
-
--- SE PA_CBOCOD SAUDE 322415, 3516058, CBO = ACS 0 Caso Contrário 1

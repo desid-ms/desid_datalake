@@ -80,8 +80,8 @@ def execute(
         FROM SIA.TB_PA
         WHERE CO_PA_CMP >= '202201'
         AND CO_PA_CMP < '202301'
-        AND NU_PA_VALPRO > 0
-        AND NU_PA_VALAPR > 0
+        AND NU_PA_VALPRO >= 0
+        AND NU_PA_VALAPR >= 0
         GROUP BY
             CO_PA_CMP, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_TPUPS,
             CO_PA_TPFIN, CO_PA_TIPPRE, CO_PA_CBOCOD, CO_PA_PROC_ID, CO_NATUREZA_JUR
