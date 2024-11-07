@@ -55,10 +55,8 @@ main_query as (
 
 SELECT 
     m.*,
-    p.nome_proc as procedimento,
-    p.fonte,
-    p.co_financiamento,
-    p.valor_2022 
+    p.*
 FROM main_query m
-LEFT JOIN read_csv('data/inputs/sha/valor_procedimentos.csv') p 
-    ON m.co_procedimento = p.proc_rea; -- planilha Raulino
+LEFT JOIN sha.procedimentos p 
+    ON m.co_procedimento = p.codigo_procedimento;
+    

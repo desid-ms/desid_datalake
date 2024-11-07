@@ -2511,7 +2511,7 @@
   "nome_coluna": "complexidade_procedimento",
   "chave": "1",
   "cobertura_temporal": "(1).0",
-  "valor": "atencao basica (pab)"
+  "valor": "01 - Atenção Básica (PAB)"
 }, {
   "id_tabela": "producao_ambulatorial",
   "nome_coluna": "tipo_financiamento_producao",
@@ -2529,25 +2529,25 @@
   "nome_coluna": "tipo_financiamento_producao",
   "chave": "5",
   "cobertura_temporal": "(1).0",
-  "valor": "incetivo - mac"
+  "valor": "Incentivo MAC"
 }, {
   "id_tabela": "producao_ambulatorial",
   "nome_coluna": "tipo_financiamento_producao",
   "chave": "1",
   "cobertura_temporal": "(1).0",
-  "valor": "atencao basica (pab)"
+  "valor": "PAB"
 }, {
   "id_tabela": "producao_ambulatorial",
   "nome_coluna": "tipo_financiamento_producao",
   "chave": "6",
   "cobertura_temporal": "(1).0",
-  "valor": "media e alta complexidade - mac"
+  "valor": "MAC"
 }, {
   "id_tabela": "producao_ambulatorial",
   "nome_coluna": "tipo_financiamento_producao",
   "chave": "4",
   "cobertura_temporal": "(1).0",
-  "valor": "fundo de acoes estrategicas e compensacoes faec"
+  "valor": "FAEC"
 }, {
   "id_tabela": "producao_ambulatorial",
   "nome_coluna": "tipo_financiamento_producao",

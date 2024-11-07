@@ -8,6 +8,9 @@ import os
 
 @model(
     "raw.sia__tb_pa",
+    kind = dict (name = ModelKindName.INCREMENTAL_BY_TIME_RANGE, time_column ="CO_PA_CMP"),
+    start = "2022-01-01",
+    end = "2022-12-31",
     columns={
       
         "CO_PA_CMP": "TEXT",
@@ -80,7 +83,7 @@ def execute(
         FROM SIA.TB_PA
         WHERE CO_PA_CMP >= '202201'
         AND CO_PA_CMP < '202301'
-        AND NU_PA_VALPRO >= 0
+        AND NU_PA_VALPRO >= 0 -- Atenção Básica vem com valor zerado, mas precisamos das quantidades
         AND NU_PA_VALAPR >= 0
         GROUP BY
             CO_PA_CMP, CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_TPUPS,

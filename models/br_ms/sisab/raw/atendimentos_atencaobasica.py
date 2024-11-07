@@ -8,6 +8,10 @@ import os
 
 @model(
    "raw.sisab__es",
+   kind=dict(
+        name=ModelKindName.INCREMENTAL_BY_UNIQUE_KEY,
+        unique_key="ID_ATENDIMENTO"
+    ),
    columns={
        "ANO": "INTEGER",
        "COMPETENCIA": "INTEGER",
@@ -66,10 +70,10 @@ def execute(
     """
 
     try:
-        # Establish the connection
         with cx_Oracle.connect(username, password, dsn, encoding="UTF-8") as connection:
-            df = pd.read_sql(query, connection)
-        return df
+            for chunk in pd.read_sql(query, connection, chunksize = 4_000_000):
+                yield chunk
+
     except cx_Oracle.Error as error:
         print("Error while connecting to Oracle Database:", error)
         raise
