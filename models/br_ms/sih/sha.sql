@@ -9,7 +9,7 @@ SELECT
     'outro' as tipo_profissional, -- internações não são realizadas por agentes comunitários
     cnes_provedor, -- código do estabelecimento provedor do cuidado no CNES (Cadastro Nacional de Estabelecimentos de Saúde)
     e.tipo_provedor, -- tipo do estabelecimento provedor do cuidado (publico federal, contratado, sem fins lucrativos etc) durante a competencia (mes, ano) do registro ambulatorial
-    e.tipo_gestao,
+    -- e.tipo_gestao,
     e.codigo_SHA as HP,
     p.codigo_procedimento,
     p.codigo_sha as HC,

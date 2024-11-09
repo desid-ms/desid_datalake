@@ -12,7 +12,11 @@ SELECT
 FROM
    raw.sia__tb_pa pa
 WHERE 
-   pa.co_pa_tpfin not in ('02', '07')
+   pa.co_pa_tpfin not in 
+      (
+         '02', -- assitencia farmaceutica 
+         '07'  -- vigilancia em saude
+      ) 
    AND pa.SUM_NU_PA_QTDPRO > 0
  
 

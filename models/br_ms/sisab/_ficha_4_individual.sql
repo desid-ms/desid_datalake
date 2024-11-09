@@ -29,6 +29,7 @@ atendimentos_pca AS (
    GROUP BY ID_ATENDIMENTO
 ),
 
+
 main_query as ( 
     SELECT
        S.*,
@@ -36,7 +37,7 @@ main_query as (
            CASE 
                WHEN T1.valor = 'Domicílio' THEN 301010137
                WHEN T2.valor = 'Escuta inicial / Orientação' THEN 301040079
-               WHEN T2.valor = 'Atendimento de urgência' THEN 301060037
+               WHEN T2.valor = 'Atendimento de urgência' THEN 0301060037
            END,
            pca.CO_PROCEDIMENTO,
            rs.CO_PROCEDIMENTO,
@@ -46,11 +47,12 @@ main_query as (
            END
        ) AS CO_PROCEDIMENTO
     FROM raw.sisab__es S
-    LEFT JOIN tipos t1 ON t1.tabela = 'LOCAL_DE_ATENDIMENTO' AND t1.chave = S.CO_LOCAL_ATENDIMENTO
-    LEFT JOIN tipos t2 ON t2.tabela = 'TIPO_ATENDIMENTO' AND t2.chave = S.CO_TIPO_ATENDIMENTO
+    LEFT JOIN raw.sisab__tipos t1 ON t1.tabela = 'LOCAL_DE_ATENDIMENTO' AND t1.chave = S.CO_LOCAL_ATENDIMENTO
+    LEFT JOIN raw.sisab__tipos t2 ON t2.tabela = 'TIPO_ATENDIMENTO' AND t2.chave = S.CO_TIPO_ATENDIMENTO
     LEFT JOIN atendimentos_pca pca ON pca.ID_ATENDIMENTO = S.ID_ATENDIMENTO
     LEFT JOIN atendimentos_rs rs ON rs.ID_ATENDIMENTO = S.ID_ATENDIMENTO
-    WHERE CO_TIPO_FICHA_ATENDIMENTO = 4 -- Ficha de Atendimento Individual
+
+    WHERE CO_TIPO_FICHA_ATENDIMENTO = 4
 )
 
 SELECT 
@@ -58,5 +60,5 @@ SELECT
     p.*
 FROM main_query m
 LEFT JOIN sha.procedimentos p 
-    ON m.co_procedimento = p.codigo_procedimento;
+    ON m.co_procedimento::int = p.codigo_procedimento::int;
     

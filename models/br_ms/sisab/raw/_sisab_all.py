@@ -24,9 +24,7 @@ def get_pool():
         dsn=dsn, 
         min=1,
         max=5,
-        increment=1,
-        encoding="UTF-8",
-        threaded=True  # Enable threading support
+        increment=1
     )
 
 @model(

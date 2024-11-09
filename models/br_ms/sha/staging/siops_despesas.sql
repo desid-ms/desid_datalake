@@ -16,8 +16,19 @@ DESPESAS_NAO_CONSIDERADAS_APURACAO_MINIMO AS (
     SELECT competencia, ibge, SUM(despesa_liquidada) AS valor
     FROM siops.despesas
     WHERE
-        conta IN (
-            'ACDO000004', -- Inativos e pensionistas
+        fonte = 'Receitas Impostos e Transf.'
+    AND conta IN ( 
+            '3.1.90.01.00.00', --   Aposentadorias do RPPS, Reserva Remunerada e Reforma dos Militares
+            '3.1.90.03.00.00', --   Pensões do RPPS e do Militar
+            '3.1.90.05.00.00', --	Outros Benefícios Previdenciários do Servidor ou do Militar
+            '3.1.90.92.01.00', --	Aposentadorias, Reserva Remunerada e Reformas dos Militares
+            '3.1.90.92.03.00', --	Pensões do RPPS e do Millitar
+            '3.1.90.92.05.00', --	Outros Benefícios Previdenciários do Servidor ou do Militar
+            '3.1.90.94.03.00', --	Indenizações e Restituições Trabalhistas - Inativo Civil
+            '3.1.90.94.04.00', --	Indenizações e Restituições Trabalhistas - Inativo Militar
+            '3.1.90.94.06.00', --	Indenizações e Restituições Trabalhistas - Pensionista Militar
+            '3.1.90.94.13.00', --	Indenizações e Restituições Trabalhistas - Pensionista Civil
+            -- As contas 3.1.90.* acima totalizam na ACDO000004
             'ACDO000005' -- Despesas correntes com outras ações e serviços não computados
         )
     GROUP BY
@@ -27,7 +38,7 @@ DESPESAS_COM_MEDICAMENTOS AS (
     SELECT competencia, ibge, SUM(despesa_liquidada) AS valor
     FROM siops.despesas
     WHERE
-        conta IN ('3.3.30.30.01.00', '3.3.40.30.01.00', '3.3.90.30.09.00', '3.3.91.30.09.00')
+        conta IN ('3.3.30.30.01.00', '3.3.40.30.01.00', '3.3.90.30.09.01', '3.3.90.30.09.02', '3.3.91.30.09.00')
     AND fonte = 'Receitas Impostos e Transf.'
     GROUP BY
         competencia, ibge
