@@ -31,9 +31,9 @@ SELECT * from sih.sha
 --     PAB_n::bigint as PAB_n,
 --     PAB_valor::DOUBLE AS PAB_valor
 -- FROM (
---     PIVOT sha.registros
---     ON tipo_financiamento
---     USING sum(n) as n, sum(valor) as valor
---     GROUP BY fonte, ano_competencia, tipo_profissional, tipo_provedor
---     ORDER BY ALL
+    -- PIVOT sha.registros
+    -- ON tipo_financiamento
+    -- USING sum(n) as n, sum(valor) as valor
+    -- GROUP BY fonte, ano_competencia, tipo_profissional, tipo_provedor
+    -- ORDER BY ALL
 -- )) to 'data/outputs/sha/sha_consolidado.xlsx' WITH (FORMAT GDAL, DRIVER 'xlsx');

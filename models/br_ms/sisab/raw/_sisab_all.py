@@ -5,27 +5,8 @@ from sqlmesh import ExecutionContext, model
 from sqlmesh.core.model.kind import ModelKindName
 import oracledb
 import os
+from lib.db_utils import OracleConfig, QueryExecutor
 
-
-oracledb.init_oracle_client()
-
-
-def get_pool():
-    host = 'exaccrjdr-scan.saude.gov'
-    port = '1521'
-    service_name = 'DFPO1DR.saude.gov'
-    dsn = f"""(DESCRIPTION=
-            (ADDRESS=(PROTOCOL=TCP)(HOST={host})(PORT={port}))
-            (CONNECT_DATA=(SERVICE_NAME={service_name})))"""
-            
-    return oracledb.create_pool(
-        user=os.environ['ORACLE_USR'],
-        password=os.environ['ORACLE_PWD'],
-        dsn=dsn, 
-        min=1,
-        max=5,
-        increment=1
-    )
 
 @model(
     "raw.sisab",
@@ -72,37 +53,30 @@ def execute(
     end: datetime,
     execution_time: datetime,
     **kwargs: t.Any,
-) -> pd.DataFrame:  # Added return type annotation
+):  # Added return type annotation
     
+    config = OracleConfig('DFPO1DR.saude.gov')
+    executor = QueryExecutor(config)
+       
     query = """
-        SELECT *
-        FROM DBSISAB.VW_SISAB_CGES
-        WHERE COMPETENCIA BETWEEN :start_date AND :end_date
-        AND ST_REGISTRO_ATIVO = 'S'
+        SELECT a.*
+        FROM (
+            SELECT 
+                b.*,
+                ROW_NUMBER() OVER (ORDER BY ID_ATENDIMENTO) as rn
+            FROM DBSISAB.VW_SISAB_CGES b
+            WHERE COMPETENCIA BETWEEN :start_date AND :end_date
+            AND ST_REGISTRO_ATIVO = 'S'
+        ) a
+        WHERE a.rn > :offset
+        ORDER BY a.rn
     """
     
     params = {
         'start_date': '202201',
-        'end_date': '202212'
+        'end_date': '202212',
+        'offset': executor.checkpoint.current_offset
     }
     
-    pool = None
-    try:
-        pool = get_pool()
-        with pool.acquire() as connection:
-            for chunk in pd.read_sql(
-                query, 
-                con=connection, 
-                params=params,
-                chunksize=4_000_000
-            ): yield chunk            
-    
-    except oracledb.Error as error:
-        print(f"Oracle Database Error: {error}")
-        raise
-    except Exception as e:
-        print(f"Unexpected error: {e}")
-        raise
-    finally:
-        if pool:
-            pool.close()
+    for chunk in executor.execute_query(query, params):
+        yield chunk
