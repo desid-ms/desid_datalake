@@ -4,16 +4,15 @@ MODEL (
 );
 
 WITH DESPESAS_CORRENTES AS (
-    SELECT competencia, ibge, SUM(despesa_liquidada) AS valor 
+    SELECT competencia, ibge, fonte, destinacao, SUM(despesa_liquidada) AS valor 
     FROM siops.despesas
     WHERE 
         LEFT (conta, 2) = '3.' -- apenas despesas correntes
         AND fonte = 'Receitas Impostos e Transf.'
-    GROUP BY 
-        competencia, ibge
+    GROUP BY ALL
 ),
 DESPESAS_NAO_CONSIDERADAS_APURACAO_MINIMO AS (
-    SELECT competencia, ibge, SUM(despesa_liquidada) AS valor
+    SELECT competencia, ibge, fonte, destinacao, SUM(despesa_liquidada) AS valor
     FROM siops.despesas
     WHERE
         fonte = 'Receitas Impostos e Transf.'
@@ -31,21 +30,21 @@ DESPESAS_NAO_CONSIDERADAS_APURACAO_MINIMO AS (
             -- As contas 3.1.90.* acima totalizam na ACDO000004
             'ACDO000005' -- Despesas correntes com outras ações e serviços não computados
         )
-    GROUP BY
-        competencia, ibge
+    GROUP BY ALL
     ),
 DESPESAS_COM_MEDICAMENTOS AS (
-    SELECT competencia, ibge, SUM(despesa_liquidada) AS valor
+    SELECT competencia, ibge, fonte, destinacao, SUM(despesa_liquidada) AS valor
     FROM siops.despesas
     WHERE
         conta IN ('3.3.30.30.01.00', '3.3.40.30.01.00', '3.3.90.30.09.01', '3.3.90.30.09.02', '3.3.91.30.09.00')
     AND fonte = 'Receitas Impostos e Transf.'
-    GROUP BY
-        competencia, ibge
+    GROUP BY ALL
 )
 SELECT 
     left(correntes.competencia, 4) as competencia,
     correntes.ibge,
+    correntes.fonte, 
+    correntes.destinacao,
     correntes.valor as despesas_correntes,
     COALESCE(naoconsideradas.valor, 0) as despesas_nao_consideradas_apuracao_minimo,
     COALESCE(medicamentos.valor, 0) as despesas_medicamentos,
@@ -54,8 +53,12 @@ FROM DESPESAS_CORRENTES correntes
 LEFT JOIN DESPESAS_NAO_CONSIDERADAS_APURACAO_MINIMO naoconsideradas
     ON correntes.competencia = naoconsideradas.competencia
     AND correntes.ibge = naoconsideradas.ibge
+    AND correntes.fonte = naoconsideradas.fonte
+    AND correntes.destinacao = naoconsideradas.destinacao
 LEFT JOIN DESPESAS_COM_MEDICAMENTOS medicamentos
     ON correntes.competencia = medicamentos.competencia
     AND correntes.ibge = medicamentos.ibge
+    AND correntes.fonte = medicamentos.fonte
+    AND correntes.destinacao = medicamentos.destinacao;
 
 

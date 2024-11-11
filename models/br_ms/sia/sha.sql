@@ -7,10 +7,11 @@ SELECT
     'SIA' as fonte,
     left(MAX(a.competencia), 4) as ano_competencia,
     CASE 
-        WHEN LEFT(a.cbo_executante,4) IN 
-            ('3522', -- Agentes da saúde e do meio ambiente no br_mte.cbo
-            '5151', -- Agentes comunitários de saúde e afins
-            ) THEN 'acs' ELSE 'outro'
+        -- WHEN LEFT(a.cbo_executante,4) IN 
+        --     ('3522', -- Agentes da saúde e do meio ambiente no br_mte.cbo
+        --     '5151', -- Agentes comunitários de saúde e afins
+        --     ) THEN 'acs' ELSE 'outro'
+        WHEN a.cbo_executante IN ('352210', '515105', '515120', '515125', '515130') THEN 'acs' ELSE 'outro'
     END as tipo_profissional, -- profisional de saúde responsável pelo cuidado é Agente Comunitário de Saúde (ACS) ou outro tipo de profissional
     a.cnes_estabelecimento as cnes_provedor, -- código do estabelecimento provedor do cuidado no CNES (Cadastro Nacional de Estabelecimentos de Saúde)
     e.tipo_provedor, -- tipo do estabelecimento provedor do cuidado (publico federal, contratado, sem fins lucrativos etc) durante a competencia (mes, ano) do registro ambulatorial

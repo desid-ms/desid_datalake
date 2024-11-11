@@ -7,6 +7,7 @@ SELECT
     e.nu_comp AS competencia,
     e.co_cnes AS id_estabelecimento_cnes,
     t1.valor AS tipo_unidade,
+    e.co_municipio_gestor as ibge,
     t2.valor AS tipo_gestao,
     t3.valor AS tipo_pessoa,
     t4.valor AS tipo_natureza_administrativa,
