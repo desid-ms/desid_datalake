@@ -18,8 +18,8 @@ SELECT
       WHEN '06' THEN 'MAC'
       ELSE 'INVÁLIDO'
    END as tipo_financiamento, -- código do tipo de financimento da produção 
-   pa.SUM_NU_PA_QTDPRO as quantidade_produzida, -- quantidade de procedimentos realizados
-   pa.SUM_NU_PA_QTDAPR as quantidade_aprovada, -- quantidade de procedimentos realizados
+   pa.NU_PA_QTDPRO as quantidade_produzida, -- quantidade de procedimentos realizados
+   pa.NU_PA_QTDAPR as quantidade_aprovada, -- quantidade de procedimentos realizados
 FROM
    raw.sia__tb_pa pa
    LEFT JOIN br_ms.territorio t on t.codigo_municipio = pa.co_pa_gestao
@@ -29,5 +29,5 @@ FROM
          '02', -- assitencia farmaceutica 
          '07'  -- vigilancia em saude
       )
-   and (pa.SUM_NU_PA_QTDPRO > 0 or pa.SUM_NU_PA_QTDAPR > 0)
+   and (NU_PA_QTDPRO > 0 or NU_PA_QTDAPR > 0)
  

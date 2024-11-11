@@ -3,7 +3,7 @@ from datetime import datetime
 import pandas as pd
 from sqlmesh import ExecutionContext, model
 from sqlmesh.core.model.kind import ModelKindName
-import cx_Oracle
+import oracledb
 import os
 
 @model(
@@ -140,7 +140,8 @@ def execute(
     host = 'exaccdfdr-scan.saude.gov'
     port = '1521'
     service_name = 'RJPO1DR.saude.gov'
-    dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
+    dsn = f"{host}:{port}/{service_name}"
+    
     query = """
         SELECT
             CO_PA_CODUNI, CO_PA_GESTAO, CO_PA_CONDIC, CO_PA_UFMUN, 
@@ -160,10 +161,12 @@ def execute(
         AND CO_PA_CMP <= '202212'
     """
     try:
-        with cx_Oracle.connect(username, password, dsn, encoding="UTF-8") as connection:
-            for chunk in pd.read_sql(query, connection, chunksize = 4_000_000):
+        with oracledb.connect(user=username, 
+                            password=password, 
+                            dsn=dsn) as connection:
+            for chunk in pd.read_sql(query, connection, chunksize = 6_000_000):
                 yield chunk
 
-    except cx_Oracle.Error as error:
+    except oracledb.Error as error:
         print("Error while connecting to Oracle Database:", error)
         raise
