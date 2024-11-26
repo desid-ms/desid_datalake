@@ -5,6 +5,9 @@ gateways:
         connection:
             type: duckdb
             database: data/catalog.db
+            connector_config:
+                threads: 16
+                memory_limit: 45G
             extensions: [spatial, sqlite]
         state_connection:
             type: duckdb

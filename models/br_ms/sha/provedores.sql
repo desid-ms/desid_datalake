@@ -1,3 +1,4 @@
+-- Provedores de cuidado no Brasil de acordo com a base de dados do CNES e classificação SHA
  MODEL (
     name sha.provedores,
     kind FULL
@@ -5,36 +6,29 @@
 
 
 SELECT
-   e.nu_comp AS competencia,
-   e.co_cnes AS id_provedor, -- código cnes do estabelevimento provedor de cuidados
-   h.hp_code as codigo_sha,
-   e.tp_unidade AS codigo_tpups, -- código cnes do tipo da unidade (estabelecimento de saúde)
-   t1.valor AS tipo_unidade,
-   e.co_natureza_jur AS codigo_natureza_juridica, --código cnes da natureza jurídica 
-   n.descricao AS natureza_juridica,
+   e.competencia, -- Ano e mês da competência do registro do estabelecimento: YYYYMM
+   e.id_estabelecimento_cnes AS id_provedor, -- Código CNES do estabelecimento provedor de cuidados
+   e.tipo_estabelecimento, -- Tipo de estabelecimento conforme CNES (ex. pronto socorro geral, hospital geral, centro de imunizacao etc)
+   h.hp_code as codigo_sha, -- Código da função SHA correspondente ao tipo de estabelecimento
+    --    e.natureza_juridica, --  Natureza jurídica do estabelecimento conforme CNES
    COALESCE(
        CASE 
-           WHEN e.co_natureza_jur IN ('1015', '1040', '1074', '1104', '1139', '1163', '1252') THEN 'federal'
-           WHEN e.co_natureza_jur IN ('1023', '1058', '1082', '1112', '1147', '1171', '1236', '1260') THEN 'estadual'
-           WHEN e.co_natureza_jur IN ('1031', '1066', '1120', '1155', '1180', '1244', '1279') THEN 'municipal'
-           WHEN e.co_natureza_jur IN ('1198', '1201', '1210', '1228') AND e.tp_gestao = 'M' THEN 'municipal'
-           WHEN e.co_natureza_jur IN ('1198', '1201', '1210', '1228') AND e.tp_gestao = 'E' THEN 'estadual'
-           WHEN e.co_natureza_jur IN ('1198', '1201', '1210', '1228') THEN 'outra entidade pública'
-           WHEN e.co_natureza_jur BETWEEN '2000' and '2999' THEN 'contratado'
-           WHEN e.co_natureza_jur BETWEEN '3000' and '3999' THEN 'sem fins lucrativos'
-       END,
-    'ignorado'
-   ) AS tipo_provedor,
-       
-   e.tp_gestao AS codigo_tipo_gestao, --código cnes do tipo de gestão 
-   t2.valor AS tipo_gestao
+           WHEN n.descricao LIKE '%Federal%' THEN 'administracao publica federal'
+           WHEN n.descricao LIKE '%Estadual%' THEN 'administracao publica estadual'
+           WHEN n.descricao LIKE '%Municipal%' THEN 'administracao publica municipal'
+           WHEN e.codigo_natureza_juridica IN ('1341')  THEN 'administracao publica federal' -- União
+           WHEN e.codigo_natureza_juridica IN ('1244')  THEN 'administracao publica municipal' -- Município
+           WHEN e.codigo_natureza_juridica IN ('1198', '1201', '1210', '1228') AND e.tipo_gestao = 'municipal' THEN 'administracao publica municipal' -- Fundo, Comissão, Consórcio Municipal
+           WHEN e.codigo_natureza_juridica IN ('1198', '1201', '1210', '1228') AND e.tipo_gestao = 'estadual' THEN 'administracao publica estadual'-- Fundo, Comissão, Consórcio Estadual
+           WHEN e.codigo_natureza_juridica BETWEEN '1000' and '1999' THEN 'outra administracao publica'
+           WHEN e.codigo_natureza_juridica BETWEEN '2000' and '2999' THEN 'contratado' -- entidades empresariais
+           WHEN e.codigo_natureza_juridica BETWEEN '3000' and '3999' THEN 'sem fins lucrativos' -- entidades sem fins lucrativos
+           WHEN e.codigo_natureza_juridica BETWEEN '4000' and '4999' THEN 'contratado' -- pessoa física
+           WHEN e.codigo_natureza_juridica BETWEEN '5000' and '5999' THEN 'instituicao extraterritorial' -- organização internacional e outras instituicoes extraterritoriais
+END,
+    'desconhecido'
+   ) AS tipo_provedor, -- Indicador to tipo de provedor: 'administracao publica federal', 'administracao publica estadual', 'administracao publica municipal', 'outra administracao publica', 'contratado', 'sem fins lucrativos', 'instituicao extraterritorial', 'desconhecido'
 FROM
-   raw.cnes__tb_comp_estabelecimento e
-   LEFT JOIN raw.cnes__tipos t1 ON e.tp_unidade::int = t1.chave::int
-       AND t1.id_tabela = 'estabelecimento' AND t1.nome_coluna = 'tipo_unidade'
-   LEFT JOIN raw.cnes__tipos t2 ON e.tp_gestao = t2.chave
-       AND t2.id_tabela = 'estabelecimento' AND t2.nome_coluna = 'tipo_gestao'
-   LEFT JOIN raw.cnes__tipos t3 ON e.tp_pfpj::int = t3.chave::int
-       AND t3.id_tabela = 'estabelecimento' AND t3.nome_coluna = 'tipo_pessoa'
-   LEFT JOIN raw.cnes__naturezas_juridicas n ON e.co_natureza_jur::int = n.id_natureza_juridica::int
-   LEFT JOIN raw.sha__tpups_hps h ON h.TPUPS::int = e.tp_unidade::int
+   cnes.estabelecimentos e
+   LEFT JOIN raw.cnes__naturezas_juridicas n ON e.codigo_natureza_juridica::int = n.id_natureza_juridica::int
+   LEFT JOIN raw.sha__tpups_hps h ON h.TPUPS::int = e.codigo_tipo_estabelecimento::int

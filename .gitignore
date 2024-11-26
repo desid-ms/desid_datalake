@@ -16,6 +16,7 @@ __pycache__
 **/*/*.ipynb_checkpoints*
 
 data/inputs/apurasus
+data/inputs/basedosdados
 data/inputs/compras
 data/inputs/materiais
 data/inputs/uasgs
@@ -23,3 +24,4 @@ data/inputs/siops
 data/inputs/sisab
 data/inputs/compras.parquet
 data/inputs/pdms.csv
+data/outputs/**/*/

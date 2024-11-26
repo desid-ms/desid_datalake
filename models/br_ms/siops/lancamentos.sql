@@ -1,3 +1,4 @@
+-- Lançamentos dos entes no SIOPS no período de competência. Só contém valores informados e homologados. Não contém valores calculados (contas agregadoras, ex. totais e subtotais).
 MODEL (
   name siops.lancamentos,
   depends_on ["staging.siops__periodos", "staging.siops__homologados", "siconfi.entes"],
@@ -80,12 +81,12 @@ WITH TODOS_VALORES /* TODOS_VALORES une tb_vl_valores de estados e municípios *
     ON H.PERIODO = P.PERIODO AND H.IBGE_ENTE = V.CODIGO_IBGE
 )
 SELECT
-  H.COMPETENCIA AS competencia, /* periodo ao qual o lancamento se refere YYYY-B onde YYYY é ano e B é Bimestre */
-  H.CODIGO_IBGE AS ibge, /* código IBGE do ente de 6 dífitos */
-  S.ENTE AS ente, /* nome do ente federado que registrou o lançamento */
-  CASE WHEN S.CAPITAL = 1 THEN 'S' ELSE 'N' END AS capital, /* se o ente é capital, 'S', ou não, 'N' */
-  S.REGIAO AS regiao, /* região do país */
-  S.UF AS uf, /* unidade federativa. Estados e DF estão na unidade federativa da união, BR */
+  H.COMPETENCIA AS competencia, /* Periodo ao qual o lancamento se refere YYYY-B onde YYYY é ano e B é bimestre */
+  H.CODIGO_IBGE AS ibge, /* Código IBGE do ente de 6 dífitos */
+  S.ENTE AS ente, /* Nome do ente federado que registrou o lançamento */
+  CASE WHEN S.CAPITAL = 1 THEN 'S' ELSE 'N' END AS capital, /* Indicador se o ente é capital, 'S', ou não, 'N' */
+  S.REGIAO AS regiao, /* Região do país */
+  S.UF AS uf, /* Unidade Federativa. Estados e DF estão na unidade federativa da união, BR */
   CASE
     WHEN S.ESFERA = 'D'
     THEN 'Distrital'
@@ -95,14 +96,14 @@ SELECT
     THEN 'Estadual'
     WHEN S.ESFERA = 'U'
     THEN 'Federal'
-  END AS esfera, /* esfera federativa */
-  S.POPULACAO AS populacao, /* população 2022 (segundo SICONFI) */
-  TRIM(REGEXP_REPLACE(REGEXP_REPLACE(C.NO_COLUNA, '\s*=.*$', ''), '\s*\([a-z]\)', '')) AS fase, /* fase orçamentária */
-  FS.FONTE AS fonte, /* fonte de recursos dos lançamentos de despesa */
-  FS.SUBFUNCAO AS destinacao, /* destinação dos recursos dos lançamentos de despesa(aka subfunção) */
-  CT.CODIGO_CONTA AS conta, /* código da conta contábil do lançamento */
-  CT.DESCRICAO_CONTA AS descricao_conta, /* descrição da conta contábil no plano de contas do SIOPS */
-  H.NU_VALOR AS valor_nominal /* valor do lançamento no valor nominal corrente do período de competência */
+  END AS esfera, /* Esfera federativa: Municipal, Estadual, Distrital ou Federal */
+  S.POPULACAO AS populacao, /* População em 2022 (segundo SICONFI) */
+  TRIM(REGEXP_REPLACE(REGEXP_REPLACE(C.NO_COLUNA, '\s*=.*$', ''), '\s*\([a-z]\)', '')) AS fase, /* Fase orçamentária */
+  FS.FONTE AS fonte, /* Fonte de recursos dos lançamentos de despesa */
+  FS.SUBFUNCAO AS destinacao, /* Destinação dos recursos dos lançamentos de despesa (subfunção) */
+  CT.CODIGO_CONTA AS conta, /* Código da conta contábil do lançamento */
+  CT.DESCRICAO_CONTA AS descricao_conta, /* Descrição da conta contábil no plano de contas do SIOPS */
+  H.NU_VALOR AS valor_nominal /* Valor nominal corrente do lançamento no período de competência */
 FROM HOMOLOGADOS AS H
 JOIN SIOPS.CONTAS AS CT
   ON CT.CODIGO_CONTA_SIOPS = H.CO_ITEM
