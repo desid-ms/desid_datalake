@@ -1,4 +1,4 @@
--- Lançamentos dos entes no SIOPS no período de competência. Só contém valores informados e homologados. Não contém valores calculados (contas agregadoras, ex. totais e subtotais).
+-- Lançamentos de Receitas, Deduções e Despesas dos entes no SIOPS no período de competência. Só contém valores informados e homologados. Não contém valores calculados (contas agregadoras, ex. totais e subtotais). Não inclui Restos a Pagar.
 MODEL (
   name siops.lancamentos,
   depends_on ["staging.siops__periodos", "staging.siops__homologados", "siconfi.entes"],
@@ -46,27 +46,19 @@ WITH TODOS_VALORES /* TODOS_VALORES une tb_vl_valores de estados e municípios *
     *
     EXCLUDE (CO_UF)
   FROM RAW.SIOPSUF__TB_VL_VALORES
-), OPERACIONAIS /* apenas valores de contas operacionais */ AS (
-  SELECT
-    *
-  FROM TODOS_VALORES
+), 
+  OPERACIONAIS /* apenas valores de contas operacionais */ AS (
+  SELECT * FROM TODOS_VALORES
   WHERE
-    CO_ITEM IN (
-      SELECT
-        CAST(CODIGO_CONTA_SIOPS AS TEXT)
-      FROM SIOPS.CONTAS
-      WHERE
-        TIPO_CONTA = 'operacional'
-    )
-), VALORES_RECEITAS_DESPESAS /* apenas valores de receitas e despesas */ AS (
-  SELECT
-    *
-  FROM OPERACIONAIS
+    CO_ITEM IN (SELECT CODIGO_CONTA_SIOPS::text FROM SIOPS.CONTAS WHERE TIPO_CONTA = 'operacional')
+), 
+  VALORES_RECEITAS_DESPESAS /* apenas valores de receitas e despesas */ AS (
+  SELECT  * FROM OPERACIONAIS
   /* 3_1 3_2... 3_18, 4_1..4_18..., 95_1..95_18 são as pastas_hierarquias válidas */
   WHERE
     (
-      REGEXP_MATCHES(co_pasta_hierarquia, '^(3|4|6|7|8|9|10|86|87|88|89|90|94|95)_([1-9]|1[0-8])$')
-      OR CO_PASTA = 1
+      REGEXP_MATCHES(co_pasta_hierarquia, '^(3|4|6|7|8|9|10|86|87|88|89|90|94|95)_([1-9]|1[0-8])$') -- Despesas em suas fontes e subfuncoes
+      OR CO_PASTA = 1 -- RECEITA
     )
     AND CO_TIPO < 23 /* Remove fases que são Totais Gerais */
     AND NOT CO_TIPO IN (14, 20, 21) /* Remove Restos a Pagar e Totalizadoras de Receitas para base de cálculo ASPS */
@@ -81,12 +73,14 @@ WITH TODOS_VALORES /* TODOS_VALORES une tb_vl_valores de estados e municípios *
     ON H.PERIODO = P.PERIODO AND H.IBGE_ENTE = V.CODIGO_IBGE
 )
 SELECT
-  H.COMPETENCIA AS competencia, /* Periodo ao qual o lancamento se refere YYYY-B onde YYYY é ano e B é bimestre */
-  H.CODIGO_IBGE AS ibge, /* Código IBGE do ente de 6 dífitos */
-  S.ENTE AS ente, /* Nome do ente federado que registrou o lançamento */
-  CASE WHEN S.CAPITAL = 1 THEN 'S' ELSE 'N' END AS capital, /* Indicador se o ente é capital, 'S', ou não, 'N' */
-  S.REGIAO AS regiao, /* Região do país */
-  S.UF AS uf, /* Unidade Federativa. Estados e DF estão na unidade federativa da união, BR */
+  left(H.competencia,4)::int as ano, /* Ano competência ao qual o lançamento se refere */
+  right(H.competencia,1)::int as bimestre, /* Bimestre competência ao qual o lançamento se refere */
+  H.competencia as competencia, /* Período de competência do lançamento no formato YYYY-B */
+  H.CODIGO_IBGE AS ibge, /* Código IBGE de 6 dígitos do ente */
+  S.ENTE AS ente, /* Nome do ente federado que registrou o lançamento (Fonte: SICONFI) */
+  CASE WHEN S.CAPITAL = 1 THEN 'S' ELSE 'N' END AS capital, /* Indicador se o ente é capital, 'S', ou não, 'N' (Fonte: SICONFI) */
+  S.REGIAO AS regiao, /* Região do país  (Fonte: SICONFI) */
+  S.UF AS uf, /* Unidade Federativa. Estados e DF estão na unidade federativa da união, BR  (Fonte: SICONFI) */
   CASE
     WHEN S.ESFERA = 'D'
     THEN 'Distrital'
@@ -96,12 +90,13 @@ SELECT
     THEN 'Estadual'
     WHEN S.ESFERA = 'U'
     THEN 'Federal'
-  END AS esfera, /* Esfera federativa: Municipal, Estadual, Distrital ou Federal */
-  S.POPULACAO AS populacao, /* População em 2022 (segundo SICONFI) */
+  END AS esfera, /* Esfera federativa: Municipal, Estadual, Distrital ou Federal (Fonte: SICONFI) */
+  S.POPULACAO AS populacao, /* População em 2022 (Fonte: SICONFI) */
+  --  REGEXP letra que distingue Fases iguais: "Receitas Realizadas Brutas (e)", "Receitas Realizadas Brutas (x)"  ->  "Receitas Realizadas Brutas"
   TRIM(REGEXP_REPLACE(REGEXP_REPLACE(C.NO_COLUNA, '\s*=.*$', ''), '\s*\([a-z]\)', '')) AS fase, /* Fase orçamentária */
   FS.FONTE AS fonte, /* Fonte de recursos dos lançamentos de despesa */
   FS.SUBFUNCAO AS destinacao, /* Destinação dos recursos dos lançamentos de despesa (subfunção) */
-  CT.CODIGO_CONTA AS conta, /* Código da conta contábil do lançamento */
+  CT.CODIGO_CONTA AS conta, /* Código da conta contábil do lançamento no formato X.X.X.X.XX.X.X ou ACDOXXXXXX ou ACROXXXXXX */
   CT.DESCRICAO_CONTA AS descricao_conta, /* Descrição da conta contábil no plano de contas do SIOPS */
   H.NU_VALOR AS valor_nominal /* Valor nominal corrente do lançamento no período de competência */
 FROM HOMOLOGADOS AS H
@@ -114,21 +109,24 @@ LEFT JOIN STAGING.SIOPS__FONTES_SUBFUNCOES AS FS
 JOIN SICONFI.ENTES AS S
   ON H.CODIGO_IBGE = S.codigo_ibge_6
 ORDER BY
-  competencia,
+  ano,
+  bimestre,
   ibge,
   fase,
   conta,
   fonte,
   destinacao;
 
+
+ /*  POST-STATEMENT */
 @IF(
   @runtime_stage = 'evaluating',
   COPY siops.lancamentos
-  TO 'data/outputs/siops__lancamentos' WITH (
+  TO 'data/outputs/br_ms__siops' WITH (
     FORMAT PARQUET,
     PARTITION_BY (
-      competencia
+      ano, bimestre, esfera,
     ),
-    OVERWRITE_OR_IGNORE
+    OVERWRITE_OR_IGNORE,
+    FILENAME_PATTERN 'lancamentos')
   )
-) /*  POST-STATEMENT */
