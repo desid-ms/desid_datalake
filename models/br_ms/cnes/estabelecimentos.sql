@@ -10,9 +10,15 @@ SELECT
     e.nu_comp AS competencia, -- Ano e mês da competência do registro do estabelecimento: YYYYMM
     e.co_cnes AS id_estabelecimento_cnes, -- Código do estabelecimento no CNES (de 01 a 85)
     e.tp_unidade as codigo_tipo_estabelecimento, -- Cödigo CNES do tipo de estabelecimento
-    t1.valor AS tipo_estabelecimento, -- Tipo de estabelecimento (ex. pronto socorro geral, hospital geral, centro de imunizacao etc)
-    t2.valor AS tipo_gestao, -- Tipo de gestão: estadual, municipal, dupla, sem gestao, nao informado
-    t3.valor AS tipo_pessoa, -- Indicador se o estabelecimento é pessoa física ou jurídica
+    trim(t1.valor) AS tipo_estabelecimento, -- Tipo de estabelecimento (ex. pronto socorro geral, hospital geral, centro de imunizacao etc)
+    coalesce(
+        case
+            when right(e.co_municipio_gestor, 4) = '0000' then 'estadual'
+            else trim(t2.valor) 
+        end, 
+        'nao informada'
+     ) AS tipo_gestao, -- Tipo de gestão: estadual, municipal, dupla, sem gestao, nao informada
+    trim(t3.valor) AS tipo_pessoa, -- Indicador se o estabelecimento é pessoa física ou jurídica
     e.co_natureza_jur AS codigo_natureza_juridica, -- Código da natureza jurídica do estabelecimento
     COALESCE(lower(n.descricao), 
         CASE
@@ -39,8 +45,4 @@ FROM
         AND t2.id_tabela = 'estabelecimento' AND t2.nome_coluna = 'tipo_gestao'
     LEFT JOIN raw.cnes__tipos t3 ON e.tp_pfpj = t3.chave
         AND t3.id_tabela = 'estabelecimento' AND t3.nome_coluna = 'tipo_pessoa'
-    LEFT JOIN raw.cnes__tipos t4 ON e.co_natureza_organizacao::int = t4.chave::int
-        AND t4.id_tabela = 'estabelecimento' AND t4.nome_coluna = 'tipo_natureza_administrativa'
-    LEFT JOIN raw.cnes__tipos t5 ON e.tp_prestador::int = t5.chave::int
-        AND t5.id_tabela = 'estabelecimento' AND t5.nome_coluna = 'tipo_prestador'
     LEFT JOIN raw.cnes__naturezas_juridicas n ON e.co_natureza_jur::int = n.id_natureza_juridica::int

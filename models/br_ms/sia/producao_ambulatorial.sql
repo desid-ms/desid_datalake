@@ -7,7 +7,7 @@ MODEL (
 
 SELECT
    pa.pa_cmp as competencia, -- ano e mês da producao ambulatorial
-   pa.pa_gestao as id_municipio_ibge, -- código IBGE do município gestor
+   -- pa.pa_gestao as id_municipio_ibge, -- código IBGE do município gestor
    pa.pa_coduni as id_estabelecimento_cnes, -- id do estabelecimento no CNES
    pa.pa_cbocod as id_ocupacao_executante_cbo, -- código brasileiro de ocupações (CBO) do profissional de saúde executante
    pa.pa_proc_id AS id_procedimento_sigtap, -- código do procedimento realizado no SIGTAP
