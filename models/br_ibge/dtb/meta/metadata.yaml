@@ -1,0 +1,26 @@
+title: Base de Dados Territoriais IBGE
+type: Dataset
+format: parquet
+identifier: br_ibge__dtb
+subject:
+- Território
+- Brasil
+- IBGE
+rights: Open Data Commons Attribution License (ODC-By)
+coverage.temporal: 2022
+coverage.spatial: Brasil
+creator:
+  name: Frederico Guth
+  email: frederico.saude@saude.gov.br
+publisher: DESID/Ministério da Saúde do Brasil
+description: "Este dataset contempla os dados informados pelo IBGE."
+language: pt-BR
+created: '2024-11-28'
+source: SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)
+resources:
+  br_ibge.dtb:
+    title: br_ibge__dtb.territorio
+    description: Divisão territorial brasileira.
+    location:
+      url: data/br_ibge__dtb/territorio
+      format: parquet

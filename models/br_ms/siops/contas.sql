@@ -20,5 +20,5 @@ FROM
 @IF(
   @runtime_stage = 'evaluating',
 COPY siops.contas TO 'data/outputs/br_ms__siops' WITH
-    (FORMAT PARQUET, PARTITION_BY (ano), OVERWRITE, FILENAME_PATTERN 'contas')
+    (FORMAT PARQUET, PARTITION_BY (ano), OVERWRITE, FILENAME_PATTERN 'contas_')
 );

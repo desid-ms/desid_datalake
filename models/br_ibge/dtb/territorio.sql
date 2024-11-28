@@ -1,6 +1,6 @@
 -- Divisão Territorial Brasileira apresenta a relação de regioes, mesorregioes, unidades federativas, microrregioes e municípios que compõem a divisão territorial brasileira oficial segundo o IBGE
 MODEL (
-  name br_ibge.dtb,
+  name dtb.territorio,
   kind FULL
 );
 

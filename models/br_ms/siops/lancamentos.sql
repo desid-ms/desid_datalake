@@ -128,5 +128,5 @@ ORDER BY
       ano, bimestre, esfera,
     ),
     OVERWRITE_OR_IGNORE,
-    FILENAME_PATTERN 'lancamentos')
+    FILENAME_PATTERN 'lancamentos_')
   )

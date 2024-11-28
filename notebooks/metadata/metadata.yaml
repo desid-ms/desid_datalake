@@ -1,0 +1,40 @@
+title: Base de dados SIOPS
+identifier: br_ms__siops
+subject: [Orçamento Público, Saúde, SIOPS, Mínimo Constitucional]
+rights: Open Data Commons Attribution License (ODC-By)
+coverage.temporal: 2022
+coverage.spatial: Brazil
+creator:
+  name: Frederico Guth
+  email: siops@saude.gov.br
+publisher: DESID/Ministério da Saúde do Brasil
+description: |
+  Este dataset contempla os dados informados e homologados no SIOPS. 
+
+  O Sistema Único de Saúde (SUS) é financiado pelos governos federal, estadual e
+  municipal, conforme a Constituição de 1988, que estabelece aplicação mínima de
+  recursos na saúde. Para monitorar e garantir a aplicação desta norma, foi criado o
+  SIOPS onde bimestralmente gestores dos entes federados devem informar dados
+  orçamentários de receitas e despesas, explicitando a aplicação em saúde.
+language: pt-BR
+created: '2022-12-31'
+source: 'SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)'
+resources:
+  siops.lancamentos:
+    title: siops.lancamentos
+    description: Tabela de lançamentos do SIOPS
+    accrualPeriodicity: Bimestral
+    location:
+      url: data/br_ms__siops/lancamentos
+      partitions:
+        - ano
+        - bimestre
+      format: parquet
+  siops.contas:
+    title: siops.contas
+    description: Tabela de contas do SIOPS
+    accrualPeriodicity: Anual
+    location:
+      url: data/br_ms__siops/contas
+      format: parquet
+
