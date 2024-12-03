@@ -23,7 +23,7 @@ description: "Este dataset contempla dados coletados, tratados e usados na const
   \ \nfornecendo uma estrutura consistente para contabilização dos fluxos financeiros\
   \ no setor.\n"
 language: pt-BR
-created: '2024-11-28'
+created: '2024-11-29'
 source: SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)
 resources:
   sha.provedores:
@@ -39,64 +39,64 @@ resources:
       > Provedores de cuidado no Brasil de acordo com a base de dados do CNES e classificação
       SHA
 
-      | column_name              | type    | description                                                                                                                                                                                                                                             |
-      source   |
+      | coluna                   | tipo    | descrição                                                                                                                                                                                                                                               |
+      fonte   |
 
-      |:-------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|
+      |:-------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|
 
       | competencia              | VARCHAR | Ano e mês da competência do registro
-      do estabelecimento: YYYYMM                                                                                                                                                                                         |          |
+      do estabelecimento: YYYYMM                                                                                                                                                                                         |         |
 
-      | sigla_uf                 | VARCHAR | Sigla da UF onde se localiza o estabelecimento                                                                                                                                                                                                          |          |
+      | sigla_uf                 | VARCHAR | Sigla da UF onde se localiza o estabelecimento                                                                                                                                                                                                          |         |
 
       | id_municipio_ibge        | VARCHAR | Código IBGE de 6 digitos do município
-      gestor do estabelecimento                                                                                                                                                                                         |          |
+      gestor do estabelecimento                                                                                                                                                                                         |         |
 
       | id_provedor              | VARCHAR | Código CNES do estabelecimento provedor
-      de cuidados                                                                                                                                                                                                     |          |
+      de cuidados                                                                                                                                                                                                     |         |
 
       | tipo_estabelecimento     | VARCHAR | Tipo de estabelecimento conforme CNES
-      (ex. pronto socorro geral, hospital geral, centro de imunizacao etc)                                                                                                                                              |          |
+      (ex. pronto socorro geral, hospital geral, centro de imunizacao etc)                                                                                                                                              |         |
 
       | codigo_sha               | VARCHAR | Código da função SHA correspondente ao
-      tipo de estabelecimento                                                                                                                                                                                          |          |
+      tipo de estabelecimento                                                                                                                                                                                          |         |
 
       | codigo_natureza_juridica | VARCHAR | Código da natureza juridica do estabelecimento
-      conforme Tabela de Naturezas Juridicas do CONCLA                                                                                                                                                         |          |
+      conforme Tabela de Naturezas Juridicas do CONCLA                                                                                                                                                         |         |
 
       | tipo_provedor            | VARCHAR | Indicador to tipo de provedor: ''administracao
       publica federal'', ''administracao publica estadual'', ''administracao publica
       municipal'', ''outra administracao publica'', ''contratado'', ''sem fins lucrativos'',
-      ''instituicao extraterritorial'', ''desconhecido'' |          |'
+      ''instituicao extraterritorial'', ''desconhecido'' |         |'
     description: Provedores de cuidado no Brasil de acordo com a base de dados do
       CNES e classificação SHA
     schema.fields:
-    - column_name: competencia
-      type: VARCHAR
-      description: 'Ano e mês da competência do registro do estabelecimento: YYYYMM'
-    - column_name: sigla_uf
-      type: VARCHAR
-      description: Sigla da UF onde se localiza o estabelecimento
-    - column_name: id_municipio_ibge
-      type: VARCHAR
-      description: Código IBGE de 6 digitos do município gestor do estabelecimento
-    - column_name: id_provedor
-      type: VARCHAR
-      description: Código CNES do estabelecimento provedor de cuidados
-    - column_name: tipo_estabelecimento
-      type: VARCHAR
-      description: Tipo de estabelecimento conforme CNES (ex. pronto socorro geral,
+    - coluna: competencia
+      tipo: VARCHAR
+      descrição: 'Ano e mês da competência do registro do estabelecimento: YYYYMM'
+    - coluna: sigla_uf
+      tipo: VARCHAR
+      descrição: Sigla da UF onde se localiza o estabelecimento
+    - coluna: id_municipio_ibge
+      tipo: VARCHAR
+      descrição: Código IBGE de 6 digitos do município gestor do estabelecimento
+    - coluna: id_provedor
+      tipo: VARCHAR
+      descrição: Código CNES do estabelecimento provedor de cuidados
+    - coluna: tipo_estabelecimento
+      tipo: VARCHAR
+      descrição: Tipo de estabelecimento conforme CNES (ex. pronto socorro geral,
         hospital geral, centro de imunizacao etc)
-    - column_name: codigo_sha
-      type: VARCHAR
-      description: Código da função SHA correspondente ao tipo de estabelecimento
-    - column_name: codigo_natureza_juridica
-      type: VARCHAR
-      description: Código da natureza juridica do estabelecimento conforme Tabela
-        de Naturezas Juridicas do CONCLA
-    - column_name: tipo_provedor
-      type: VARCHAR
-      description: 'Indicador to tipo de provedor: ''administracao publica federal'',
+    - coluna: codigo_sha
+      tipo: VARCHAR
+      descrição: Código da função SHA correspondente ao tipo de estabelecimento
+    - coluna: codigo_natureza_juridica
+      tipo: VARCHAR
+      descrição: Código da natureza juridica do estabelecimento conforme Tabela de
+        Naturezas Juridicas do CONCLA
+    - coluna: tipo_provedor
+      tipo: VARCHAR
+      descrição: 'Indicador to tipo de provedor: ''administracao publica federal'',
         ''administracao publica estadual'', ''administracao publica municipal'', ''outra
         administracao publica'', ''contratado'', ''sem fins lucrativos'', ''instituicao
         extraterritorial'', ''desconhecido'''
@@ -110,34 +110,50 @@ resources:
       format: parquet
     repr: '## sha.procedimentos
 
-      | column_name               | type          | description   | source   |
+      | coluna                    | tipo          | descrição                                              |
+      fonte             |
 
-      |:--------------------------|:--------------|:--------------|:---------|
+      |:--------------------------|:--------------|:-------------------------------------------------------|:------------------|
 
-      | codigo_procedimento       | VARCHAR       |               |          |
+      | codigo_procedimento       | VARCHAR       | Cödigo do procedimento realizado                       |
+      SIGTAP, NCS/DESID |
 
-      | procedimento              | VARCHAR       |               |          |
+      | procedimento              | VARCHAR       | Nome do procedimento realizado                         |
+      SIGTAP, NCS/DESID |
 
-      | fonte                     | VARCHAR       |               |          |
+      | fonte                     | VARCHAR       | Indica se a fonte da informação
+      é NCS ou SIGTAP (nulo) | NCS/DESID         |
 
-      | codigo_sha                | VARCHAR       |               |          |
+      | codigo_sha                | VARCHAR       |                                                        |                   |
 
-      | codigo_tipo_financiamento | VARCHAR       |               |          |
+      | codigo_tipo_financiamento | VARCHAR       | Código do tipo de financiamento
+      do procedimento        | SIGTAP, NCS/DESID |
 
-      | valor_2022                | DECIMAL(18,2) |               |          |'
+      | valor_2022                | DECIMAL(18,2) | Valor do procedimento em reais
+      nominais em 2022        | SIGTAP, NCS/DESID |'
     schema.fields:
-    - column_name: codigo_procedimento
-      type: VARCHAR
-    - column_name: procedimento
-      type: VARCHAR
-    - column_name: fonte
-      type: VARCHAR
-    - column_name: codigo_sha
-      type: VARCHAR
-    - column_name: codigo_tipo_financiamento
-      type: VARCHAR
-    - column_name: valor_2022
-      type: DECIMAL(18,2)
+    - coluna: codigo_procedimento
+      tipo: VARCHAR
+      descrição: Cödigo do procedimento realizado
+      fonte: SIGTAP, NCS/DESID
+    - coluna: procedimento
+      tipo: VARCHAR
+      descrição: Nome do procedimento realizado
+      fonte: SIGTAP, NCS/DESID
+    - coluna: fonte
+      tipo: VARCHAR
+      descrição: Indica se a fonte da informação é NCS ou SIGTAP (nulo)
+      fonte: NCS/DESID
+    - coluna: codigo_sha
+      tipo: VARCHAR
+    - coluna: codigo_tipo_financiamento
+      tipo: VARCHAR
+      descrição: Código do tipo de financiamento do procedimento
+      fonte: SIGTAP, NCS/DESID
+    - coluna: valor_2022
+      tipo: DECIMAL(18,2)
+      descrição: Valor do procedimento em reais nominais em 2022
+      fonte: SIGTAP, NCS/DESID
   sha.producao_ambulatorial:
     title: sha.producao_ambulatorial
     accrualPeriodicity: Anual
@@ -148,91 +164,116 @@ resources:
       format: parquet
     repr: '## sha.producao_ambulatorial
 
-      | column_name        | type          | description                                                                                                                                                  |
-      source   |
+      | coluna             | tipo          | descrição                                                                                                                                                    |
+      fonte             |
 
-      |:-------------------|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|
+      |:-------------------|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
 
-      | fonte              | VARCHAR       | Fonte dos dados: SIA                                                                                                                                         |          |
+      | fonte              | VARCHAR       | Fonte dos dados: SIA                                                                                                                                         |
+      NCS/DESID         |
 
       | ano_competencia    | VARCHAR       | Ano da competencia do registro ambulatorial:
-      YYYY                                                                                                            |          |
+      YYYY                                                                                                            |
+      SIA-TabWin        |
 
       | tipo_profissional  | VARCHAR       | Profisional de saúde responsável pelo
-      cuidado é Agente Comunitário de Saúde (ACS) ou outro tipo de profissional                                              |          |
+      cuidado é Agente Comunitário de Saúde (ACS) ou outro tipo de profissional                                              |
+      NCS/DESID         |
 
       | sigla_uf           | VARCHAR       | Sigla da UF onde se localiza o estabelecimento
-      provedor do cuidado                                                                                           |          |
+      provedor do cuidado                                                                                           |
+      sha.provedores    |
 
       | id_municipio_ibge  | VARCHAR       | Código IBGE de 6 digitos do municipio
-      dp provedor de cuidado                                                                                                 |          |
+      dp provedor de cuidado                                                                                                 |
+      sha.provedores    |
 
       | tipo_provedor      | VARCHAR       | Tipo do estabelecimento provedor do cuidado
       (publico federal, contratado, sem fins lucrativos etc) durante a competencia
-      (mes, ano) do registro ambulatorial |          |
+      (mes, ano) do registro ambulatorial | sha.provedores    |
 
       | HP                 | VARCHAR       | Código da função HP no SHA do estabelecimento
-      provedor do cuidado                                                                                            |          |
+      provedor do cuidado                                                                                            |
+      sha.provedores    |
 
-      | procedimento       | VARCHAR       | Código do procedimento realizado no SIGTAP                                                                                                                   |          |
+      | procedimento       | VARCHAR       | Código do procedimento realizado                                                                                                                             |
+      sha.procedimentos |
 
       | HC                 | VARCHAR       | Código da função HC no SHA do procedimento
-      realizado                                                                                                         |          |
+      realizado                                                                                                         |
+      sha.procedimentos |
 
       | tipo_financiamento | VARCHAR       | Tipo de financiamento da produção: PAB,
-      FAEC, Incentivo MAC, MAC                                                                                             |          |
+      FAEC, Incentivo MAC, MAC                                                                                             |
+      SIA-TabWin        |
 
       | valor_unitario     | DECIMAL(18,2) | Valor unitário em reais nominais do procedimento
-      em 2022 segundo a tabela de procedimentos do SIGTAP                                                         |          |
+      em 2022 segundo a tabela de procedimentos                                                                   |
+      sha.procedimentos |
 
       | n                  | HUGEINT       | quantidade de procedimentos realizados
-      (produção ambulatorial)                                                                                               |          |
+      (produção ambulatorial)                                                                                               |
+      SIA-TabWin        |
 
       | valor              | DECIMAL(38,2) | valor total em reais nominais da produção
-      ambulatorial                                                                                                       |          |'
+      ambulatorial em 2022                                                                                               |
+      SIA-TabWin        |'
     schema.fields:
-    - column_name: fonte
-      type: VARCHAR
-      description: 'Fonte dos dados: SIA'
-    - column_name: ano_competencia
-      type: VARCHAR
-      description: 'Ano da competencia do registro ambulatorial: YYYY'
-    - column_name: tipo_profissional
-      type: VARCHAR
-      description: Profisional de saúde responsável pelo cuidado é Agente Comunitário
+    - coluna: fonte
+      tipo: VARCHAR
+      descrição: 'Fonte dos dados: SIA'
+      fonte: NCS/DESID
+    - coluna: ano_competencia
+      tipo: VARCHAR
+      descrição: 'Ano da competencia do registro ambulatorial: YYYY'
+      fonte: SIA-TabWin
+    - coluna: tipo_profissional
+      tipo: VARCHAR
+      descrição: Profisional de saúde responsável pelo cuidado é Agente Comunitário
         de Saúde (ACS) ou outro tipo de profissional
-    - column_name: sigla_uf
-      type: VARCHAR
-      description: Sigla da UF onde se localiza o estabelecimento provedor do cuidado
-    - column_name: id_municipio_ibge
-      type: VARCHAR
-      description: Código IBGE de 6 digitos do municipio dp provedor de cuidado
-    - column_name: tipo_provedor
-      type: VARCHAR
-      description: Tipo do estabelecimento provedor do cuidado (publico federal, contratado,
+      fonte: NCS/DESID
+    - coluna: sigla_uf
+      tipo: VARCHAR
+      descrição: Sigla da UF onde se localiza o estabelecimento provedor do cuidado
+      fonte: sha.provedores
+    - coluna: id_municipio_ibge
+      tipo: VARCHAR
+      descrição: Código IBGE de 6 digitos do municipio dp provedor de cuidado
+      fonte: sha.provedores
+    - coluna: tipo_provedor
+      tipo: VARCHAR
+      descrição: Tipo do estabelecimento provedor do cuidado (publico federal, contratado,
         sem fins lucrativos etc) durante a competencia (mes, ano) do registro ambulatorial
-    - column_name: HP
-      type: VARCHAR
-      description: Código da função HP no SHA do estabelecimento provedor do cuidado
-    - column_name: procedimento
-      type: VARCHAR
-      description: Código do procedimento realizado no SIGTAP
-    - column_name: HC
-      type: VARCHAR
-      description: Código da função HC no SHA do procedimento realizado
-    - column_name: tipo_financiamento
-      type: VARCHAR
-      description: 'Tipo de financiamento da produção: PAB, FAEC, Incentivo MAC, MAC'
-    - column_name: valor_unitario
-      type: DECIMAL(18,2)
-      description: Valor unitário em reais nominais do procedimento em 2022 segundo
-        a tabela de procedimentos do SIGTAP
-    - column_name: n
-      type: HUGEINT
-      description: quantidade de procedimentos realizados (produção ambulatorial)
-    - column_name: valor
-      type: DECIMAL(38,2)
-      description: valor total em reais nominais da produção ambulatorial
+      fonte: sha.provedores
+    - coluna: HP
+      tipo: VARCHAR
+      descrição: Código da função HP no SHA do estabelecimento provedor do cuidado
+      fonte: sha.provedores
+    - coluna: procedimento
+      tipo: VARCHAR
+      descrição: 'Código do procedimento realizado '
+      fonte: sha.procedimentos
+    - coluna: HC
+      tipo: VARCHAR
+      descrição: Código da função HC no SHA do procedimento realizado
+      fonte: sha.procedimentos
+    - coluna: tipo_financiamento
+      tipo: VARCHAR
+      descrição: 'Tipo de financiamento da produção: PAB, FAEC, Incentivo MAC, MAC'
+      fonte: SIA-TabWin
+    - coluna: valor_unitario
+      tipo: DECIMAL(18,2)
+      descrição: Valor unitário em reais nominais do procedimento em 2022 segundo
+        a tabela de procedimentos
+      fonte: sha.procedimentos
+    - coluna: n
+      tipo: HUGEINT
+      descrição: quantidade de procedimentos realizados (produção ambulatorial)
+      fonte: SIA-TabWin
+    - coluna: valor
+      tipo: DECIMAL(38,2)
+      descrição: valor total em reais nominais da produção ambulatorial em 2022
+      fonte: SIA-TabWin
   sha.producao_hospitalar:
     title: sha.producao_hospitalar
     accrualPeriodicity: Anual
@@ -243,96 +284,118 @@ resources:
       format: parquet
     repr: '## sha.producao_hospitalar
 
-      | column_name        | type          | description                                                                                                                                                                      |
-      source   |
+      | coluna             | tipo          | descrição                                                                                                                                                                        |
+      fonte             |
 
-      |:-------------------|:--------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|
+      |:-------------------|:--------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
 
-      | fonte              | VARCHAR       | Fonte dos dados: SIH                                                                                                                                                             |          |
+      | fonte              | VARCHAR       | Fonte dos dados: SIH                                                                                                                                                             |
+      NCS/DESID         |
 
       | ano_competencia    | VARCHAR       | Ano de competencia do cuidado realizado:
-      YYYY                                                                                                                                    |          |
+      YYYY                                                                                                                                    |
+      SIH               |
 
       | tipo_profissional  | VARCHAR       | Indicador se a ocupação do profisisonal
       responsável é agente comunitário. Internações não são realizadas por agentes
-      comunitários                                                |          |
+      comunitários                                                | NCS/DESID         |
 
       | sigla_uf           | VARCHAR       | Sigla da UF onde se localiza o estabelecimento
-      provedor do cuidado                                                                                                               |          |
+      provedor do cuidado                                                                                                               |
+      sha.provedores    |
 
       | id_municipio_ibge  | VARCHAR       | Código IBGE de 6 dígitos do município
-      gestor do estabelecimento provedor do cuidado                                                                                              |          |
+      gestor do estabelecimento provedor do cuidado                                                                                              |
+      sha.provedores    |
 
       | tipo_provedor      | VARCHAR       | tipo do estabelecimento provedor do cuidado
       (publico federal, contratado, sem fins lucrativos etc) durante a competencia
-      (mes, ano) do registro ambulatorial                     |          |
+      (mes, ano) do registro ambulatorial                     | sha.provedores    |
 
       | HP                 | VARCHAR       | Código da função HP no SHA do estabelecimento
-      provedor do cuidado                                                                                                                |          |
+      provedor do cuidado                                                                                                                |
+      sha.provedores    |
 
       | procedimento       | VARCHAR       | Código no SIGTAP do principal procedimento
-      realizado durante a internação                                                                                                        |          |
+      realizado durante a internação                                                                                                        |
+      sha.procedimentos |
 
       | HC                 | VARCHAR       | Código da função HC no SHA do principal
-      procedimento realizado                                                                                                                   |          |
+      procedimento realizado                                                                                                                   |
+      sha.procedimentos |
 
       | tipo_financiamento | VARCHAR       | Tipo de financiamento da produção: PAB,
-      FAEC, Incentivo MAC, MAC                                                                                                                 |          |
+      FAEC, Incentivo MAC, MAC                                                                                                                 |
+      SIH               |
 
       | valor_unitario     | DOUBLE        | Valor unitário em reais nominais: média
-      do valor de internação (valor internacao/dias de internação)                                                                             |          |
+      do valor de internação (valor internacao/dias de internação)                                                                             |
+      NCS/DESID         |
 
       | n                  | INTEGER       | Quantidade de dias de internação. Inclui
       produção hospitalar reduzida e rejeitada, pois mesmo que a internação não tenha
-      sido autorizada, o serviço foi prestado e pago pelo SUS |          |
+      sido autorizada, o serviço foi prestado e pago pelo SUS | SIH               |
 
       | valor              | DECIMAL(18,2) | Valor nominal em reais total da internação
-      segundo o SIH. Inclui valores de diferentes procedimentos além do principal.                                                          |          |'
+      segundo o SIH. Inclui valores de diferentes procedimentos além do principal.                                                          |
+      SIH               |'
     schema.fields:
-    - column_name: fonte
-      type: VARCHAR
-      description: 'Fonte dos dados: SIH'
-    - column_name: ano_competencia
-      type: VARCHAR
-      description: 'Ano de competencia do cuidado realizado: YYYY'
-    - column_name: tipo_profissional
-      type: VARCHAR
-      description: Indicador se a ocupação do profisisonal responsável é agente comunitário.
+    - coluna: fonte
+      tipo: VARCHAR
+      descrição: 'Fonte dos dados: SIH'
+      fonte: NCS/DESID
+    - coluna: ano_competencia
+      tipo: VARCHAR
+      descrição: 'Ano de competencia do cuidado realizado: YYYY'
+      fonte: SIH
+    - coluna: tipo_profissional
+      tipo: VARCHAR
+      descrição: Indicador se a ocupação do profisisonal responsável é agente comunitário.
         Internações não são realizadas por agentes comunitários
-    - column_name: sigla_uf
-      type: VARCHAR
-      description: Sigla da UF onde se localiza o estabelecimento provedor do cuidado
-    - column_name: id_municipio_ibge
-      type: VARCHAR
-      description: Código IBGE de 6 dígitos do município gestor do estabelecimento
-        provedor do cuidado
-    - column_name: tipo_provedor
-      type: VARCHAR
-      description: tipo do estabelecimento provedor do cuidado (publico federal, contratado,
+      fonte: NCS/DESID
+    - coluna: sigla_uf
+      tipo: VARCHAR
+      descrição: Sigla da UF onde se localiza o estabelecimento provedor do cuidado
+      fonte: sha.provedores
+    - coluna: id_municipio_ibge
+      tipo: VARCHAR
+      descrição: Código IBGE de 6 dígitos do município gestor do estabelecimento provedor
+        do cuidado
+      fonte: sha.provedores
+    - coluna: tipo_provedor
+      tipo: VARCHAR
+      descrição: tipo do estabelecimento provedor do cuidado (publico federal, contratado,
         sem fins lucrativos etc) durante a competencia (mes, ano) do registro ambulatorial
-    - column_name: HP
-      type: VARCHAR
-      description: Código da função HP no SHA do estabelecimento provedor do cuidado
-    - column_name: procedimento
-      type: VARCHAR
-      description: Código no SIGTAP do principal procedimento realizado durante a
-        internação
-    - column_name: HC
-      type: VARCHAR
-      description: Código da função HC no SHA do principal procedimento realizado
-    - column_name: tipo_financiamento
-      type: VARCHAR
-      description: 'Tipo de financiamento da produção: PAB, FAEC, Incentivo MAC, MAC'
-    - column_name: valor_unitario
-      type: DOUBLE
-      description: 'Valor unitário em reais nominais: média do valor de internação
-        (valor internacao/dias de internação)'
-    - column_name: n
-      type: INTEGER
-      description: Quantidade de dias de internação. Inclui produção hospitalar reduzida
+      fonte: sha.provedores
+    - coluna: HP
+      tipo: VARCHAR
+      descrição: Código da função HP no SHA do estabelecimento provedor do cuidado
+      fonte: sha.provedores
+    - coluna: procedimento
+      tipo: VARCHAR
+      descrição: Código no SIGTAP do principal procedimento realizado durante a internação
+      fonte: sha.procedimentos
+    - coluna: HC
+      tipo: VARCHAR
+      descrição: Código da função HC no SHA do principal procedimento realizado
+      fonte: sha.procedimentos
+    - coluna: tipo_financiamento
+      tipo: VARCHAR
+      descrição: 'Tipo de financiamento da produção: PAB, FAEC, Incentivo MAC, MAC'
+      fonte: SIH
+    - coluna: valor_unitario
+      tipo: DOUBLE
+      descrição: 'Valor unitário em reais nominais: média do valor de internação (valor
+        internacao/dias de internação)'
+      fonte: NCS/DESID
+    - coluna: n
+      tipo: INTEGER
+      descrição: Quantidade de dias de internação. Inclui produção hospitalar reduzida
         e rejeitada, pois mesmo que a internação não tenha sido autorizada, o serviço
         foi prestado e pago pelo SUS
-    - column_name: valor
-      type: DECIMAL(18,2)
-      description: Valor nominal em reais total da internação segundo o SIH. Inclui
+      fonte: SIH
+    - coluna: valor
+      tipo: DECIMAL(18,2)
+      descrição: Valor nominal em reais total da internação segundo o SIH. Inclui
         valores de diferentes procedimentos além do principal.
+      fonte: SIH

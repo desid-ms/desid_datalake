@@ -5,34 +5,34 @@ from (
             ibge,
             conta,
             fonte,
-            subfuncao,
+            destinacao,
             SUM(
                 CASE
-                    WHEN fase = 'Receitas Orçadas' THEN valor
+                    WHEN fase = 'Receitas Orçadas' THEN valor_nominal
                     ELSE 0
                 END
             ) AS Receitas_Orcadas,
             SUM(
                 CASE
-                    WHEN fase = 'Receitas Realizadas Brutas' THEN valor
+                    WHEN fase = 'Receitas Realizadas Brutas' THEN valor_nominal
                     ELSE 0
                 END
             ) AS Receitas_Realizadas,
             SUM(
                 CASE
-                    WHEN fase = 'Despesas Empenhadas' THEN valor
+                    WHEN fase = 'Despesas Empenhadas' THEN valor_nominal
                     ELSE 0
                 END
             ) AS Despesas_Empenhadas,
             SUM(
                 CASE
-                    WHEN fase = 'Despesas Liquidadas' THEN valor
+                    WHEN fase = 'Despesas Liquidadas' THEN valor_nominal
                     ELSE 0
                 END
             ) AS Despesas_Liquidadas,
             SUM(
                 CASE
-                    WHEN fase = 'Despesas Pagas' THEN valor
+                    WHEN fase = 'Despesas Pagas' THEN valor_nominal
                     ELSE 0
                 END
             ) AS Despesas_Pagas,
@@ -44,7 +44,7 @@ from (
             ibge,
             conta,
             fonte,
-            subfuncao
+            destinacao
     )
 WHERE 
     CONTA !='ACDO000002'

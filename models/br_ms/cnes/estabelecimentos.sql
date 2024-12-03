@@ -1,3 +1,4 @@
+ -- Dados do Cadastro Nacional de Estabelecimentos do SUS (CNES)
  MODEL (
     name cnes.estabelecimentos,
     kind FULL

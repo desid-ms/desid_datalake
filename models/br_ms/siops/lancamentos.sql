@@ -122,7 +122,7 @@ ORDER BY
 @IF(
   @runtime_stage = 'evaluating',
   COPY siops.lancamentos
-  TO 'data/outputs/br_ms__siops' WITH (
+  TO 'data/outputs/br_ms__siops/lancamentos' WITH (
     FORMAT PARQUET,
     PARTITION_BY (
       ano, bimestre, esfera,

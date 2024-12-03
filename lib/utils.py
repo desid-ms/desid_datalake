@@ -1,3 +1,4 @@
+import datetime
 import pandas as pd
 import yaml
 import os
@@ -37,10 +38,10 @@ def get_table_info(context, schema: str, table: str) -> dict:
 def get_columns_info(context, schema: str, table: str) -> pd.DataFrame:
     query = f"""
     SELECT 
-        column_name,
-        data_type as type,
-        regexp_replace(comment, ' \(Fonte:[^)]+\)', '') as description,
-        NULLIF(regexp_extract(comment, 'Fonte: ([^)]+)', 1), '') as source
+        column_name as 'coluna',
+        data_type as tipo,
+        regexp_replace(comment, ' \(Fonte:[^)]+\)', '') as 'descrição',
+        NULLIF(regexp_extract(comment, 'Fonte: ([^)]+)', 1), '') as fonte
     FROM duckdb_columns where table_name = '{table}' and schema_name = '{schema}'
     """
     return context.fetchdf(query)

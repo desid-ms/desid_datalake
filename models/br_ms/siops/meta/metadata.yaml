@@ -21,7 +21,7 @@ description: "Este dataset contempla os dados informados e homologados no SIOPS.
   \ o SIOPS onde bimestralmente gestores dos entes federados devem informar dados\
   \ orçamentários de receitas e despesas, explicitando a aplicação em saúde."
 language: pt-BR
-created: '2024-11-28'
+created: '2024-11-29'
 source: SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)
 resources:
   siops.lancamentos:
@@ -38,62 +38,62 @@ resources:
       - bimestre
       format: parquet
     schema.fields:
-    - column_name: ano
-      type: INTEGER
-      description: Ano competência ao qual o lançamento se refere
-    - column_name: bimestre
-      type: INTEGER
-      description: Bimestre competência ao qual o lançamento se refere
-    - column_name: competencia
-      type: VARCHAR
-      description: Período de competência do lançamento no formato YYYY-B
-    - column_name: ibge
-      type: INTEGER
-      description: Código IBGE de 6 dígitos do ente
-    - column_name: ente
-      type: VARCHAR
-      description: Nome do ente federado que registrou o lançamento
-      source: SICONFI
-    - column_name: capital
-      type: VARCHAR
-      description: Indicador se o ente é capital, 'S', ou não, 'N'
-      source: SICONFI
-    - column_name: regiao
-      type: VARCHAR
-      description: 'Região do país '
-      source: SICONFI
-    - column_name: uf
-      type: VARCHAR
-      description: 'Unidade Federativa. Estados e DF estão na unidade federativa da
+    - coluna: ano
+      tipo: INTEGER
+      descrição: Ano competência ao qual o lançamento se refere
+    - coluna: bimestre
+      tipo: INTEGER
+      descrição: Bimestre competência ao qual o lançamento se refere
+    - coluna: competencia
+      tipo: VARCHAR
+      descrição: Período de competência do lançamento no formato YYYY-B
+    - coluna: ibge
+      tipo: INTEGER
+      descrição: Código IBGE de 6 dígitos do ente
+    - coluna: ente
+      tipo: VARCHAR
+      descrição: Nome do ente federado que registrou o lançamento
+      fonte: SICONFI
+    - coluna: capital
+      tipo: VARCHAR
+      descrição: Indicador se o ente é capital, 'S', ou não, 'N'
+      fonte: SICONFI
+    - coluna: regiao
+      tipo: VARCHAR
+      descrição: 'Região do país '
+      fonte: SICONFI
+    - coluna: uf
+      tipo: VARCHAR
+      descrição: 'Unidade Federativa. Estados e DF estão na unidade federativa da
         união, BR '
-      source: SICONFI
-    - column_name: esfera
-      type: VARCHAR
-      description: 'Esfera federativa: Municipal, Estadual, Distrital ou Federal'
-      source: SICONFI
-    - column_name: populacao
-      type: UINTEGER
-      description: População em 2022
-      source: SICONFI
-    - column_name: fase
-      type: VARCHAR
-      description: Fase orçamentária
-    - column_name: fonte
-      type: VARCHAR
-      description: Fonte de recursos dos lançamentos de despesa
-    - column_name: destinacao
-      type: VARCHAR
-      description: Destinação dos recursos dos lançamentos de despesa (subfunção)
-    - column_name: conta
-      type: VARCHAR
-      description: Código da conta contábil do lançamento no formato X.X.X.X.XX.X.X
+      fonte: SICONFI
+    - coluna: esfera
+      tipo: VARCHAR
+      descrição: 'Esfera federativa: Municipal, Estadual, Distrital ou Federal'
+      fonte: SICONFI
+    - coluna: populacao
+      tipo: UINTEGER
+      descrição: População em 2022
+      fonte: SICONFI
+    - coluna: fase
+      tipo: VARCHAR
+      descrição: Fase orçamentária
+    - coluna: fonte
+      tipo: VARCHAR
+      descrição: Fonte de recursos dos lançamentos de despesa
+    - coluna: destinacao
+      tipo: VARCHAR
+      descrição: Destinação dos recursos dos lançamentos de despesa (subfunção)
+    - coluna: conta
+      tipo: VARCHAR
+      descrição: Código da conta contábil do lançamento no formato X.X.X.X.XX.X.X
         ou ACDOXXXXXX ou ACROXXXXXX
-    - column_name: descricao_conta
-      type: VARCHAR
-      description: Descrição da conta contábil no plano de contas do SIOPS
-    - column_name: valor_nominal
-      type: DECIMAL(18,2)
-      description: Valor nominal corrente do lançamento no período de competência
+    - coluna: descricao_conta
+      tipo: VARCHAR
+      descrição: Descrição da conta contábil no plano de contas do SIOPS
+    - coluna: valor_nominal
+      tipo: DECIMAL(18,2)
+      descrição: Valor nominal corrente do lançamento no período de competência
     repr: '## siops.lancamentos
 
       > Lançamentos de Receitas, Deduções e Despesas dos entes no SIOPS no período
@@ -101,55 +101,55 @@ resources:
       calculados (contas agregadoras, ex. totais e subtotais). Não inclui Restos a
       Pagar.
 
-      | column_name     | type          | description                                                                                  |
-      source   |
+      | coluna          | tipo          | descrição                                                                                    |
+      fonte   |
 
-      |:----------------|:--------------|:---------------------------------------------------------------------------------------------|:---------|
+      |:----------------|:--------------|:---------------------------------------------------------------------------------------------|:--------|
 
       | ano             | INTEGER       | Ano competência ao qual o lançamento se
-      refere                                               |          |
+      refere                                               |         |
 
       | bimestre        | INTEGER       | Bimestre competência ao qual o lançamento
-      se refere                                          |          |
+      se refere                                          |         |
 
       | competencia     | VARCHAR       | Período de competência do lançamento no
-      formato YYYY-B                                       |          |
+      formato YYYY-B                                       |         |
 
-      | ibge            | INTEGER       | Código IBGE de 6 dígitos do ente                                                             |          |
+      | ibge            | INTEGER       | Código IBGE de 6 dígitos do ente                                                             |         |
 
       | ente            | VARCHAR       | Nome do ente federado que registrou o lançamento                                             |
-      SICONFI  |
+      SICONFI |
 
       | capital         | VARCHAR       | Indicador se o ente é capital, ''S'', ou
-      não, ''N''                                              | SICONFI  |
+      não, ''N''                                              | SICONFI |
 
       | regiao          | VARCHAR       | Região do país                                                                               |
-      SICONFI  |
+      SICONFI |
 
       | uf              | VARCHAR       | Unidade Federativa. Estados e DF estão na
-      unidade federativa da união, BR                    | SICONFI  |
+      unidade federativa da união, BR                    | SICONFI |
 
       | esfera          | VARCHAR       | Esfera federativa: Municipal, Estadual,
-      Distrital ou Federal                                 | SICONFI  |
+      Distrital ou Federal                                 | SICONFI |
 
       | populacao       | UINTEGER      | População em 2022                                                                            |
-      SICONFI  |
+      SICONFI |
 
-      | fase            | VARCHAR       | Fase orçamentária                                                                            |          |
+      | fase            | VARCHAR       | Fase orçamentária                                                                            |         |
 
-      | fonte           | VARCHAR       | Fonte de recursos dos lançamentos de despesa                                                 |          |
+      | fonte           | VARCHAR       | Fonte de recursos dos lançamentos de despesa                                                 |         |
 
       | destinacao      | VARCHAR       | Destinação dos recursos dos lançamentos
-      de despesa (subfunção)                               |          |
+      de despesa (subfunção)                               |         |
 
       | conta           | VARCHAR       | Código da conta contábil do lançamento no
-      formato X.X.X.X.XX.X.X ou ACDOXXXXXX ou ACROXXXXXX |          |
+      formato X.X.X.X.XX.X.X ou ACDOXXXXXX ou ACROXXXXXX |         |
 
       | descricao_conta | VARCHAR       | Descrição da conta contábil no plano de
-      contas do SIOPS                                      |          |
+      contas do SIOPS                                      |         |
 
       | valor_nominal   | DECIMAL(18,2) | Valor nominal corrente do lançamento no
-      período de competência                               |          |'
+      período de competência                               |         |'
   siops.contas:
     title: siops.contas
     description: Plano de contas do SIOPS no período de competência
@@ -158,58 +158,58 @@ resources:
       url: data/br_ms__siops/contas
       format: parquet
     schema.fields:
-    - column_name: ano
-      type: VARCHAR
-      description: Ano competência do plano de contas YYYY
-    - column_name: codigo_conta_siops
-      type: INTEGER
-      description: Identificador da conta no sistema SIOPS
-    - column_name: codigo_conta
-      type: VARCHAR
-      description: Código da conta no formato X.X.X.X.XX.X.X ou ACDOXXXXXX ou ACROXXXXXX
-    - column_name: descricao_conta
-      type: VARCHAR
-      description: Descrição da conta
-    - column_name: tipo_conta
-      type: VARCHAR
-      description: Indicador se conta é do tipo agregadora (calculada) ou operacional
+    - coluna: ano
+      tipo: VARCHAR
+      descrição: Ano competência do plano de contas YYYY
+    - coluna: codigo_conta_siops
+      tipo: INTEGER
+      descrição: Identificador da conta no sistema SIOPS
+    - coluna: codigo_conta
+      tipo: VARCHAR
+      descrição: Código da conta no formato X.X.X.X.XX.X.X ou ACDOXXXXXX ou ACROXXXXXX
+    - coluna: descricao_conta
+      tipo: VARCHAR
+      descrição: Descrição da conta
+    - coluna: tipo_conta
+      tipo: VARCHAR
+      descrição: Indicador se conta é do tipo agregadora (calculada) ou operacional
         (informada pelo ente)
-    - column_name: ativo_estado
-      type: VARCHAR
-      description: 'Indicador se conta pode ser usada para ente Estadual: S ou N'
-    - column_name: ativo_df
-      type: VARCHAR
-      description: 'Indicador se conta pode ser usada para ente Distrito Federal:
-        S ou N'
-    - column_name: ativo_municipio
-      type: VARCHAR
-      description: 'Indicador se conta pode ser usada para ente Municipal: S ou N'
+    - coluna: ativo_estado
+      tipo: VARCHAR
+      descrição: 'Indicador se conta pode ser usada para ente Estadual: S ou N'
+    - coluna: ativo_df
+      tipo: VARCHAR
+      descrição: 'Indicador se conta pode ser usada para ente Distrito Federal: S
+        ou N'
+    - coluna: ativo_municipio
+      tipo: VARCHAR
+      descrição: 'Indicador se conta pode ser usada para ente Municipal: S ou N'
     repr: '## siops.contas
 
       > Plano de contas do SIOPS no período de competência
 
-      | column_name        | type    | description                                                                              |
-      source   |
+      | coluna             | tipo    | descrição                                                                                |
+      fonte   |
 
-      |:-------------------|:--------|:-----------------------------------------------------------------------------------------|:---------|
+      |:-------------------|:--------|:-----------------------------------------------------------------------------------------|:--------|
 
-      | ano                | VARCHAR | Ano competência do plano de contas YYYY                                                  |          |
+      | ano                | VARCHAR | Ano competência do plano de contas YYYY                                                  |         |
 
-      | codigo_conta_siops | INTEGER | Identificador da conta no sistema SIOPS                                                  |          |
+      | codigo_conta_siops | INTEGER | Identificador da conta no sistema SIOPS                                                  |         |
 
       | codigo_conta       | VARCHAR | Código da conta no formato X.X.X.X.XX.X.X ou
-      ACDOXXXXXX ou ACROXXXXXX                    |          |
+      ACDOXXXXXX ou ACROXXXXXX                    |         |
 
-      | descricao_conta    | VARCHAR | Descrição da conta                                                                       |          |
+      | descricao_conta    | VARCHAR | Descrição da conta                                                                       |         |
 
       | tipo_conta         | VARCHAR | Indicador se conta é do tipo agregadora (calculada)
-      ou operacional (informada pelo ente) |          |
+      ou operacional (informada pelo ente) |         |
 
       | ativo_estado       | VARCHAR | Indicador se conta pode ser usada para ente
-      Estadual: S ou N                             |          |
+      Estadual: S ou N                             |         |
 
       | ativo_df           | VARCHAR | Indicador se conta pode ser usada para ente
-      Distrito Federal: S ou N                     |          |
+      Distrito Federal: S ou N                     |         |
 
       | ativo_municipio    | VARCHAR | Indicador se conta pode ser usada para ente
-      Municipal: S ou N                            |          |'
+      Municipal: S ou N                            |         |'

@@ -1,9 +1,7 @@
 -- •	(crítica 246) o valor da receita realizada bruta (coluna e), conta 1.1.1.8.02.0.0 não pode ser inferior a 0,80*base ICMS ou maior que 1,50 base ICMS. para Estados e DF
-{{ config(
-  enabled=false
-) }}
+
 SELECT distinct d.conta
-FROM {{ref('dataset')}} AS d
+FROM siops.lancamentos AS d
 LEFT JOIN (
     SELECT *
     FROM Base

@@ -40,6 +40,6 @@ select
     'SISAB' as fonte,
     p.codigo_sha,
     p.codigo_tipo_financiamento,
-    p.valor_2022
+    p.valor
 from ab_sigtap ab
 join sha.procedimentos p on ab.co_procedimento_sigtap = p.codigo_procedimento

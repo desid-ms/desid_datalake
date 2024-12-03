@@ -13,14 +13,123 @@ creator:
   name: Frederico Guth
   email: frederico.saude@saude.gov.br
 publisher: DESID/Ministério da Saúde do Brasil
-description: "Este dataset contempla os dados informados pelo IBGE."
+description: Este dataset contempla os dados informados pelo IBGE.
 language: pt-BR
-created: '2024-11-28'
+created: '2024-11-29'
 source: SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)
 resources:
-  br_ibge.dtb:
+  dtb.territorio:
     title: br_ibge__dtb.territorio
-    description: Divisão territorial brasileira.
+    description: Divisão Territorial Brasileira apresenta a relação de regioes, mesorregioes,
+      unidades federativas, microrregioes e municípios que compõem a divisão territorial
+      brasileira oficial segundo o IBGE
     location:
       url: data/br_ibge__dtb/territorio
       format: parquet
+    repr: '## dtb.territorio
+
+      > Divisão Territorial Brasileira apresenta a relação de regioes, mesorregioes,
+      unidades federativas, microrregioes e municípios que compõem a divisão territorial
+      brasileira oficial segundo o IBGE
+
+      | coluna                             | tipo    | descrição                                                                                  |
+      fonte   |
+
+      |:-----------------------------------|:--------|:-------------------------------------------------------------------------------------------|:--------|
+
+      | id_regiao                          | INTEGER | código ibge para as regioes
+      brasileiras: 1=Norte;2=Nordeste;3=Sudeste;4=Sul;5=Centro-Oeste |         |
+
+      | nome_regiao                        | VARCHAR | nome da região: Norte, Nordeste,
+      Sudeste, Sul, Centro-Oeste                                |         |
+
+      | id_uf                              | INTEGER | código do ibge com dois digitos
+      que representam unicamente cada unidade da federação       |         |
+
+      | sigla_uf                           | VARCHAR | sigla da unidade da federação                                                              |         |
+
+      | nome_uf                            | VARCHAR | nome da unidade da federação                                                               |         |
+
+      | id_regiao_geografica_intermediaria | INTEGER | código ibge que identifica
+      unicamente cada região geográfica intermediária                 |         |
+
+      | regiao_geografica_intermediaria    | VARCHAR | região geográfica intermediária                                                            |         |
+
+      | id_regiao_geografica_imediata      | INTEGER | código ibge que identifica
+      unicamente cada região geográfica imediata                      |         |
+
+      | regiao_geografica_imediata         | VARCHAR | região geográfica imediata                                                                 |         |
+
+      | id_mesorregiao                     | INTEGER | código ibge que identifica
+      unicamente cada mesorregião                                     |         |
+
+      | nome_mesoregiao                    | VARCHAR | nome da mesorregião                                                                        |         |
+
+      | id_microrregiao                    | INTEGER | código ibge que identifica
+      unicamente cada microrregião                                    |         |
+
+      | nome_microrregiao                  | VARCHAR | nome da microrregião                                                                       |         |
+
+      | id_municipio_5                     | INTEGER | código ibge que identifica
+      unicamente cada município com 5 dígitos                         |         |
+
+      | id_municipio_6                     | INTEGER | código ibge que identifica
+      unicamente cada município com 6 dígitos                         |         |
+
+      | id_municipio_7                     | INTEGER | código ibge que identifica
+      unicamente cada município com 7 dígitos                         |         |
+
+      | nome_municipio                     | VARCHAR | nome oficial do município                                                                  |         |'
+    schema.fields:
+    - coluna: id_regiao
+      tipo: INTEGER
+      descrição: 'código ibge para as regioes brasileiras: 1=Norte;2=Nordeste;3=Sudeste;4=Sul;5=Centro-Oeste'
+    - coluna: nome_regiao
+      tipo: VARCHAR
+      descrição: 'nome da região: Norte, Nordeste, Sudeste, Sul, Centro-Oeste'
+    - coluna: id_uf
+      tipo: INTEGER
+      descrição: código do ibge com dois digitos que representam unicamente cada unidade
+        da federação
+    - coluna: sigla_uf
+      tipo: VARCHAR
+      descrição: sigla da unidade da federação
+    - coluna: nome_uf
+      tipo: VARCHAR
+      descrição: nome da unidade da federação
+    - coluna: id_regiao_geografica_intermediaria
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada região geográfica intermediária
+    - coluna: regiao_geografica_intermediaria
+      tipo: VARCHAR
+      descrição: região geográfica intermediária
+    - coluna: id_regiao_geografica_imediata
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada região geográfica imediata
+    - coluna: regiao_geografica_imediata
+      tipo: VARCHAR
+      descrição: região geográfica imediata
+    - coluna: id_mesorregiao
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada mesorregião
+    - coluna: nome_mesoregiao
+      tipo: VARCHAR
+      descrição: nome da mesorregião
+    - coluna: id_microrregiao
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada microrregião
+    - coluna: nome_microrregiao
+      tipo: VARCHAR
+      descrição: nome da microrregião
+    - coluna: id_municipio_5
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada município com 5 dígitos
+    - coluna: id_municipio_6
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada município com 6 dígitos
+    - coluna: id_municipio_7
+      tipo: INTEGER
+      descrição: código ibge que identifica unicamente cada município com 7 dígitos
+    - coluna: nome_municipio
+      tipo: VARCHAR
+      descrição: nome oficial do município

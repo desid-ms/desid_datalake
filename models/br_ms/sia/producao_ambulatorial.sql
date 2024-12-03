@@ -30,5 +30,6 @@ FROM
          '02', -- assitencia farmaceutica 
          '07'  -- vigilancia em saude
       )
+   and left(PA_CMP, 4)='2022'
    and (PA_QTDPRO::int > 0 or PA_QTDAPR::int > 0)
  

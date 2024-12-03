@@ -1,4 +1,4 @@
--- Provedores de cuidado no Brasil de acordo com a base de dados do CNES e classificação SHA
+-- Dados sobre os estabelecimentos provedores de cuidado do SUS de acordo com a metodologia do SHA (HP, Health Providers)
  MODEL (
     name sha.provedores,
     kind FULL
@@ -6,13 +6,15 @@
 
 
 SELECT
-   e.competencia, -- Ano e mês da competência do registro do estabelecimento: YYYYMM
-   e.sigla_uf, -- Sigla da UF onde se localiza o estabelecimento
-   e.id_municipio_ibge, -- Código IBGE de 6 digitos do município gestor do estabelecimento
-   e.id_estabelecimento_cnes AS id_provedor, -- Código CNES do estabelecimento provedor de cuidados
-   e.tipo_estabelecimento, -- Tipo de estabelecimento conforme CNES (ex. pronto socorro geral, hospital geral, centro de imunizacao etc)
-   h.hp_code as codigo_sha, -- Código da função SHA correspondente ao tipo de estabelecimento
-   e.codigo_natureza_juridica, -- Código da natureza juridica do estabelecimento conforme Tabela de Naturezas Juridicas do CONCLA
+   left(e.competencia, 4) as ano, -- Ano da competencia do registro do estabelecimento: YYYY (Fonte: CNES)
+   right(e.competencia, 2) as mes, -- Mês da competencia do registro do estabelecimento: YYYY (Fonte: CNES)
+   e.competencia, -- Ano e mês da competência do registro do estabelecimento: YYYYMM (Fonte: CNES)
+   e.sigla_uf, -- Sigla da UF onde se localiza o estabelecimento (Fonte: CNES)
+   e.id_municipio_ibge, -- Código IBGE de 6 digitos do município gestor do estabelecimento (Fonte: CNES)
+   e.id_estabelecimento_cnes AS id_provedor, -- Código CNES do estabelecimento provedor de cuidados (Fonte: CNES)
+   e.tipo_estabelecimento, -- Tipo de estabelecimento conforme CNES (ex. pronto socorro geral, hospital geral, centro de imunizacao etc) (Fonte: CNES)
+   h.hp_code as codigo_sha, -- Código da função SHA correspondente ao tipo de estabelecimento (Fonte: NCS/DESID)
+   e.codigo_natureza_juridica, -- Código da natureza juridica do estabelecimento (Fonte: Tabela de Naturezas Juridicas do CONCLA)
    COALESCE(
     CASE 
     WHEN n.descricao LIKE '%Federal%' THEN 'administracao publica federal'
@@ -33,8 +35,19 @@ SELECT
     WHEN e.codigo_natureza_juridica BETWEEN '5000' and '5999' THEN 'instituicao extraterritorial' -- organização internacional e outras instituicoes extraterritoriais
     END,
     'desconhecido'
-   ) AS tipo_provedor, -- Indicador to tipo de provedor: 'administracao publica federal', 'administracao publica estadual', 'administracao publica municipal', 'outra administracao publica', 'contratado', 'sem fins lucrativos', 'instituicao extraterritorial', 'desconhecido'
+   ) AS tipo_provedor, -- Indicador to tipo de provedor: 'administracao publica federal', 'administracao publica estadual', 'administracao publica municipal', 'outra administracao publica', 'contratado', 'sem fins lucrativos', 'instituicao extraterritorial', 'desconhecido' (Fonte: CNES, NCD/DESID)
 FROM
    cnes.estabelecimentos e
    LEFT JOIN raw.cnes__naturezas_juridicas n ON e.codigo_natureza_juridica::int = n.id_natureza_juridica::int
-   LEFT JOIN raw.sha__tpups_hps h ON h.TPUPS::int = e.codigo_tipo_estabelecimento::int
+   LEFT JOIN raw.sha__tpups_hps h ON h.TPUPS::int = e.codigo_tipo_estabelecimento::int;
+
+ /*  POST-STATEMENT */
+@IF(
+  @runtime_stage = 'evaluating',
+  COPY sha.provedores
+  TO 'data/outputs/br_ms__sha/provedores' WITH (
+    FORMAT PARQUET,
+    PARTITION_BY (ano, mes),
+    OVERWRITE_OR_IGNORE,
+    FILENAME_PATTERN 'provedores_')
+  );
